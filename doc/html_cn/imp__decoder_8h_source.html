@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: api/cn/imp/imp_decoder.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="dir_31a1ac01d37bc983c5b5cff3958563ba.html">cn</a></li><li class="navelem"><a class="el" href="dir_c1bd294425c88ba3746096703af56b56.html">imp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imp_decoder.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imp__decoder_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * IMP Decoder func header file.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2014 Ingenic Semiconductor Co.,Ltd</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __IMP_DECODER_H__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __IMP_DECODER_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_attr.html">   35</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_attr.html#aaca5f82d924a74f24e4559d531479ced">   36</a></span>&#160;        <a class="code" href="imp__common_8h.html#ad505915c7d90c3f6ff7f21df277fbe21">IMPPayloadType</a>          <a class="code" href="struct_i_m_p_decoder_attr.html#aaca5f82d924a74f24e4559d531479ced">decType</a>;                </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_attr.html#a4a897bd932e729d4d47a7fc6ce78a328">   37</a></span>&#160;        uint32_t                        <a class="code" href="struct_i_m_p_decoder_attr.html#a4a897bd932e729d4d47a7fc6ce78a328">maxWidth</a>;               </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_attr.html#a63568c2192330af9fa712f7a041cb0e4">   38</a></span>&#160;        uint32_t                        <a class="code" href="struct_i_m_p_decoder_attr.html#a63568c2192330af9fa712f7a041cb0e4">maxHeight</a>;              </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_attr.html#a438b6cb77e7f16ae2dc1bf2ebfe8eef7">   39</a></span>&#160;        <a class="code" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a>          <a class="code" href="struct_i_m_p_decoder_attr.html#a438b6cb77e7f16ae2dc1bf2ebfe8eef7">pixelFormat</a>;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_attr.html#a38b94b5b869ebb6a9cdb3220f647253f">   40</a></span>&#160;        uint32_t                        <a class="code" href="struct_i_m_p_decoder_attr.html#a38b94b5b869ebb6a9cdb3220f647253f">nrKeepStream</a>;   </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_attr.html#a444b5b7bad848213bb503c8c43170239">   41</a></span>&#160;        uint32_t                        <a class="code" href="struct_i_m_p_decoder_attr.html#a444b5b7bad848213bb503c8c43170239">frmRateNum</a>;             </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_attr.html#ae61c4eb850d46ad1517b2df6fb4aa25f">   42</a></span>&#160;        uint32_t                        <a class="code" href="struct_i_m_p_decoder_attr.html#ae61c4eb850d46ad1517b2df6fb4aa25f">frmRateDen</a>;             </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <a class="code" href="struct_i_m_p_decoder_attr.html">IMPDecoderAttr</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_c_h_n_attr.html">   48</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_c_h_n_attr.html#a382cdb979dda46d85a33be1dcb197b91">   49</a></span>&#160;        <a class="code" href="struct_i_m_p_decoder_attr.html">IMPDecoderAttr</a>          <a class="code" href="struct_i_m_p_decoder_c_h_n_attr.html#a382cdb979dda46d85a33be1dcb197b91">decAttr</a>;                </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <a class="code" href="struct_i_m_p_decoder_c_h_n_attr.html">IMPDecoderCHNAttr</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_nal.html">   55</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_nal.html#afff0759f6f7c97c7c6c45803a80d343a">   56</a></span>&#160;        <span class="keywordtype">int</span>                                     <a class="code" href="struct_i_m_p_decoder_nal.html#afff0759f6f7c97c7c6c45803a80d343a">i_payload</a>;              </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_nal.html#aa063328c2520fc0e0546392a7d1f1452">   57</a></span>&#160;        uint8_t                         *<a class="code" href="struct_i_m_p_decoder_nal.html#aa063328c2520fc0e0546392a7d1f1452">p_payload</a>;             </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_nal.html#a80b88993b3efabcd3526320a06d5dac0">   58</a></span>&#160;        int64_t                         <a class="code" href="struct_i_m_p_decoder_nal.html#a80b88993b3efabcd3526320a06d5dac0">timeStamp</a>;              </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <a class="code" href="struct_i_m_p_decoder_nal.html">IMPDecoderNal</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_stream.html">   64</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="struct_i_m_p_decoder_stream.html#a83af695d9e992b6e60361b26781b9d18">   65</a></span>&#160;        <a class="code" href="struct_i_m_p_decoder_nal.html">IMPDecoderNal</a>   <a class="code" href="struct_i_m_p_decoder_stream.html#a83af695d9e992b6e60361b26781b9d18">decoderNal</a>; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <a class="code" href="struct_i_m_p_decoder_stream.html">IMPDecoderStream</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___decoder.html#gaf2847173e6e99d0859782d396431135e">IMP_Decoder_CreateChn</a>(<span class="keywordtype">int</span> decChn, <span class="keyword">const</span> <a class="code" href="struct_i_m_p_decoder_c_h_n_attr.html">IMPDecoderCHNAttr</a> *attr);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___decoder.html#ga00a630779788c07c9daf523443c5abb0">IMP_Decoder_DestroyChn</a>(<span class="keywordtype">int</span> decChn);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___decoder.html#ga45b743d81c9e6a5b529c7cf52a12fedf">IMP_Decoder_StartRecvPic</a>(<span class="keywordtype">int</span> decChn);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___decoder.html#ga3ee251bcb7ac2b55f8ef67dfd43d0429">IMP_Decoder_StopRecvPic</a>(<span class="keywordtype">int</span> decChn);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___decoder.html#gac2bc3fa07236594a07ca630cf1cb437c">IMP_Decoder_SendStreamTimeout</a>(<span class="keywordtype">int</span> decChn, <a class="code" href="struct_i_m_p_decoder_stream.html">IMPDecoderStream</a> *stream, uint32_t timeoutMsec);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___decoder.html#gae42cbf89e1e1cf4b8fa1b84ab0ac41e7">IMP_Decoder_PollingFrame</a>(<span class="keywordtype">int</span> decChn, uint32_t timeoutMsec);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___decoder.html#ga396b6cbf537d265617ab2ee13ac17c4e">IMP_Decoder_GetFrame</a>(<span class="keywordtype">int</span> decChn, <a class="code" href="struct_i_m_p_frame_info.html">IMPFrameInfo</a> **frame);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___decoder.html#ga522ce60cb85c8865cf7304835946639a">IMP_Decoder_ReleaseFrame</a>(<span class="keywordtype">int</span> decChn, <a class="code" href="struct_i_m_p_frame_info.html">IMPFrameInfo</a> *frame);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __IMP_DECODER_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="struct_i_m_p_decoder_nal_html_aa063328c2520fc0e0546392a7d1f1452"><div class="ttname"><a href="struct_i_m_p_decoder_nal.html#aa063328c2520fc0e0546392a7d1f1452">IMPDecoderNal::p_payload</a></div><div class="ttdeci">uint8_t * p_payload</div><div class="ttdoc">解码帧的数据指针 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:57</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_attr_html_a38b94b5b869ebb6a9cdb3220f647253f"><div class="ttname"><a href="struct_i_m_p_decoder_attr.html#a38b94b5b869ebb6a9cdb3220f647253f">IMPDecoderAttr::nrKeepStream</a></div><div class="ttdeci">uint32_t nrKeepStream</div><div class="ttdoc">解码器缓存帧个数 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:40</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_attr_html"><div class="ttname"><a href="struct_i_m_p_decoder_attr.html">IMPDecoderAttr</a></div><div class="ttdoc">定义解码器属性 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:35</div></div>
+<div class="ttc" id="group___i_m_p___decoder_html_ga00a630779788c07c9daf523443c5abb0"><div class="ttname"><a href="group___i_m_p___decoder.html#ga00a630779788c07c9daf523443c5abb0">IMP_Decoder_DestroyChn</a></div><div class="ttdeci">int IMP_Decoder_DestroyChn(int decChn)</div><div class="ttdoc">销毁解码Channel </div></div>
+<div class="ttc" id="group___i_m_p___decoder_html_ga522ce60cb85c8865cf7304835946639a"><div class="ttname"><a href="group___i_m_p___decoder.html#ga522ce60cb85c8865cf7304835946639a">IMP_Decoder_ReleaseFrame</a></div><div class="ttdeci">int IMP_Decoder_ReleaseFrame(int decChn, IMPFrameInfo *frame)</div><div class="ttdoc">释放码流缓存 </div></div>
+<div class="ttc" id="struct_i_m_p_decoder_attr_html_a444b5b7bad848213bb503c8c43170239"><div class="ttname"><a href="struct_i_m_p_decoder_attr.html#a444b5b7bad848213bb503c8c43170239">IMPDecoderAttr::frmRateNum</a></div><div class="ttdeci">uint32_t frmRateNum</div><div class="ttdoc">在一秒钟内的时间单元的数量, 以时间单元为单位。即帧率的分子 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:41</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_attr_html_a4a897bd932e729d4d47a7fc6ce78a328"><div class="ttname"><a href="struct_i_m_p_decoder_attr.html#a4a897bd932e729d4d47a7fc6ce78a328">IMPDecoderAttr::maxWidth</a></div><div class="ttdeci">uint32_t maxWidth</div><div class="ttdoc">解码帧最大的宽度 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:37</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_nal_html"><div class="ttname"><a href="struct_i_m_p_decoder_nal.html">IMPDecoderNal</a></div><div class="ttdoc">定义解码帧数据属性 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:55</div></div>
+<div class="ttc" id="imp__common_8h_html_ad505915c7d90c3f6ff7f21df277fbe21"><div class="ttname"><a href="imp__common_8h.html#ad505915c7d90c3f6ff7f21df277fbe21">IMPPayloadType</a></div><div class="ttdeci">IMPPayloadType</div><div class="ttdoc">编解码协议类型 </div><div class="ttdef"><b>Definition:</b> imp_common.h:82</div></div>
+<div class="ttc" id="group___i_m_p___decoder_html_gac2bc3fa07236594a07ca630cf1cb437c"><div class="ttname"><a href="group___i_m_p___decoder.html#gac2bc3fa07236594a07ca630cf1cb437c">IMP_Decoder_SendStreamTimeout</a></div><div class="ttdeci">int IMP_Decoder_SendStreamTimeout(int decChn, IMPDecoderStream *stream, uint32_t timeoutMsec)</div><div class="ttdoc">发送需解码数据 </div></div>
+<div class="ttc" id="struct_i_m_p_frame_info_html"><div class="ttname"><a href="struct_i_m_p_frame_info.html">IMPFrameInfo</a></div><div class="ttdoc">IMP帧图像信息定义. </div><div class="ttdef"><b>Definition:</b> imp_common.h:54</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_attr_html_aaca5f82d924a74f24e4559d531479ced"><div class="ttname"><a href="struct_i_m_p_decoder_attr.html#aaca5f82d924a74f24e4559d531479ced">IMPDecoderAttr::decType</a></div><div class="ttdeci">IMPPayloadType decType</div><div class="ttdoc">解码帧原数据协议类型 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:36</div></div>
+<div class="ttc" id="group___i_m_p___decoder_html_gaf2847173e6e99d0859782d396431135e"><div class="ttname"><a href="group___i_m_p___decoder.html#gaf2847173e6e99d0859782d396431135e">IMP_Decoder_CreateChn</a></div><div class="ttdeci">int IMP_Decoder_CreateChn(int decChn, const IMPDecoderCHNAttr *attr)</div><div class="ttdoc">创建解码Channel </div></div>
+<div class="ttc" id="struct_i_m_p_decoder_stream_html"><div class="ttname"><a href="struct_i_m_p_decoder_stream.html">IMPDecoderStream</a></div><div class="ttdoc">定义解码器码流属性 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:64</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_c_h_n_attr_html"><div class="ttname"><a href="struct_i_m_p_decoder_c_h_n_attr.html">IMPDecoderCHNAttr</a></div><div class="ttdoc">定义解码Channel属性 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:48</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_attr_html_a438b6cb77e7f16ae2dc1bf2ebfe8eef7"><div class="ttname"><a href="struct_i_m_p_decoder_attr.html#a438b6cb77e7f16ae2dc1bf2ebfe8eef7">IMPDecoderAttr::pixelFormat</a></div><div class="ttdeci">IMPPixelFormat pixelFormat</div><div class="ttdoc">解码帧目标数据协议类型 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:39</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_nal_html_afff0759f6f7c97c7c6c45803a80d343a"><div class="ttname"><a href="struct_i_m_p_decoder_nal.html#afff0759f6f7c97c7c6c45803a80d343a">IMPDecoderNal::i_payload</a></div><div class="ttdeci">int i_payload</div><div class="ttdoc">解码帧的数据长度 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:56</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_attr_html_a63568c2192330af9fa712f7a041cb0e4"><div class="ttname"><a href="struct_i_m_p_decoder_attr.html#a63568c2192330af9fa712f7a041cb0e4">IMPDecoderAttr::maxHeight</a></div><div class="ttdeci">uint32_t maxHeight</div><div class="ttdoc">解码帧最大的高度 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:38</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_attr_html_ae61c4eb850d46ad1517b2df6fb4aa25f"><div class="ttname"><a href="struct_i_m_p_decoder_attr.html#ae61c4eb850d46ad1517b2df6fb4aa25f">IMPDecoderAttr::frmRateDen</a></div><div class="ttdeci">uint32_t frmRateDen</div><div class="ttdoc">在一帧内的时间单元的数量, 以时间单元为单位。即帧率的分母 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:42</div></div>
+<div class="ttc" id="struct_i_m_p_decoder_stream_html_a83af695d9e992b6e60361b26781b9d18"><div class="ttname"><a href="struct_i_m_p_decoder_stream.html#a83af695d9e992b6e60361b26781b9d18">IMPDecoderStream::decoderNal</a></div><div class="ttdeci">IMPDecoderNal decoderNal</div><div class="ttdoc">解码帧数据结构体 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:65</div></div>
+<div class="ttc" id="group___i_m_p___decoder_html_ga45b743d81c9e6a5b529c7cf52a12fedf"><div class="ttname"><a href="group___i_m_p___decoder.html#ga45b743d81c9e6a5b529c7cf52a12fedf">IMP_Decoder_StartRecvPic</a></div><div class="ttdeci">int IMP_Decoder_StartRecvPic(int decChn)</div><div class="ttdoc">开启解码Channel接收图像 </div></div>
+<div class="ttc" id="struct_i_m_p_decoder_nal_html_a80b88993b3efabcd3526320a06d5dac0"><div class="ttname"><a href="struct_i_m_p_decoder_nal.html#a80b88993b3efabcd3526320a06d5dac0">IMPDecoderNal::timeStamp</a></div><div class="ttdeci">int64_t timeStamp</div><div class="ttdoc">解码帧的时间戳 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:58</div></div>
+<div class="ttc" id="imp__common_8h_html_a41dd79af5cc134fac5e24c98272824c0"><div class="ttname"><a href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a></div><div class="ttdeci">IMPPixelFormat</div><div class="ttdoc">IMP图像格式定义. </div><div class="ttdef"><b>Definition:</b> imp_common.h:91</div></div>
+<div class="ttc" id="group___i_m_p___decoder_html_ga396b6cbf537d265617ab2ee13ac17c4e"><div class="ttname"><a href="group___i_m_p___decoder.html#ga396b6cbf537d265617ab2ee13ac17c4e">IMP_Decoder_GetFrame</a></div><div class="ttdeci">int IMP_Decoder_GetFrame(int decChn, IMPFrameInfo **frame)</div><div class="ttdoc">获取解码码流 </div></div>
+<div class="ttc" id="group___i_m_p___decoder_html_gae42cbf89e1e1cf4b8fa1b84ab0ac41e7"><div class="ttname"><a href="group___i_m_p___decoder.html#gae42cbf89e1e1cf4b8fa1b84ab0ac41e7">IMP_Decoder_PollingFrame</a></div><div class="ttdeci">int IMP_Decoder_PollingFrame(int decChn, uint32_t timeoutMsec)</div><div class="ttdoc">Polling 解码码流缓存 </div></div>
+<div class="ttc" id="group___i_m_p___decoder_html_ga3ee251bcb7ac2b55f8ef67dfd43d0429"><div class="ttname"><a href="group___i_m_p___decoder.html#ga3ee251bcb7ac2b55f8ef67dfd43d0429">IMP_Decoder_StopRecvPic</a></div><div class="ttdeci">int IMP_Decoder_StopRecvPic(int decChn)</div><div class="ttdoc">停止解码Channel接收图像 </div></div>
+<div class="ttc" id="struct_i_m_p_decoder_c_h_n_attr_html_a382cdb979dda46d85a33be1dcb197b91"><div class="ttname"><a href="struct_i_m_p_decoder_c_h_n_attr.html#a382cdb979dda46d85a33be1dcb197b91">IMPDecoderCHNAttr::decAttr</a></div><div class="ttdeci">IMPDecoderAttr decAttr</div><div class="ttdoc">解码器属性 </div><div class="ttdef"><b>Definition:</b> imp_decoder.h:49</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:30 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

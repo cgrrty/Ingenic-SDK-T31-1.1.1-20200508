@@ -1,0 +1,10 @@
+1 ./rtw_simple_config -i wlan0 -c /etc/wpa_supplicant.conf  -p 14825903
+ -t 120 -n RTKSC_SAMPLE -d
+
+注意：simple config在代码指定驱动名称和相关路径，库里默认8188eu，8188fu需修改源码，重新编译
+
+
+2.手机安装SimpleConfigApp，
+	1) 选择wifi 输入密码
+	2) 输入pincode
+	3) start

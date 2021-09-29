@@ -1,0 +1,5 @@
+<map id="IMP_IVS_MoveParam" name="IMP_IVS_MoveParam">
+<area shape="rect" id="node2" href="$struct_i_m_p_rect.html" title="IMP Rectangle area information. " alt="" coords="5,117,80,147"/>
+<area shape="rect" id="node4" href="$struct_i_m_p_point.html" title="IMP point coordinate information. " alt="" coords="5,5,80,35"/>
+<area shape="rect" id="node6" href="$struct_i_m_p_frame_info.html" title="IMP frame image information definition. " alt="" coords="104,117,208,147"/>
+</map>

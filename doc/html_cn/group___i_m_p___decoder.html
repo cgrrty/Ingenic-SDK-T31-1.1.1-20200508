@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: IMP_Decoder</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">IMP_Decoder<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>视频解码模块，当前只支持JPEG解码  
+<a href="#details">更多...</a></p>
+<div class="dynheader">
+IMP_Decoder 的协作图:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group___i_m_p___decoder.png" border="0" alt="" usemap="#group______i__m__p______decoder"/>
+<map name="group______i__m__p______decoder" id="group______i__m__p______decoder">
+<area shape="rect" id="node2" href="group__imp.html" title="IMP(Ingenic Media Platform)" alt="" coords="7,5,193,35"/></map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_decoder_attr.html">IMPDecoderAttr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义解码器属性  <a href="struct_i_m_p_decoder_attr.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_decoder_c_h_n_attr.html">IMPDecoderCHNAttr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义解码Channel属性  <a href="struct_i_m_p_decoder_c_h_n_attr.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_decoder_nal.html">IMPDecoderNal</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义解码帧数据属性  <a href="struct_i_m_p_decoder_nal.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_decoder_stream.html">IMPDecoderStream</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义解码器码流属性  <a href="struct_i_m_p_decoder_stream.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gaf2847173e6e99d0859782d396431135e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___decoder.html#gaf2847173e6e99d0859782d396431135e">IMP_Decoder_CreateChn</a> (int decChn, const <a class="el" href="struct_i_m_p_decoder_c_h_n_attr.html">IMPDecoderCHNAttr</a> *attr)</td></tr>
+<tr class="memdesc:gaf2847173e6e99d0859782d396431135e"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建解码Channel  <a href="#gaf2847173e6e99d0859782d396431135e">更多...</a><br /></td></tr>
+<tr class="separator:gaf2847173e6e99d0859782d396431135e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00a630779788c07c9daf523443c5abb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___decoder.html#ga00a630779788c07c9daf523443c5abb0">IMP_Decoder_DestroyChn</a> (int decChn)</td></tr>
+<tr class="memdesc:ga00a630779788c07c9daf523443c5abb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁解码Channel  <a href="#ga00a630779788c07c9daf523443c5abb0">更多...</a><br /></td></tr>
+<tr class="separator:ga00a630779788c07c9daf523443c5abb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45b743d81c9e6a5b529c7cf52a12fedf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___decoder.html#ga45b743d81c9e6a5b529c7cf52a12fedf">IMP_Decoder_StartRecvPic</a> (int decChn)</td></tr>
+<tr class="memdesc:ga45b743d81c9e6a5b529c7cf52a12fedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">开启解码Channel接收图像  <a href="#ga45b743d81c9e6a5b529c7cf52a12fedf">更多...</a><br /></td></tr>
+<tr class="separator:ga45b743d81c9e6a5b529c7cf52a12fedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ee251bcb7ac2b55f8ef67dfd43d0429"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___decoder.html#ga3ee251bcb7ac2b55f8ef67dfd43d0429">IMP_Decoder_StopRecvPic</a> (int decChn)</td></tr>
+<tr class="memdesc:ga3ee251bcb7ac2b55f8ef67dfd43d0429"><td class="mdescLeft">&#160;</td><td class="mdescRight">停止解码Channel接收图像  <a href="#ga3ee251bcb7ac2b55f8ef67dfd43d0429">更多...</a><br /></td></tr>
+<tr class="separator:ga3ee251bcb7ac2b55f8ef67dfd43d0429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2bc3fa07236594a07ca630cf1cb437c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___decoder.html#gac2bc3fa07236594a07ca630cf1cb437c">IMP_Decoder_SendStreamTimeout</a> (int decChn, <a class="el" href="struct_i_m_p_decoder_stream.html">IMPDecoderStream</a> *stream, uint32_t timeoutMsec)</td></tr>
+<tr class="memdesc:gac2bc3fa07236594a07ca630cf1cb437c"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送需解码数据  <a href="#gac2bc3fa07236594a07ca630cf1cb437c">更多...</a><br /></td></tr>
+<tr class="separator:gac2bc3fa07236594a07ca630cf1cb437c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae42cbf89e1e1cf4b8fa1b84ab0ac41e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___decoder.html#gae42cbf89e1e1cf4b8fa1b84ab0ac41e7">IMP_Decoder_PollingFrame</a> (int decChn, uint32_t timeoutMsec)</td></tr>
+<tr class="memdesc:gae42cbf89e1e1cf4b8fa1b84ab0ac41e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polling 解码码流缓存  <a href="#gae42cbf89e1e1cf4b8fa1b84ab0ac41e7">更多...</a><br /></td></tr>
+<tr class="separator:gae42cbf89e1e1cf4b8fa1b84ab0ac41e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga396b6cbf537d265617ab2ee13ac17c4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___decoder.html#ga396b6cbf537d265617ab2ee13ac17c4e">IMP_Decoder_GetFrame</a> (int decChn, <a class="el" href="struct_i_m_p_frame_info.html">IMPFrameInfo</a> **frame)</td></tr>
+<tr class="memdesc:ga396b6cbf537d265617ab2ee13ac17c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取解码码流  <a href="#ga396b6cbf537d265617ab2ee13ac17c4e">更多...</a><br /></td></tr>
+<tr class="separator:ga396b6cbf537d265617ab2ee13ac17c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga522ce60cb85c8865cf7304835946639a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___decoder.html#ga522ce60cb85c8865cf7304835946639a">IMP_Decoder_ReleaseFrame</a> (int decChn, <a class="el" href="struct_i_m_p_frame_info.html">IMPFrameInfo</a> *frame)</td></tr>
+<tr class="memdesc:ga522ce60cb85c8865cf7304835946639a"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放码流缓存  <a href="#ga522ce60cb85c8865cf7304835946639a">更多...</a><br /></td></tr>
+<tr class="separator:ga522ce60cb85c8865cf7304835946639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p>视频解码模块，当前只支持JPEG解码 </p>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="gaf2847173e6e99d0859782d396431135e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_CreateChn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_i_m_p_decoder_c_h_n_attr.html">IMPDecoderCHNAttr</a> *&#160;</td>
+          <td class="paramname"><em>attr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建解码Channel </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>解码Channel属性指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>无。 </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>无。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga00a630779788c07c9daf523443c5abb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_DestroyChn </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>销毁解码Channel </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>无。 </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>无。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga396b6cbf537d265617ab2ee13ac17c4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_GetFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_i_m_p_frame_info.html">IMPFrameInfo</a> **&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取解码码流 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">frame</td><td>解码码流结构体指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>无。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>解码码流buffer由解码器内部申请，该函数只需要传入结构体指针即可。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae42cbf89e1e1cf4b8fa1b84ab0ac41e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_PollingFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeoutMsec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Polling 解码码流缓存 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMsec</td><td>超时时间 单位ms</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>无。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>如果Channel未创建，则返回失败 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga522ce60cb85c8865cf7304835946639a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_ReleaseFrame </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_i_m_p_frame_info.html">IMPFrameInfo</a> *&#160;</td>
+          <td class="paramname"><em>frame</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放码流缓存 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">frame</td><td>解码码流结构体指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>无。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>无。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac2bc3fa07236594a07ca630cf1cb437c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_SendStreamTimeout </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_i_m_p_decoder_stream.html">IMPDecoderStream</a> *&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>timeoutMsec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>发送需解码数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stream</td><td>需解码的数据流结构体指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutMsec</td><td>解码超时时间 单位ms</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>无。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>如果Channel未创建，则返回失败 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga45b743d81c9e6a5b529c7cf52a12fedf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_StartRecvPic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>开启解码Channel接收图像 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>开启解码Channel接收图像后才能开始解码</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>如果Channel未创建，则返回失败 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3ee251bcb7ac2b55f8ef67dfd43d0429"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_Decoder_StopRecvPic </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>decChn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>停止解码Channel接收图像 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">decChn</td><td>解码Channel号,取值范围: [0, NR_MAX_DEC_CHN - 1]</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>停止解码Channel接收图像</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>如果Channel未创建，则返回失败 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:31 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

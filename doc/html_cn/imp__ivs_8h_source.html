@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: api/cn/imp/imp_ivs.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="dir_31a1ac01d37bc983c5b5cff3958563ba.html">cn</a></li><li class="navelem"><a class="el" href="dir_c1bd294425c88ba3746096703af56b56.html">imp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imp_ivs.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imp__ivs_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * IMP IVS header file.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2015 Ingenic Semiconductor Co.,Ltd</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __IMP_IVS_H__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __IMP_IVS_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="imp__common_8h.html">imp/imp_common.h</a>&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define IMP_IVS_DEFAULT_TIMEOUTMS               (-1)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="group___i_m_p___i_v_s.html#ga8170a9e0dc57c3b9e1f03f5543b9cc69">  126</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> <a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html">  128</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> {</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#a13623f1d68513495c21f8b061b1a5aec">  129</a></span>&#160;        <span class="keywordtype">void</span>  *<a class="code" href="struct_i_m_p_i_v_s_interface.html#a13623f1d68513495c21f8b061b1a5aec">param</a>;                                                                                                   </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#afeeb9c6a747228c7c19a059ce5b0f71a">  130</a></span>&#160;        <span class="keywordtype">int</span>   <a class="code" href="struct_i_m_p_i_v_s_interface.html#afeeb9c6a747228c7c19a059ce5b0f71a">paramSize</a>;                                                                                                </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#a6f2319c0e41b1713c94084a54a8796f7">  131</a></span>&#160;        <a class="code" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a> <a class="code" href="struct_i_m_p_i_v_s_interface.html#a6f2319c0e41b1713c94084a54a8796f7">pixfmt</a>;                                                                                  </div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#af901b54394602da1dcc6a8c08ac11ba5">  132</a></span>&#160;        int  (*<a class="code" href="struct_i_m_p_i_v_s_interface.html#af901b54394602da1dcc6a8c08ac11ba5">init</a>)(<a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *inf);                                                             </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#a2e177791792d65ac3d4e9ab0d7e27675">  133</a></span>&#160;        void (*<a class="code" href="struct_i_m_p_i_v_s_interface.html#a2e177791792d65ac3d4e9ab0d7e27675">exit</a>)(<a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *inf);                                                             </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#a435d03881dd91fb365d3b60309fdef86">  134</a></span>&#160;        int  (*<a class="code" href="struct_i_m_p_i_v_s_interface.html#a435d03881dd91fb365d3b60309fdef86">preProcessSync</a>)(<a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *inf, <a class="code" href="struct_i_m_p_frame_info.html">IMPFrameInfo</a> *frame);</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#acf0ffa3df4dae794703e35cab870e173">  135</a></span>&#160;        int  (*<a class="code" href="struct_i_m_p_i_v_s_interface.html#acf0ffa3df4dae794703e35cab870e173">processAsync</a>)(<a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *inf, <a class="code" href="struct_i_m_p_frame_info.html">IMPFrameInfo</a> *frame);</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#ad4f5697675d3767f1237a70112766cd4">  136</a></span>&#160;        int  (*<a class="code" href="struct_i_m_p_i_v_s_interface.html#ad4f5697675d3767f1237a70112766cd4">getResult</a>)(<a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *inf, <span class="keywordtype">void</span> **result);                 </div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#adba315bd4fc5c92a18bac51ca0cb37be">  137</a></span>&#160;        int  (*<a class="code" href="struct_i_m_p_i_v_s_interface.html#adba315bd4fc5c92a18bac51ca0cb37be">releaseResult</a>)(<a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *inf, <span class="keywordtype">void</span> *result);              </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#a92bdcdee4e1167048a831a995e551244">  138</a></span>&#160;        int      (*<a class="code" href="struct_i_m_p_i_v_s_interface.html#a92bdcdee4e1167048a831a995e551244">getParam</a>)(<a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *inf, <span class="keywordtype">void</span> *<a class="code" href="struct_i_m_p_i_v_s_interface.html#a13623f1d68513495c21f8b061b1a5aec">param</a>);                        </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#aa1d9560994f1efb61d97bad6db005cc2">  139</a></span>&#160;        int      (*<a class="code" href="struct_i_m_p_i_v_s_interface.html#aa1d9560994f1efb61d97bad6db005cc2">setParam</a>)(<a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *inf, <span class="keywordtype">void</span> *<a class="code" href="struct_i_m_p_i_v_s_interface.html#a13623f1d68513495c21f8b061b1a5aec">param</a>);                        </div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#a173e8bd0f8f70493b7bb793b9e01e5f4">  140</a></span>&#160;        int      (*<a class="code" href="struct_i_m_p_i_v_s_interface.html#a173e8bd0f8f70493b7bb793b9e01e5f4">flushFrame</a>)(<a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *inf);                                           </div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_v_s_interface.html#a8b6505c37d4ff95854b8b00527e4d9fa">  141</a></span>&#160;        <span class="keywordtype">void</span> *<a class="code" href="struct_i_m_p_i_v_s_interface.html#a8b6505c37d4ff95854b8b00527e4d9fa">priv</a>;                                                                                                             </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;};</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#gaf4bb6f49f2a0bf8f0d5f448b6a62e6a5">IMP_IVS_CreateGroup</a>(<span class="keywordtype">int</span> GrpNum);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga2400f2ef403e471bd1d7c6a4eb1356f6">IMP_IVS_DestroyGroup</a>(<span class="keywordtype">int</span> GrpNum);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#gada895e87ff289b637330935379e081d6">IMP_IVS_CreateChn</a>(<span class="keywordtype">int</span> ChnNum, <a class="code" href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a> *handler);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#gacd3e4340777295519e7d097e4e5f30cd">IMP_IVS_DestroyChn</a>(<span class="keywordtype">int</span> ChnNum);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga001fe0e1ee94b91bc4f2a08474ecd652">IMP_IVS_RegisterChn</a>(<span class="keywordtype">int</span> GrpNum, <span class="keywordtype">int</span> ChnNum);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga9b756088952b6ff0f483b0d5826109ec">IMP_IVS_UnRegisterChn</a>(<span class="keywordtype">int</span> ChnNum);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#gaf1ffe26e56f2d8f8bce812b3d26111db">IMP_IVS_StartRecvPic</a>(<span class="keywordtype">int</span> ChnNum);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga3452e6eb4c0838a6ce1e5c2907f51fc3">IMP_IVS_StopRecvPic</a>(<span class="keywordtype">int</span> ChnNum);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga4ff339164b80826f2288766482da907c">IMP_IVS_PollingResult</a>(<span class="keywordtype">int</span> ChnNum, <span class="keywordtype">int</span> timeoutMs);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga39b67051ba392735d9719c37968717f6">IMP_IVS_GetResult</a>(<span class="keywordtype">int</span> ChnNum, <span class="keywordtype">void</span> **result);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga4c8a0109894c69f3e83ec5c4f73e5e74">IMP_IVS_ReleaseResult</a>(<span class="keywordtype">int</span> ChnNum, <span class="keywordtype">void</span> *result);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga079dccc637f16934f905a7518fb44e9e">IMP_IVS_ReleaseData</a>(<span class="keywordtype">void</span> *vaddr);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga59ddb3579c4d1221da6e2c45d929bfc2">IMP_IVS_GetParam</a>(<span class="keywordtype">int</span> chnNum, <span class="keywordtype">void</span> *param);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_v_s.html#ga2a0e9458531fb623d2af6dacfab5acc0">IMP_IVS_SetParam</a>(<span class="keywordtype">int</span> chnNum, <span class="keywordtype">void</span> *param);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;}</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __IMP_IVS_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga001fe0e1ee94b91bc4f2a08474ecd652"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga001fe0e1ee94b91bc4f2a08474ecd652">IMP_IVS_RegisterChn</a></div><div class="ttdeci">int IMP_IVS_RegisterChn(int GrpNum, int ChnNum)</div><div class="ttdoc">注册通道到通道组 </div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga3452e6eb4c0838a6ce1e5c2907f51fc3"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga3452e6eb4c0838a6ce1e5c2907f51fc3">IMP_IVS_StopRecvPic</a></div><div class="ttdeci">int IMP_IVS_StopRecvPic(int ChnNum)</div><div class="ttdoc">通道停止接收图像 </div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_a13623f1d68513495c21f8b061b1a5aec"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#a13623f1d68513495c21f8b061b1a5aec">IMPIVSInterface::param</a></div><div class="ttdeci">void * param</div><div class="ttdoc">输入参数 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:129</div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga9b756088952b6ff0f483b0d5826109ec"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga9b756088952b6ff0f483b0d5826109ec">IMP_IVS_UnRegisterChn</a></div><div class="ttdeci">int IMP_IVS_UnRegisterChn(int ChnNum)</div><div class="ttdoc">从通道组注消通道 </div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga2a0e9458531fb623d2af6dacfab5acc0"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga2a0e9458531fb623d2af6dacfab5acc0">IMP_IVS_SetParam</a></div><div class="ttdeci">int IMP_IVS_SetParam(int chnNum, void *param)</div><div class="ttdoc">设置通道算法参数 </div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_a173e8bd0f8f70493b7bb793b9e01e5f4"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#a173e8bd0f8f70493b7bb793b9e01e5f4">IMPIVSInterface::flushFrame</a></div><div class="ttdeci">int(* flushFrame)(IMPIVSInterface *inf)</div><div class="ttdoc">释放由外部通过processAsync输入给算法后被缓存的所有frame </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:140</div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_aa1d9560994f1efb61d97bad6db005cc2"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#aa1d9560994f1efb61d97bad6db005cc2">IMPIVSInterface::setParam</a></div><div class="ttdeci">int(* setParam)(IMPIVSInterface *inf, void *param)</div><div class="ttdoc">设置算法参数 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:139</div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga4ff339164b80826f2288766482da907c"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga4ff339164b80826f2288766482da907c">IMP_IVS_PollingResult</a></div><div class="ttdeci">int IMP_IVS_PollingResult(int ChnNum, int timeoutMs)</div><div class="ttdoc">阻塞判断是否可以获得IVS功能已计算出的智能分析结果 </div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga079dccc637f16934f905a7518fb44e9e"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga079dccc637f16934f905a7518fb44e9e">IMP_IVS_ReleaseData</a></div><div class="ttdeci">int IMP_IVS_ReleaseData(void *vaddr)</div><div class="ttdoc">释放传给Datacallback的参数frame </div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_a8b6505c37d4ff95854b8b00527e4d9fa"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#a8b6505c37d4ff95854b8b00527e4d9fa">IMPIVSInterface::priv</a></div><div class="ttdeci">void * priv</div><div class="ttdoc">私有变量 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:141</div></div>
+<div class="ttc" id="struct_i_m_p_frame_info_html"><div class="ttname"><a href="struct_i_m_p_frame_info.html">IMPFrameInfo</a></div><div class="ttdoc">IMP帧图像信息定义. </div><div class="ttdef"><b>Definition:</b> imp_common.h:54</div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html">IMPIVSInterface</a></div><div class="ttdef"><b>Definition:</b> imp_ivs.h:128</div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_acf0ffa3df4dae794703e35cab870e173"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#acf0ffa3df4dae794703e35cab870e173">IMPIVSInterface::processAsync</a></div><div class="ttdeci">int(* processAsync)(IMPIVSInterface *inf, IMPFrameInfo *frame)</div><div class="ttdoc">处理函数, SDK IVS 模块对传入此函数的frame 额外加了锁，故此函数必须在该frame使用完毕后尽快使用free_dat...</div><div class="ttdef"><b>Definition:</b> imp_ivs.h:135</div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_a6f2319c0e41b1713c94084a54a8796f7"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#a6f2319c0e41b1713c94084a54a8796f7">IMPIVSInterface::pixfmt</a></div><div class="ttdeci">IMPPixelFormat pixfmt</div><div class="ttdoc">算法需要数据格式 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:131</div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_gaf4bb6f49f2a0bf8f0d5f448b6a62e6a5"><div class="ttname"><a href="group___i_m_p___i_v_s.html#gaf4bb6f49f2a0bf8f0d5f448b6a62e6a5">IMP_IVS_CreateGroup</a></div><div class="ttdeci">int IMP_IVS_CreateGroup(int GrpNum)</div><div class="ttdoc">创建通道组 </div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_adba315bd4fc5c92a18bac51ca0cb37be"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#adba315bd4fc5c92a18bac51ca0cb37be">IMPIVSInterface::releaseResult</a></div><div class="ttdeci">int(* releaseResult)(IMPIVSInterface *inf, void *result)</div><div class="ttdoc">释放结果资源 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:137</div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_ad4f5697675d3767f1237a70112766cd4"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#ad4f5697675d3767f1237a70112766cd4">IMPIVSInterface::getResult</a></div><div class="ttdeci">int(* getResult)(IMPIVSInterface *inf, void **result)</div><div class="ttdoc">获取结果资源 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:136</div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga39b67051ba392735d9719c37968717f6"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga39b67051ba392735d9719c37968717f6">IMP_IVS_GetResult</a></div><div class="ttdeci">int IMP_IVS_GetResult(int ChnNum, void **result)</div><div class="ttdoc">获得IVS功能计算出的智能分析结果 </div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_a92bdcdee4e1167048a831a995e551244"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#a92bdcdee4e1167048a831a995e551244">IMPIVSInterface::getParam</a></div><div class="ttdeci">int(* getParam)(IMPIVSInterface *inf, void *param)</div><div class="ttdoc">获得算法参数 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:138</div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_afeeb9c6a747228c7c19a059ce5b0f71a"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#afeeb9c6a747228c7c19a059ce5b0f71a">IMPIVSInterface::paramSize</a></div><div class="ttdeci">int paramSize</div><div class="ttdoc">参数空间大小 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:130</div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga59ddb3579c4d1221da6e2c45d929bfc2"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga59ddb3579c4d1221da6e2c45d929bfc2">IMP_IVS_GetParam</a></div><div class="ttdeci">int IMP_IVS_GetParam(int chnNum, void *param)</div><div class="ttdoc">获取通道算法参数 </div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_gaf1ffe26e56f2d8f8bce812b3d26111db"><div class="ttname"><a href="group___i_m_p___i_v_s.html#gaf1ffe26e56f2d8f8bce812b3d26111db">IMP_IVS_StartRecvPic</a></div><div class="ttdeci">int IMP_IVS_StartRecvPic(int ChnNum)</div><div class="ttdoc">通道开始接收图像 </div></div>
+<div class="ttc" id="imp__common_8h_html_a41dd79af5cc134fac5e24c98272824c0"><div class="ttname"><a href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a></div><div class="ttdeci">IMPPixelFormat</div><div class="ttdoc">IMP图像格式定义. </div><div class="ttdef"><b>Definition:</b> imp_common.h:91</div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga2400f2ef403e471bd1d7c6a4eb1356f6"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga2400f2ef403e471bd1d7c6a4eb1356f6">IMP_IVS_DestroyGroup</a></div><div class="ttdeci">int IMP_IVS_DestroyGroup(int GrpNum)</div><div class="ttdoc">销毁通道组 </div></div>
+<div class="ttc" id="imp__common_8h_html"><div class="ttname"><a href="imp__common_8h.html">imp_common.h</a></div><div class="ttdoc">SDK-T15公共数据结构头文件 </div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_a2e177791792d65ac3d4e9ab0d7e27675"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#a2e177791792d65ac3d4e9ab0d7e27675">IMPIVSInterface::exit</a></div><div class="ttdeci">void(* exit)(IMPIVSInterface *inf)</div><div class="ttdoc">注销函数 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:133</div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_ga4c8a0109894c69f3e83ec5c4f73e5e74"><div class="ttname"><a href="group___i_m_p___i_v_s.html#ga4c8a0109894c69f3e83ec5c4f73e5e74">IMP_IVS_ReleaseResult</a></div><div class="ttdeci">int IMP_IVS_ReleaseResult(int ChnNum, void *result)</div><div class="ttdoc">释放IVS功能计算出的结果资源 </div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_gacd3e4340777295519e7d097e4e5f30cd"><div class="ttname"><a href="group___i_m_p___i_v_s.html#gacd3e4340777295519e7d097e4e5f30cd">IMP_IVS_DestroyChn</a></div><div class="ttdeci">int IMP_IVS_DestroyChn(int ChnNum)</div><div class="ttdoc">销毁IVS功能句柄对应的通道 </div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_a435d03881dd91fb365d3b60309fdef86"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#a435d03881dd91fb365d3b60309fdef86">IMPIVSInterface::preProcessSync</a></div><div class="ttdeci">int(* preProcessSync)(IMPIVSInterface *inf, IMPFrameInfo *frame)</div><div class="ttdoc">预处理函数，不对传入此函数的frame额外加锁，故无需free frame，返回值：>=0 正确，<0：错误 ...</div><div class="ttdef"><b>Definition:</b> imp_ivs.h:134</div></div>
+<div class="ttc" id="group___i_m_p___i_v_s_html_gada895e87ff289b637330935379e081d6"><div class="ttname"><a href="group___i_m_p___i_v_s.html#gada895e87ff289b637330935379e081d6">IMP_IVS_CreateChn</a></div><div class="ttdeci">int IMP_IVS_CreateChn(int ChnNum, IMPIVSInterface *handler)</div><div class="ttdoc">创建IVS功能对应的通道 </div></div>
+<div class="ttc" id="struct_i_m_p_i_v_s_interface_html_af901b54394602da1dcc6a8c08ac11ba5"><div class="ttname"><a href="struct_i_m_p_i_v_s_interface.html#af901b54394602da1dcc6a8c08ac11ba5">IMPIVSInterface::init</a></div><div class="ttdeci">int(* init)(IMPIVSInterface *inf)</div><div class="ttdoc">初始化函数 </div><div class="ttdef"><b>Definition:</b> imp_ivs.h:132</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:30 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

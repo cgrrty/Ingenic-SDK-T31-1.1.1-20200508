@@ -1,0 +1,2256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: IMP_ISP</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#enumval-members">枚举值</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">IMP_ISP<div class="ingroups"><a class="el" href="group__imp.html">IMP(Ingenic Media Platform)</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>图像信号处理单元。主要包含图像效果设置、模式切换以及Sensor的注册添加删除等操作  
+<a href="#details">更多...</a></p>
+<div class="dynheader">
+IMP_ISP 的协作图:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group___i_m_p___i_s_p.png" border="0" alt="" usemap="#group______i__m__p______i__s__p"/>
+<map name="group______i__m__p______i__s__p" id="group______i__m__p______i__s__p">
+<area shape="rect" id="node2" href="group__imp.html" title="IMP(Ingenic Media Platform)" alt="" coords="7,5,193,35"/></map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_i2_c_info.html">IMPI2CInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头控制总线类型是I2C时，需要配置的参数结构体  <a href="struct_i_m_p_i2_c_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_s_p_i_info.html">IMPSPIInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头控制总线类型是SPI时，需要配置的参数结构体  <a href="struct_i_m_p_s_p_i_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头注册信息结构体  <a href="struct_i_m_p_sensor_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">gamma  <a href="struct_i_m_p_i_s_p_gamma.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionisp__core__expr__attr.html">isp_core_expr_attr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光参数  <a href="unionisp__core__expr__attr.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionisp__core__ae__roi__select.html">isp_core_ae_roi_select</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光统计区域选择  <a href="unionisp__core__ae__roi__select.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structisp__core__wb__attr.html">isp_core_wb_attr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">白平衡参数  <a href="structisp__core__wb__attr.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ga42cce6933c6242e9944874321756f62c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga42cce6933c6242e9944874321756f62c"></a>
+typedef union <a class="el" href="unionisp__core__expr__attr.html">isp_core_expr_attr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a></td></tr>
+<tr class="memdesc:ga42cce6933c6242e9944874321756f62c"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光参数 <br /></td></tr>
+<tr class="separator:ga42cce6933c6242e9944874321756f62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad50c1f6042c643570d9148832ac60dba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad50c1f6042c643570d9148832ac60dba"></a>
+typedef union <a class="el" href="unionisp__core__ae__roi__select.html">isp_core_ae_roi_select</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gad50c1f6042c643570d9148832ac60dba">IMPISPAERoi</a></td></tr>
+<tr class="memdesc:gad50c1f6042c643570d9148832ac60dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光统计区域选择 <br /></td></tr>
+<tr class="separator:gad50c1f6042c643570d9148832ac60dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb085866bbf4d5576e01762beb11b2e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadb085866bbf4d5576e01762beb11b2e1"></a>
+typedef struct <a class="el" href="structisp__core__wb__attr.html">isp_core_wb_attr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a></td></tr>
+<tr class="memdesc:gadb085866bbf4d5576e01762beb11b2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">白平衡参数 <br /></td></tr>
+<tr class="separator:gadb085866bbf4d5576e01762beb11b2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56f9af7c26bc010f60faa8776339fc3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga56f9af7c26bc010f60faa8776339fc3a"></a>
+typedef struct <a class="el" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IMPISPCOEFFTWB</b></td></tr>
+<tr class="separator:ga56f9af7c26bc010f60faa8776339fc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ga38ee4d645812c12b28cd37d5320ccfb2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">IMPSensorControlBusType</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2a97f8ef07011482201851230c9e944752">TX_SENSOR_CONTROL_INTERFACE_I2C</a> = 1, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2aacc0aa36ed6d54a7064f49eb987f7bc6">TX_SENSOR_CONTROL_INTERFACE_SPI</a>
+ }</td></tr>
+<tr class="memdesc:ga38ee4d645812c12b28cd37d5320ccfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头控制总线类型枚举  <a href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">更多...</a><br /></td></tr>
+<tr class="separator:ga38ee4d645812c12b28cd37d5320ccfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45aca860233255ad78614e2fa38520b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab61200e52980316eaea2a9c2bd5abcf1">IMPISP_TUNING_OPS_MODE_DISABLE</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9aa3b9036e0facac6e3165ef4a24b41790">IMPISP_TUNING_OPS_MODE_ENABLE</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab22cf50d640c3fa6e43566e45f60fb80">IMPISP_TUNING_OPS_MODE_BUTT</a>
+ }</td></tr>
+<tr class="memdesc:ga45aca860233255ad78614e2fa38520b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP功能开关  <a href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">更多...</a><br /></td></tr>
+<tr class="separator:ga45aca860233255ad78614e2fa38520b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51cbf4116bb59389dc30a6840764e73e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga51cbf4116bb59389dc30a6840764e73e">IMPISPTuningOpsType</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ea5e63521a46939be32170e2f44596b086">IMPISP_TUNING_OPS_TYPE_AUTO</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73eabc9c9bf5f177c50dbc895ef196d2d825">IMPISP_TUNING_OPS_TYPE_MANUAL</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ead55a5e7f03b4cf92f09ca928730d2799">IMPISP_TUNING_OPS_TYPE_BUTT</a>
+ }</td></tr>
+<tr class="memdesc:ga51cbf4116bb59389dc30a6840764e73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP功能选用开关  <a href="group___i_m_p___i_s_p.html#ga51cbf4116bb59389dc30a6840764e73e">更多...</a><br /></td></tr>
+<tr class="separator:ga51cbf4116bb59389dc30a6840764e73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga452cdc199a01922aa7a5e10d06225f0e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea87cb7a4e8538d789e73e25fcf030ccf2">IMPISP_ANTIFLICKER_DISABLE</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eada18ffe50bfe6dfe686f37c4d16f574b">IMPISP_ANTIFLICKER_50HZ</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eac2c914da54c8ce3dcef396ea0edce902">IMPISP_ANTIFLICKER_60HZ</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea5877a1a388b494636e1250e30e5e707a">IMPISP_ANTIFLICKER_BUTT</a>
+ }</td></tr>
+<tr class="memdesc:ga452cdc199a01922aa7a5e10d06225f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP抗闪频属性参数结构体。  <a href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">更多...</a><br /></td></tr>
+<tr class="separator:ga452cdc199a01922aa7a5e10d06225f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00373cf71fd22df5eaa2f7eed6973100"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100a3311b00220b304cc33887dc596255633">IMPISP_RUNNING_MODE_DAY</a> = 0, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100aca258162fd7afe8a1a81fe5b63723c73">IMPISP_RUNNING_MODE_NIGHT</a> = 1, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100acdceafc2c7437b0cfc100c28afdc49cc">IMPISP_RUNNING_MODE_BUTT</a>
+ }</td></tr>
+<tr class="memdesc:ga00373cf71fd22df5eaa2f7eed6973100"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP 工作模式配置，正常模式或夜视模式。  <a href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">更多...</a><br /></td></tr>
+<tr class="separator:ga00373cf71fd22df5eaa2f7eed6973100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15dbea9727fd70901275c90a3e5ef2d2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2afc30999bcaa40b4d78b7917b5831857a">ISP_CORE_EXPR_MODE_AUTO</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2ac1c6437b2649ae7f6444dd8fabc140b5">ISP_CORE_EXPR_MODE_MANUAL</a>
+ }</td></tr>
+<tr class="memdesc:ga15dbea9727fd70901275c90a3e5ef2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光模式  <a href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">更多...</a><br /></td></tr>
+<tr class="separator:ga15dbea9727fd70901275c90a3e5ef2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga119b1782b6d972e38d604528ad72b65e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65eaccd13313b10d37bb3631b3f63222acd1">ISP_CORE_EXPR_UNIT_LINE</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65ea78fe9c564ee2464a75aab02dfe770ef1">ISP_CORE_EXPR_UNIT_US</a>
+ }</td></tr>
+<tr class="memdesc:ga119b1782b6d972e38d604528ad72b65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光单位  <a href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">更多...</a><br /></td></tr>
+<tr class="separator:ga119b1782b6d972e38d604528ad72b65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8322e3086b65300b1aca801a5ad1b22e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">isp_core_wb_mode</a> { <br />
+&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea6ce1e0466ff7747983d1b152285369c9">ISP_CORE_WB_MODE_AUTO</a> = 0, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea82c9447a0616b465eae5b9a341148c6c">ISP_CORE_WB_MODE_MANUAL</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaaa36a59a0bc0b75b8e078ca54c96d306">ISP_CORE_WB_MODE_DAY_LIGHT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaf767ffefd8e9cb997495bed0c3f4017c">ISP_CORE_WB_MODE_CLOUDY</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea4d72e8d03f8e0cfb4097e42320a8a0f4">ISP_CORE_WB_MODE_INCANDESCENT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea68920c1dbcde0b7e22af79ce92f230a2">ISP_CORE_WB_MODE_FLOURESCENT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea0b524369d95f89cc2838614378f01f15">ISP_CORE_WB_MODE_TWILIGHT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea10f484032b57286297764ad66e3959b0">ISP_CORE_WB_MODE_SHADE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea9860e8998bd2b3f3623e60ddd2c4c763">ISP_CORE_WB_MODE_WARM_FLOURESCENT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea839ad326780726d37b156d95dd0add3b">ISP_CORE_WB_MODE_CUSTOM</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga8322e3086b65300b1aca801a5ad1b22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">白平衡模式  <a href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">更多...</a><br /></td></tr>
+<tr class="separator:ga8322e3086b65300b1aca801a5ad1b22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gac80de0e7f019c1718e58bb9d728203c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gac80de0e7f019c1718e58bb9d728203c3">IMP_ISP_Open</a> (void)</td></tr>
+<tr class="memdesc:gac80de0e7f019c1718e58bb9d728203c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开ISP模块  <a href="#gac80de0e7f019c1718e58bb9d728203c3">更多...</a><br /></td></tr>
+<tr class="separator:gac80de0e7f019c1718e58bb9d728203c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c2fdfdad046856bff32937c5ac05b90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga5c2fdfdad046856bff32937c5ac05b90">IMP_ISP_Close</a> (void)</td></tr>
+<tr class="memdesc:ga5c2fdfdad046856bff32937c5ac05b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭ISP模块  <a href="#ga5c2fdfdad046856bff32937c5ac05b90">更多...</a><br /></td></tr>
+<tr class="separator:ga5c2fdfdad046856bff32937c5ac05b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e4d951a6a80e88026f41e310090c44d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga8e4d951a6a80e88026f41e310090c44d">IMP_ISP_AddSensor</a> (<a class="el" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> *pinfo)</td></tr>
+<tr class="memdesc:ga8e4d951a6a80e88026f41e310090c44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加一个sensor，用于向ISP模块提供数据源  <a href="#ga8e4d951a6a80e88026f41e310090c44d">更多...</a><br /></td></tr>
+<tr class="separator:ga8e4d951a6a80e88026f41e310090c44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87ea0697f417532c191bf86677e281b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga87ea0697f417532c191bf86677e281b5">IMP_ISP_DelSensor</a> (<a class="el" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> *pinfo)</td></tr>
+<tr class="memdesc:ga87ea0697f417532c191bf86677e281b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除一个sensor  <a href="#ga87ea0697f417532c191bf86677e281b5">更多...</a><br /></td></tr>
+<tr class="separator:ga87ea0697f417532c191bf86677e281b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72bd61d7ffa8f06b239c1ce43a6b5274"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga72bd61d7ffa8f06b239c1ce43a6b5274">IMP_ISP_EnableSensor</a> (void)</td></tr>
+<tr class="memdesc:ga72bd61d7ffa8f06b239c1ce43a6b5274"><td class="mdescLeft">&#160;</td><td class="mdescRight">使能一个sensor  <a href="#ga72bd61d7ffa8f06b239c1ce43a6b5274">更多...</a><br /></td></tr>
+<tr class="separator:ga72bd61d7ffa8f06b239c1ce43a6b5274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga823f71e232236129da016cbbd0079295"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga823f71e232236129da016cbbd0079295">IMP_ISP_DisableSensor</a> (void)</td></tr>
+<tr class="memdesc:ga823f71e232236129da016cbbd0079295"><td class="mdescLeft">&#160;</td><td class="mdescRight">不使能一个sensor  <a href="#ga823f71e232236129da016cbbd0079295">更多...</a><br /></td></tr>
+<tr class="separator:ga823f71e232236129da016cbbd0079295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a86c7fac741e7d38daae9767f06a9f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga8a86c7fac741e7d38daae9767f06a9f7">IMP_ISP_SetSensorRegister</a> (uint32_t reg, uint32_t value)</td></tr>
+<tr class="memdesc:ga8a86c7fac741e7d38daae9767f06a9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置sensor一个寄存器的值  <a href="#ga8a86c7fac741e7d38daae9767f06a9f7">更多...</a><br /></td></tr>
+<tr class="separator:ga8a86c7fac741e7d38daae9767f06a9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga121bb07b3c434d708ff9d2627f230884"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga121bb07b3c434d708ff9d2627f230884">IMP_ISP_GetSensorRegister</a> (uint32_t reg, uint32_t *value)</td></tr>
+<tr class="memdesc:ga121bb07b3c434d708ff9d2627f230884"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sensor一个寄存器的值  <a href="#ga121bb07b3c434d708ff9d2627f230884">更多...</a><br /></td></tr>
+<tr class="separator:ga121bb07b3c434d708ff9d2627f230884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34e80ddfdcab5e5f1b500d9271e8a332"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga34e80ddfdcab5e5f1b500d9271e8a332">IMP_ISP_EnableTuning</a> (void)</td></tr>
+<tr class="memdesc:ga34e80ddfdcab5e5f1b500d9271e8a332"><td class="mdescLeft">&#160;</td><td class="mdescRight">使能ISP效果调试功能  <a href="#ga34e80ddfdcab5e5f1b500d9271e8a332">更多...</a><br /></td></tr>
+<tr class="separator:ga34e80ddfdcab5e5f1b500d9271e8a332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75329730dcf100da4839ead7d585662c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga75329730dcf100da4839ead7d585662c">IMP_ISP_DisableTuning</a> (void)</td></tr>
+<tr class="memdesc:ga75329730dcf100da4839ead7d585662c"><td class="mdescLeft">&#160;</td><td class="mdescRight">不使能ISP效果调试功能  <a href="#ga75329730dcf100da4839ead7d585662c">更多...</a><br /></td></tr>
+<tr class="separator:ga75329730dcf100da4839ead7d585662c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac974214ea084793ccba91d0209ccf3a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gac974214ea084793ccba91d0209ccf3a7">IMP_ISP_Tuning_SetSensorFPS</a> (uint32_t fps_num, uint32_t fps_den)</td></tr>
+<tr class="memdesc:gac974214ea084793ccba91d0209ccf3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置摄像头输出帧率  <a href="#gac974214ea084793ccba91d0209ccf3a7">更多...</a><br /></td></tr>
+<tr class="separator:gac974214ea084793ccba91d0209ccf3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0b29cb7b14957eef86d65501b1979d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gac0b29cb7b14957eef86d65501b1979d3">IMP_ISP_Tuning_GetSensorFPS</a> (uint32_t *fps_num, uint32_t *fps_den)</td></tr>
+<tr class="memdesc:gac0b29cb7b14957eef86d65501b1979d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取摄像头输出帧率  <a href="#gac0b29cb7b14957eef86d65501b1979d3">更多...</a><br /></td></tr>
+<tr class="separator:gac0b29cb7b14957eef86d65501b1979d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c82db22ede96a92628c96a5b891ae11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga1c82db22ede96a92628c96a5b891ae11">IMP_ISP_Tuning_SetAntiFlickerAttr</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a> attr)</td></tr>
+<tr class="memdesc:ga1c82db22ede96a92628c96a5b891ae11"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP抗闪频属性  <a href="#ga1c82db22ede96a92628c96a5b891ae11">更多...</a><br /></td></tr>
+<tr class="separator:ga1c82db22ede96a92628c96a5b891ae11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga608cd103824bbb2297ff7f63c111ba65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga608cd103824bbb2297ff7f63c111ba65">IMP_ISP_Tuning_GetAntiFlickerAttr</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a> *pattr)</td></tr>
+<tr class="memdesc:ga608cd103824bbb2297ff7f63c111ba65"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得ISP抗闪频属性  <a href="#ga608cd103824bbb2297ff7f63c111ba65">更多...</a><br /></td></tr>
+<tr class="separator:ga608cd103824bbb2297ff7f63c111ba65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa420ab671dc3ac21664e68f7471499ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaa420ab671dc3ac21664e68f7471499ce">IMP_ISP_Tuning_SetBrightness</a> (unsigned char bright)</td></tr>
+<tr class="memdesc:gaa420ab671dc3ac21664e68f7471499ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP 综合效果图片亮度  <a href="#gaa420ab671dc3ac21664e68f7471499ce">更多...</a><br /></td></tr>
+<tr class="separator:gaa420ab671dc3ac21664e68f7471499ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95eace973c2c84c22acd607e1a81292d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga95eace973c2c84c22acd607e1a81292d">IMP_ISP_Tuning_GetBrightness</a> (unsigned char *pbright)</td></tr>
+<tr class="memdesc:ga95eace973c2c84c22acd607e1a81292d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP 综合效果图片亮度  <a href="#ga95eace973c2c84c22acd607e1a81292d">更多...</a><br /></td></tr>
+<tr class="separator:ga95eace973c2c84c22acd607e1a81292d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ad8f252ce6bdf00a3682c1ebecfb149"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga9ad8f252ce6bdf00a3682c1ebecfb149">IMP_ISP_Tuning_SetContrast</a> (unsigned char contrast)</td></tr>
+<tr class="memdesc:ga9ad8f252ce6bdf00a3682c1ebecfb149"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP 综合效果图片对比度  <a href="#ga9ad8f252ce6bdf00a3682c1ebecfb149">更多...</a><br /></td></tr>
+<tr class="separator:ga9ad8f252ce6bdf00a3682c1ebecfb149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3571e3f4f0e2a5759f403241dbc1bde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaa3571e3f4f0e2a5759f403241dbc1bde">IMP_ISP_Tuning_GetContrast</a> (unsigned char *pcontrast)</td></tr>
+<tr class="memdesc:gaa3571e3f4f0e2a5759f403241dbc1bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP 综合效果图片对比度  <a href="#gaa3571e3f4f0e2a5759f403241dbc1bde">更多...</a><br /></td></tr>
+<tr class="separator:gaa3571e3f4f0e2a5759f403241dbc1bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37c58c97c2970aa01e438c189c25ef6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga37c58c97c2970aa01e438c189c25ef6d">IMP_ISP_Tuning_SetSharpness</a> (unsigned char sharpness)</td></tr>
+<tr class="memdesc:ga37c58c97c2970aa01e438c189c25ef6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP 综合效果图片锐度  <a href="#ga37c58c97c2970aa01e438c189c25ef6d">更多...</a><br /></td></tr>
+<tr class="separator:ga37c58c97c2970aa01e438c189c25ef6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e088f85ea78d4a58df1983fa8c3bbae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga1e088f85ea78d4a58df1983fa8c3bbae">IMP_ISP_Tuning_GetSharpness</a> (unsigned char *psharpness)</td></tr>
+<tr class="memdesc:ga1e088f85ea78d4a58df1983fa8c3bbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP 综合效果图片锐度  <a href="#ga1e088f85ea78d4a58df1983fa8c3bbae">更多...</a><br /></td></tr>
+<tr class="separator:ga1e088f85ea78d4a58df1983fa8c3bbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67c1bce041ce6ba21c81ae86a45d7a49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga67c1bce041ce6ba21c81ae86a45d7a49">IMP_ISP_Tuning_SetSaturation</a> (unsigned char sat)</td></tr>
+<tr class="memdesc:ga67c1bce041ce6ba21c81ae86a45d7a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP 综合效果图片饱和度  <a href="#ga67c1bce041ce6ba21c81ae86a45d7a49">更多...</a><br /></td></tr>
+<tr class="separator:ga67c1bce041ce6ba21c81ae86a45d7a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab376dc9de94e58d63d0126ca3e232da3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gab376dc9de94e58d63d0126ca3e232da3">IMP_ISP_Tuning_GetSaturation</a> (unsigned char *psat)</td></tr>
+<tr class="memdesc:gab376dc9de94e58d63d0126ca3e232da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP 综合效果图片饱和度  <a href="#gab376dc9de94e58d63d0126ca3e232da3">更多...</a><br /></td></tr>
+<tr class="separator:gab376dc9de94e58d63d0126ca3e232da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02de99774dc0257c7613d9ef4dd7ae94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga02de99774dc0257c7613d9ef4dd7ae94">IMP_ISP_Tuning_SetISPBypass</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> enable)</td></tr>
+<tr class="memdesc:ga02de99774dc0257c7613d9ef4dd7ae94"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP模块是否bypass.  <a href="#ga02de99774dc0257c7613d9ef4dd7ae94">更多...</a><br /></td></tr>
+<tr class="separator:ga02de99774dc0257c7613d9ef4dd7ae94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c301c0b728ffee66209fa536866a629"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga0c301c0b728ffee66209fa536866a629">IMP_ISP_Tuning_GetTotalGain</a> (uint32_t *gain)</td></tr>
+<tr class="memdesc:ga0c301c0b728ffee66209fa536866a629"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP输出图像的整体增益值  <a href="#ga0c301c0b728ffee66209fa536866a629">更多...</a><br /></td></tr>
+<tr class="separator:ga0c301c0b728ffee66209fa536866a629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga663cc368f688229e2766a2cc2a2cdc52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga663cc368f688229e2766a2cc2a2cdc52">IMP_ISP_Tuning_SetISPHflip</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
+<tr class="memdesc:ga663cc368f688229e2766a2cc2a2cdc52"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP图像镜面效果功能是否使能  <a href="#ga663cc368f688229e2766a2cc2a2cdc52">更多...</a><br /></td></tr>
+<tr class="separator:ga663cc368f688229e2766a2cc2a2cdc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0ad06b6d923c498476e367bf2e6a401"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gab0ad06b6d923c498476e367bf2e6a401">IMP_ISP_Tuning_GetISPHflip</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pmode)</td></tr>
+<tr class="memdesc:gab0ad06b6d923c498476e367bf2e6a401"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP图像镜面效果功能的操作状态  <a href="#gab0ad06b6d923c498476e367bf2e6a401">更多...</a><br /></td></tr>
+<tr class="separator:gab0ad06b6d923c498476e367bf2e6a401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1f07a434ff4d5d0786d713aad2ffc26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaf1f07a434ff4d5d0786d713aad2ffc26">IMP_ISP_Tuning_SetISPVflip</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
+<tr class="memdesc:gaf1f07a434ff4d5d0786d713aad2ffc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP图像上下反转效果功能是否使能  <a href="#gaf1f07a434ff4d5d0786d713aad2ffc26">更多...</a><br /></td></tr>
+<tr class="separator:gaf1f07a434ff4d5d0786d713aad2ffc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b6f33516c68ac7cf293efd247712dfc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga1b6f33516c68ac7cf293efd247712dfc">IMP_ISP_Tuning_GetISPVflip</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pmode)</td></tr>
+<tr class="memdesc:ga1b6f33516c68ac7cf293efd247712dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP图像上下反转效果功能的操作状态  <a href="#ga1b6f33516c68ac7cf293efd247712dfc">更多...</a><br /></td></tr>
+<tr class="separator:ga1b6f33516c68ac7cf293efd247712dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a8ba3dfe858dde56672a5160ec1fdfd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga9a8ba3dfe858dde56672a5160ec1fdfd">IMP_ISP_Tuning_SetISPRunningMode</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> mode)</td></tr>
+<tr class="memdesc:ga9a8ba3dfe858dde56672a5160ec1fdfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP工作模式，正常模式或夜视模式；默认为正常模式。  <a href="#ga9a8ba3dfe858dde56672a5160ec1fdfd">更多...</a><br /></td></tr>
+<tr class="separator:ga9a8ba3dfe858dde56672a5160ec1fdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15176aa01cdc235ea1877154176cda57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga15176aa01cdc235ea1877154176cda57">IMP_ISP_Tuning_GetISPRunningMode</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> *pmode)</td></tr>
+<tr class="memdesc:ga15176aa01cdc235ea1877154176cda57"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP工作模式，正常模式或夜视模式。  <a href="#ga15176aa01cdc235ea1877154176cda57">更多...</a><br /></td></tr>
+<tr class="separator:ga15176aa01cdc235ea1877154176cda57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbea574db862f5e4afacbb42f5cee103"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gafbea574db862f5e4afacbb42f5cee103">IMP_ISP_Tuning_SetGamma</a> (<a class="el" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a> *gamma)</td></tr>
+<tr class="memdesc:gafbea574db862f5e4afacbb42f5cee103"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置GAMMA参数.  <a href="#gafbea574db862f5e4afacbb42f5cee103">更多...</a><br /></td></tr>
+<tr class="separator:gafbea574db862f5e4afacbb42f5cee103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefda984f8fb1aed9fd540edec6f2c7ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaefda984f8fb1aed9fd540edec6f2c7ad">IMP_ISP_Tuning_GetGamma</a> (<a class="el" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a> *gamma)</td></tr>
+<tr class="memdesc:gaefda984f8fb1aed9fd540edec6f2c7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取GAMMA参数.  <a href="#gaefda984f8fb1aed9fd540edec6f2c7ad">更多...</a><br /></td></tr>
+<tr class="separator:gaefda984f8fb1aed9fd540edec6f2c7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad53a4789425c0ca6aefa236d223c62ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gad53a4789425c0ca6aefa236d223c62ef">IMP_ISP_Tuning_SetAeComp</a> (int comp)</td></tr>
+<tr class="memdesc:gad53a4789425c0ca6aefa236d223c62ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置AE补偿。AE补偿参数可以调整图像AE target，范围为[0-255].  <a href="#gad53a4789425c0ca6aefa236d223c62ef">更多...</a><br /></td></tr>
+<tr class="separator:gad53a4789425c0ca6aefa236d223c62ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4259acd6ef932cbd6c9cde02fc4a5b21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga4259acd6ef932cbd6c9cde02fc4a5b21">IMP_ISP_Tuning_GetAeComp</a> (int *comp)</td></tr>
+<tr class="memdesc:ga4259acd6ef932cbd6c9cde02fc4a5b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取AE补偿。  <a href="#ga4259acd6ef932cbd6c9cde02fc4a5b21">更多...</a><br /></td></tr>
+<tr class="separator:ga4259acd6ef932cbd6c9cde02fc4a5b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cbb8a56d859c6784619d0ea8715ca04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga2cbb8a56d859c6784619d0ea8715ca04">IMP_ISP_Tuning_GetAeLuma</a> (int *luma)</td></tr>
+<tr class="memdesc:ga2cbb8a56d859c6784619d0ea8715ca04"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取画面平均亮度。  <a href="#ga2cbb8a56d859c6784619d0ea8715ca04">更多...</a><br /></td></tr>
+<tr class="separator:ga2cbb8a56d859c6784619d0ea8715ca04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga414b5866577205f3cd28b7252d463adf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga414b5866577205f3cd28b7252d463adf">IMP_ISP_Tuning_SetExpr</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a> *expr)</td></tr>
+<tr class="memdesc:ga414b5866577205f3cd28b7252d463adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置AE参数。  <a href="#ga414b5866577205f3cd28b7252d463adf">更多...</a><br /></td></tr>
+<tr class="separator:ga414b5866577205f3cd28b7252d463adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c888732fd3ca06fabb28ff65a1acdec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga7c888732fd3ca06fabb28ff65a1acdec">IMP_ISP_Tuning_GetExpr</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a> *expr)</td></tr>
+<tr class="memdesc:ga7c888732fd3ca06fabb28ff65a1acdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取AE参数。  <a href="#ga7c888732fd3ca06fabb28ff65a1acdec">更多...</a><br /></td></tr>
+<tr class="separator:ga7c888732fd3ca06fabb28ff65a1acdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga304964ed99e1065b27eca47dada5fbab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga304964ed99e1065b27eca47dada5fbab">IMP_ISP_Tuning_SetWB</a> (<a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *wb)</td></tr>
+<tr class="memdesc:ga304964ed99e1065b27eca47dada5fbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置白平衡功能设置。可以设置自动与手动模式，手动模式主要通过设置rgain、bgain实现。  <a href="#ga304964ed99e1065b27eca47dada5fbab">更多...</a><br /></td></tr>
+<tr class="separator:ga304964ed99e1065b27eca47dada5fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96d8ab201444c78b1c7c4dba013a1488"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga96d8ab201444c78b1c7c4dba013a1488">IMP_ISP_Tuning_GetWB</a> (<a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *wb)</td></tr>
+<tr class="memdesc:ga96d8ab201444c78b1c7c4dba013a1488"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取白平衡功能设置。  <a href="#ga96d8ab201444c78b1c7c4dba013a1488">更多...</a><br /></td></tr>
+<tr class="separator:ga96d8ab201444c78b1c7c4dba013a1488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad035e477da1a52c6e29c4a4d1f5f7870"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gad035e477da1a52c6e29c4a4d1f5f7870">IMP_ISP_Tuning_GetWB_Statis</a> (<a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *wb)</td></tr>
+<tr class="memdesc:gad035e477da1a52c6e29c4a4d1f5f7870"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取白平衡统计值。  <a href="#gad035e477da1a52c6e29c4a4d1f5f7870">更多...</a><br /></td></tr>
+<tr class="separator:gad035e477da1a52c6e29c4a4d1f5f7870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc2dae32ae59f0a277b58f61087c7220"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gadc2dae32ae59f0a277b58f61087c7220">IMP_ISP_Tuning_GetWB_GOL_Statis</a> (<a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *wb)</td></tr>
+<tr class="memdesc:gadc2dae32ae59f0a277b58f61087c7220"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取白平衡全局统计值。  <a href="#gadc2dae32ae59f0a277b58f61087c7220">更多...</a><br /></td></tr>
+<tr class="separator:gadc2dae32ae59f0a277b58f61087c7220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eecfde9edb07e017907cf28b9562d1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga7eecfde9edb07e017907cf28b9562d1e">IMP_ISP_Tuning_Awb_GetRgbCoefft</a> (<a class="el" href="structisp__core__rgb__coefft__wb__attr.html">IMPISPCOEFFTWB</a> *<a class="el" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a>)</td></tr>
+<tr class="memdesc:ga7eecfde9edb07e017907cf28b9562d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sensor AWB RGB通道偏移参数。  <a href="#ga7eecfde9edb07e017907cf28b9562d1e">更多...</a><br /></td></tr>
+<tr class="separator:ga7eecfde9edb07e017907cf28b9562d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:ga09825adf2850a069612d1ec0532928c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga09825adf2850a069612d1ec0532928c7"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga09825adf2850a069612d1ec0532928c7">type</a> [20]</td></tr>
+<tr class="memdesc:ga09825adf2850a069612d1ec0532928c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C设备名字，必须与摄像头驱动中struct i2c_device_id中name变量一致 <br /></td></tr>
+<tr class="separator:ga09825adf2850a069612d1ec0532928c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafb8164f20f79a2dd0290502a25367d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaafb8164f20f79a2dd0290502a25367d1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaafb8164f20f79a2dd0290502a25367d1">addr</a></td></tr>
+<tr class="memdesc:gaafb8164f20f79a2dd0290502a25367d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C地址 <br /></td></tr>
+<tr class="separator:gaafb8164f20f79a2dd0290502a25367d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf44d63ecdfdf0d44e6e584848fb170a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf44d63ecdfdf0d44e6e584848fb170a2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaf44d63ecdfdf0d44e6e584848fb170a2">i2c_adapter_id</a></td></tr>
+<tr class="memdesc:gaf44d63ecdfdf0d44e6e584848fb170a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C控制器 <br /></td></tr>
+<tr class="separator:gaf44d63ecdfdf0d44e6e584848fb170a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4cb07b223607c73a0a0fa79d58414417"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4cb07b223607c73a0a0fa79d58414417"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga4cb07b223607c73a0a0fa79d58414417">modalias</a> [32]</td></tr>
+<tr class="memdesc:ga4cb07b223607c73a0a0fa79d58414417"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI设备名字，必须与摄像头驱动中struct spi_device_id中name变量一致 <br /></td></tr>
+<tr class="separator:ga4cb07b223607c73a0a0fa79d58414417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf52aeec8ebe03bc6097d6a6438559071"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf52aeec8ebe03bc6097d6a6438559071"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaf52aeec8ebe03bc6097d6a6438559071">bus_num</a></td></tr>
+<tr class="memdesc:gaf52aeec8ebe03bc6097d6a6438559071"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI总线地址 <br /></td></tr>
+<tr class="separator:gaf52aeec8ebe03bc6097d6a6438559071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc1e86d7c344fe34ff09e72d4595ab7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabc1e86d7c344fe34ff09e72d4595ab7e"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a> [32]</td></tr>
+<tr class="memdesc:gabc1e86d7c344fe34ff09e72d4595ab7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头名字 <br /></td></tr>
+<tr class="separator:gabc1e86d7c344fe34ff09e72d4595ab7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8aa6f715914bd7b43ecdf648e4d55060"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8aa6f715914bd7b43ecdf648e4d55060"></a>
+<a class="el" href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">IMPSensorControlBusType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga8aa6f715914bd7b43ecdf648e4d55060">cbus_type</a></td></tr>
+<tr class="memdesc:ga8aa6f715914bd7b43ecdf648e4d55060"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头控制总线类型 <br /></td></tr>
+<tr class="separator:ga8aa6f715914bd7b43ecdf648e4d55060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga180f8a04199e6b151a28f0eb4c35e3bb"><td class="memItemLeft" >
+<a class="el" href="struct_i_m_p_i2_c_info.html">IMPI2CInfo</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga180f8a04199e6b151a28f0eb4c35e3bb">i2c</a></td></tr>
+<tr class="memdesc:ga180f8a04199e6b151a28f0eb4c35e3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C总线信息 <br /></td></tr>
+<tr class="separator:ga180f8a04199e6b151a28f0eb4c35e3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga753b2373687b80fd47a9ccfa0b0a3da6"><td class="memItemLeft" >
+<a class="el" href="struct_i_m_p_s_p_i_info.html">IMPSPIInfo</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga753b2373687b80fd47a9ccfa0b0a3da6">spi</a></td></tr>
+<tr class="memdesc:ga753b2373687b80fd47a9ccfa0b0a3da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI总线信息 <br /></td></tr>
+<tr class="separator:ga753b2373687b80fd47a9ccfa0b0a3da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a71de5a7a69db61d436ca8a8c69baee"><td class="memItemLeft" ><a class="anchor" id="ga9a71de5a7a69db61d436ca8a8c69baee"></a>
+union {</td></tr>
+<tr class="memitem:ga180f8a04199e6b151a28f0eb4c35e3bb"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="struct_i_m_p_i2_c_info.html">IMPI2CInfo</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga180f8a04199e6b151a28f0eb4c35e3bb">i2c</a></td></tr>
+<tr class="memdesc:ga180f8a04199e6b151a28f0eb4c35e3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C总线信息 <br /></td></tr>
+<tr class="separator:ga180f8a04199e6b151a28f0eb4c35e3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga753b2373687b80fd47a9ccfa0b0a3da6"><td class="memItemLeft" >
+&#160;&#160;&#160;<a class="el" href="struct_i_m_p_s_p_i_info.html">IMPSPIInfo</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga753b2373687b80fd47a9ccfa0b0a3da6">spi</a></td></tr>
+<tr class="memdesc:ga753b2373687b80fd47a9ccfa0b0a3da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI总线信息 <br /></td></tr>
+<tr class="separator:ga753b2373687b80fd47a9ccfa0b0a3da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a71de5a7a69db61d436ca8a8c69baee"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ga9a71de5a7a69db61d436ca8a8c69baee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf62e57667339f400a1dcaf969601f05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaaf62e57667339f400a1dcaf969601f05"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaaf62e57667339f400a1dcaf969601f05">rst_gpio</a></td></tr>
+<tr class="memdesc:gaaf62e57667339f400a1dcaf969601f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头reset接口链接的GPIO，注意：现在没有启用该参数 <br /></td></tr>
+<tr class="separator:gaaf62e57667339f400a1dcaf969601f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac59f20dcf3e73189b28cab8ed02e1a88"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac59f20dcf3e73189b28cab8ed02e1a88"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gac59f20dcf3e73189b28cab8ed02e1a88">pwdn_gpio</a></td></tr>
+<tr class="memdesc:gac59f20dcf3e73189b28cab8ed02e1a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头power down接口链接的GPIO，注意：现在没有启用该参数 <br /></td></tr>
+<tr class="separator:gac59f20dcf3e73189b28cab8ed02e1a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81d9d4822dab004a99a2d71833d9fecd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga81d9d4822dab004a99a2d71833d9fecd"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga81d9d4822dab004a99a2d71833d9fecd">power_gpio</a></td></tr>
+<tr class="memdesc:ga81d9d4822dab004a99a2d71833d9fecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头power 接口链接的GPIO，注意：现在没有启用该参数 <br /></td></tr>
+<tr class="separator:ga81d9d4822dab004a99a2d71833d9fecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga938265016058f7e4d028d8a81ec1187a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga938265016058f7e4d028d8a81ec1187a"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga938265016058f7e4d028d8a81ec1187a">gamma</a> [129]</td></tr>
+<tr class="memdesc:ga938265016058f7e4d028d8a81ec1187a"><td class="mdescLeft">&#160;</td><td class="mdescRight">gamma参数数组，有129个点 <br /></td></tr>
+<tr class="separator:ga938265016058f7e4d028d8a81ec1187a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90942b48db02576837a357b6cca80b5a"><td class="memItemLeft" >
+enum <a class="el" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga90942b48db02576837a357b6cca80b5a">mode</a></td></tr>
+<tr class="memdesc:ga90942b48db02576837a357b6cca80b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置的曝光模式 <br /></td></tr>
+<tr class="separator:ga90942b48db02576837a357b6cca80b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a2606244fcaa169a4cee6637b23b631"><td class="memItemLeft" >
+enum <a class="el" href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga4a2606244fcaa169a4cee6637b23b631">unit</a></td></tr>
+<tr class="memdesc:ga4a2606244fcaa169a4cee6637b23b631"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置的曝光单位 <br /></td></tr>
+<tr class="separator:ga4a2606244fcaa169a4cee6637b23b631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93658cf9f03a3303cdb292e655c657e7"><td class="memItemLeft" >
+uint16_t&#160;&#160;&#160;<b>time</b></td></tr>
+<tr class="separator:ga93658cf9f03a3303cdb292e655c657e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d6a20c2ba99aad0a92f8056cba068d2"><td class="memItemLeft" ><a class="anchor" id="ga5d6a20c2ba99aad0a92f8056cba068d2"></a>
+struct {</td></tr>
+<tr class="memitem:ga90942b48db02576837a357b6cca80b5a"><td class="memItemLeft" >
+&#160;&#160;&#160;enum <a class="el" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga90942b48db02576837a357b6cca80b5a">mode</a></td></tr>
+<tr class="memdesc:ga90942b48db02576837a357b6cca80b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置的曝光模式 <br /></td></tr>
+<tr class="separator:ga90942b48db02576837a357b6cca80b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a2606244fcaa169a4cee6637b23b631"><td class="memItemLeft" >
+&#160;&#160;&#160;enum <a class="el" href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga4a2606244fcaa169a4cee6637b23b631">unit</a></td></tr>
+<tr class="memdesc:ga4a2606244fcaa169a4cee6637b23b631"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置的曝光单位 <br /></td></tr>
+<tr class="separator:ga4a2606244fcaa169a4cee6637b23b631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93658cf9f03a3303cdb292e655c657e7"><td class="memItemLeft" >
+&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<b>time</b></td></tr>
+<tr class="separator:ga93658cf9f03a3303cdb292e655c657e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d6a20c2ba99aad0a92f8056cba068d2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>s_attr</b></td></tr>
+<tr class="separator:ga5d6a20c2ba99aad0a92f8056cba068d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90942b48db02576837a357b6cca80b5a"><td class="memItemLeft" >
+enum <a class="el" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga90942b48db02576837a357b6cca80b5a">mode</a></td></tr>
+<tr class="memdesc:ga90942b48db02576837a357b6cca80b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的曝光模式 <br /></td></tr>
+<tr class="separator:ga90942b48db02576837a357b6cca80b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96980ba333fab92cd7644b36ba95bfc5"><td class="memItemLeft" >
+uint16_t&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga96980ba333fab92cd7644b36ba95bfc5">integration_time</a></td></tr>
+<tr class="memdesc:ga96980ba333fab92cd7644b36ba95bfc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的曝光时间，单位为行 <br /></td></tr>
+<tr class="separator:ga96980ba333fab92cd7644b36ba95bfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeccca892064ffc76ae67ac0a6e107d33"><td class="memItemLeft" >
+uint16_t&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gaeccca892064ffc76ae67ac0a6e107d33">integration_time_min</a></td></tr>
+<tr class="memdesc:gaeccca892064ffc76ae67ac0a6e107d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的曝光最小时间，单位为行 <br /></td></tr>
+<tr class="separator:gaeccca892064ffc76ae67ac0a6e107d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46a6f04217cc911114612141031d7f30"><td class="memItemLeft" >
+uint16_t&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga46a6f04217cc911114612141031d7f30">integration_time_max</a></td></tr>
+<tr class="memdesc:ga46a6f04217cc911114612141031d7f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的曝光最大时间，单位为行 <br /></td></tr>
+<tr class="separator:ga46a6f04217cc911114612141031d7f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabae4cbcea455fe602d251e31fbbe84cb"><td class="memItemLeft" >
+uint16_t&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gabae4cbcea455fe602d251e31fbbe84cb">one_line_expr_in_us</a></td></tr>
+<tr class="memdesc:gabae4cbcea455fe602d251e31fbbe84cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的一行曝光时间对应的微妙数 <br /></td></tr>
+<tr class="separator:gabae4cbcea455fe602d251e31fbbe84cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5e0e3c5c44ae95745d5c708d8f7ed2e"><td class="memItemLeft" ><a class="anchor" id="gaa5e0e3c5c44ae95745d5c708d8f7ed2e"></a>
+struct {</td></tr>
+<tr class="memitem:ga90942b48db02576837a357b6cca80b5a"><td class="memItemLeft" >
+&#160;&#160;&#160;enum <a class="el" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a>&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga90942b48db02576837a357b6cca80b5a">mode</a></td></tr>
+<tr class="memdesc:ga90942b48db02576837a357b6cca80b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的曝光模式 <br /></td></tr>
+<tr class="separator:ga90942b48db02576837a357b6cca80b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96980ba333fab92cd7644b36ba95bfc5"><td class="memItemLeft" >
+&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga96980ba333fab92cd7644b36ba95bfc5">integration_time</a></td></tr>
+<tr class="memdesc:ga96980ba333fab92cd7644b36ba95bfc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的曝光时间，单位为行 <br /></td></tr>
+<tr class="separator:ga96980ba333fab92cd7644b36ba95bfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeccca892064ffc76ae67ac0a6e107d33"><td class="memItemLeft" >
+&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gaeccca892064ffc76ae67ac0a6e107d33">integration_time_min</a></td></tr>
+<tr class="memdesc:gaeccca892064ffc76ae67ac0a6e107d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的曝光最小时间，单位为行 <br /></td></tr>
+<tr class="separator:gaeccca892064ffc76ae67ac0a6e107d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46a6f04217cc911114612141031d7f30"><td class="memItemLeft" >
+&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga46a6f04217cc911114612141031d7f30">integration_time_max</a></td></tr>
+<tr class="memdesc:ga46a6f04217cc911114612141031d7f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的曝光最大时间，单位为行 <br /></td></tr>
+<tr class="separator:ga46a6f04217cc911114612141031d7f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabae4cbcea455fe602d251e31fbbe84cb"><td class="memItemLeft" >
+&#160;&#160;&#160;uint16_t&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gabae4cbcea455fe602d251e31fbbe84cb">one_line_expr_in_us</a></td></tr>
+<tr class="memdesc:gabae4cbcea455fe602d251e31fbbe84cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取的一行曝光时间对应的微妙数 <br /></td></tr>
+<tr class="separator:gabae4cbcea455fe602d251e31fbbe84cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5e0e3c5c44ae95745d5c708d8f7ed2e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>g_attr</b></td></tr>
+<tr class="separator:gaa5e0e3c5c44ae95745d5c708d8f7ed2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0a25bccb37d1487a6cc25a5b5f63ac62"><td class="memItemLeft" >
+unsigned&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga0a25bccb37d1487a6cc25a5b5f63ac62">endy</a>:8</td></tr>
+<tr class="memdesc:ga0a25bccb37d1487a6cc25a5b5f63ac62"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束点y坐标 (0 ~ 255) <br /></td></tr>
+<tr class="separator:ga0a25bccb37d1487a6cc25a5b5f63ac62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fc7e0562d8f0f2042fe798cbd269d06"><td class="memItemLeft" >
+unsigned&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga9fc7e0562d8f0f2042fe798cbd269d06">endx</a>:8</td></tr>
+<tr class="memdesc:ga9fc7e0562d8f0f2042fe798cbd269d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束点x坐标 (0 ~ 255) <br /></td></tr>
+<tr class="separator:ga9fc7e0562d8f0f2042fe798cbd269d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5fe62a920781a2b00dd82dfc62d7e5b"><td class="memItemLeft" >
+unsigned&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gad5fe62a920781a2b00dd82dfc62d7e5b">starty</a>:8</td></tr>
+<tr class="memdesc:gad5fe62a920781a2b00dd82dfc62d7e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">起始点y坐标 (0 ~ 255) <br /></td></tr>
+<tr class="separator:gad5fe62a920781a2b00dd82dfc62d7e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac56adabf276501db035d01b2881703c0"><td class="memItemLeft" >
+unsigned&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gac56adabf276501db035d01b2881703c0">startx</a>:8</td></tr>
+<tr class="memdesc:gac56adabf276501db035d01b2881703c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">起始点x坐标 (0 ~ 255) <br /></td></tr>
+<tr class="separator:gac56adabf276501db035d01b2881703c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e5f3d8d0c9eb718a31a83f1da850f9b"><td class="memItemLeft" ><a class="anchor" id="ga7e5f3d8d0c9eb718a31a83f1da850f9b"></a>
+struct {</td></tr>
+<tr class="memitem:ga0a25bccb37d1487a6cc25a5b5f63ac62"><td class="memItemLeft" >
+&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga0a25bccb37d1487a6cc25a5b5f63ac62">endy</a>:8</td></tr>
+<tr class="memdesc:ga0a25bccb37d1487a6cc25a5b5f63ac62"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束点y坐标 (0 ~ 255) <br /></td></tr>
+<tr class="separator:ga0a25bccb37d1487a6cc25a5b5f63ac62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fc7e0562d8f0f2042fe798cbd269d06"><td class="memItemLeft" >
+&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#ga9fc7e0562d8f0f2042fe798cbd269d06">endx</a>:8</td></tr>
+<tr class="memdesc:ga9fc7e0562d8f0f2042fe798cbd269d06"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束点x坐标 (0 ~ 255) <br /></td></tr>
+<tr class="separator:ga9fc7e0562d8f0f2042fe798cbd269d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5fe62a920781a2b00dd82dfc62d7e5b"><td class="memItemLeft" >
+&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gad5fe62a920781a2b00dd82dfc62d7e5b">starty</a>:8</td></tr>
+<tr class="memdesc:gad5fe62a920781a2b00dd82dfc62d7e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">起始点y坐标 (0 ~ 255) <br /></td></tr>
+<tr class="separator:gad5fe62a920781a2b00dd82dfc62d7e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac56adabf276501db035d01b2881703c0"><td class="memItemLeft" >
+&#160;&#160;&#160;unsigned&#160;&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gac56adabf276501db035d01b2881703c0">startx</a>:8</td></tr>
+<tr class="memdesc:gac56adabf276501db035d01b2881703c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">起始点x坐标 (0 ~ 255) <br /></td></tr>
+<tr class="separator:gac56adabf276501db035d01b2881703c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e5f3d8d0c9eb718a31a83f1da850f9b"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ga7e5f3d8d0c9eb718a31a83f1da850f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7f66047e6e39ba2bb6af8b95f00d1dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae7f66047e6e39ba2bb6af8b95f00d1dd"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>value</b></td></tr>
+<tr class="separator:gae7f66047e6e39ba2bb6af8b95f00d1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebf901d84977e706770650e7184ff47e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaebf901d84977e706770650e7184ff47e"></a>
+enum <a class="el" href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">isp_core_wb_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaebf901d84977e706770650e7184ff47e">mode</a></td></tr>
+<tr class="memdesc:gaebf901d84977e706770650e7184ff47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">白平衡模式，分为自动与手动模式 <br /></td></tr>
+<tr class="separator:gaebf901d84977e706770650e7184ff47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6077cc12a1bb17d6eb6085a0b6c50bef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6077cc12a1bb17d6eb6085a0b6c50bef"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga6077cc12a1bb17d6eb6085a0b6c50bef">rgain</a></td></tr>
+<tr class="memdesc:ga6077cc12a1bb17d6eb6085a0b6c50bef"><td class="mdescLeft">&#160;</td><td class="mdescRight">红色增益，手动模式时有效 <br /></td></tr>
+<tr class="separator:ga6077cc12a1bb17d6eb6085a0b6c50bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga545465fa1af0708dbd6c98443f06438f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga545465fa1af0708dbd6c98443f06438f"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga545465fa1af0708dbd6c98443f06438f">bgain</a></td></tr>
+<tr class="memdesc:ga545465fa1af0708dbd6c98443f06438f"><td class="mdescLeft">&#160;</td><td class="mdescRight">蓝色增益，手动模式时有效 <br /></td></tr>
+<tr class="separator:ga545465fa1af0708dbd6c98443f06438f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga291d445629241144af7260d5f8334d27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga291d445629241144af7260d5f8334d27"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>rgb_coefft_wb_r</b></td></tr>
+<tr class="separator:ga291d445629241144af7260d5f8334d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c66e41aa19ac262a02c7a39332bb1b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1c66e41aa19ac262a02c7a39332bb1b4"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>rgb_coefft_wb_g</b></td></tr>
+<tr class="separator:ga1c66e41aa19ac262a02c7a39332bb1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67e07bb475da30e1e11cc23ee6282a44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga67e07bb475da30e1e11cc23ee6282a44"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>rgb_coefft_wb_b</b></td></tr>
+<tr class="separator:ga67e07bb475da30e1e11cc23ee6282a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p>图像信号处理单元。主要包含图像效果设置、模式切换以及Sensor的注册添加删除等操作 </p>
+<p>ISP模块与数据流无关，不需要进行Bind，仅作用于效果参数设置及Sensor控制。</p>
+<p>ISP模块的使能步骤如下： </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> ret = 0;</div>
+<div class="line">ret = <a class="code" href="group___i_m_p___i_s_p.html#gac80de0e7f019c1718e58bb9d728203c3">IMP_ISP_Open</a>(); <span class="comment">// step.1 创建ISP模块</span></div>
+<div class="line"><span class="keywordflow">if</span>(ret &lt; 0){</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Failed to ISPInit\n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> -1;</div>
+<div class="line">}</div>
+<div class="line"><a class="code" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> sensor;</div>
+<div class="line">sensor.<a class="code" href="group___i_m_p___i_s_p.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a> = <span class="stringliteral">&quot;xxx&quot;</span>;</div>
+<div class="line">sensor.<a class="code" href="group___i_m_p___i_s_p.html#ga8aa6f715914bd7b43ecdf648e4d55060">cbus_type</a> = SENSOR_CONTROL_INTERFACE_I2C; <span class="comment">// OR SENSOR_CONTROL_INTERFACE_SPI</span></div>
+<div class="line">sensor.<a class="code" href="group___i_m_p___i_s_p.html#ga180f8a04199e6b151a28f0eb4c35e3bb">i2c</a> = {</div>
+<div class="line">        .<a class="code" href="group___i_m_p___i_s_p.html#ga09825adf2850a069612d1ec0532928c7">type</a> = <span class="stringliteral">&quot;xxx&quot;</span>, <span class="comment">// I2C设备名字，必须和sensor驱动中struct i2c_device_id中的name一致。</span></div>
+<div class="line">     .addr = xx,        <span class="comment">//I2C地址</span></div>
+<div class="line">     .i2c_adapter_id = xx, <span class="comment">//sensor所在的I2C控制器ID</span></div>
+<div class="line">}</div>
+<div class="line">OR</div>
+<div class="line">sensor.<a class="code" href="group___i_m_p___i_s_p.html#ga753b2373687b80fd47a9ccfa0b0a3da6">spi</a> = {</div>
+<div class="line">     .<a class="code" href="group___i_m_p___i_s_p.html#ga4cb07b223607c73a0a0fa79d58414417">modalias</a> = <span class="stringliteral">&quot;xx&quot;</span>, <span class="comment">//SPI设备名字，必须和sensor驱动中struct spi_device_id中的name一致。</span></div>
+<div class="line">     .bus_num = xx, <span class="comment">//SPI总线地址</span></div>
+<div class="line">}</div>
+<div class="line">ret = <a class="code" href="group___i_m_p___i_s_p.html#ga8e4d951a6a80e88026f41e310090c44d">IMP_ISP_AddSensor</a>(&amp;sensor); <span class="comment">//step.2 添加一个sensor，在此操作之前sensor驱动已经添加到内核。</span></div>
+<div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Failed to Register sensor\n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> -1;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line">ret = <a class="code" href="group___i_m_p___i_s_p.html#ga72bd61d7ffa8f06b239c1ce43a6b5274">IMP_ISP_EnableSensor</a>(<span class="keywordtype">void</span>); <span class="comment">//step.3 使能sensor，现在sensor开始输出图像。</span></div>
+<div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Failed to EnableSensor\n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> -1;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line">ret = <a class="code" href="group___i_m_p___i_s_p.html#ga34e80ddfdcab5e5f1b500d9271e8a332">IMP_ISP_EnableTuning</a>(); <span class="comment">//step.4 使能ISP tuning, 然后才能调用ISP调试接口。</span></div>
+<div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Failed to EnableTuning\n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> -1;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line">调试接口请参考ISP调试接口文档。 <span class="comment">//step.5 效果调试。</span></div>
+</div><!-- fragment --><p> ISP模块的卸载步骤如下： </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> ret = 0;</div>
+<div class="line"><a class="code" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> sensor;</div>
+<div class="line">sensor.<a class="code" href="group___i_m_p___i_s_p.html#gabc1e86d7c344fe34ff09e72d4595ab7e">name</a> = <span class="stringliteral">&quot;xxx&quot;</span>;</div>
+<div class="line">ret = <a class="code" href="group___i_m_p___i_s_p.html#ga75329730dcf100da4839ead7d585662c">IMP_ISP_DisableTuning</a>(); <span class="comment">//step.1 关闭ISP tuning</span></div>
+<div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Failed to disable tuning\n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> -1;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line">ret = <a class="code" href="group___i_m_p___i_s_p.html#ga823f71e232236129da016cbbd0079295">IMP_ISP_DisableSensor</a>(); <span class="comment">//step.2 关闭sensor，现在sensor停止输出图像；在此操作前FrameSource必须全部关闭。</span></div>
+<div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Failed to disable sensor\n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> -1;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line">ret = <a class="code" href="group___i_m_p___i_s_p.html#ga87ea0697f417532c191bf86677e281b5">IMP_ISP_DelSensor</a>(&amp;sensor); <span class="comment">//step.3 删除sensor，在此操作前sensor必须关闭。</span></div>
+<div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Failed to disable sensor\n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> -1;</div>
+<div class="line">}</div>
+<div class="line"></div>
+<div class="line">ret = <a class="code" href="group___i_m_p___i_s_p.html#ga5c2fdfdad046856bff32937c5ac05b90">IMP_ISP_Close</a>(); <span class="comment">//step.4 清理ISP模块，在此操作前所有sensor都必须被删除。</span></div>
+<div class="line"><span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Failed to disable sensor\n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> -1;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p> 更多使用方法请参考Samples </p>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="ga452cdc199a01922aa7a5e10d06225f0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ISP抗闪频属性参数结构体。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga452cdc199a01922aa7a5e10d06225f0ea87cb7a4e8538d789e73e25fcf030ccf2"></a>IMPISP_ANTIFLICKER_DISABLE&#160;</td><td class="fielddoc">
+<p>不使能ISP抗闪频功能 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga452cdc199a01922aa7a5e10d06225f0eada18ffe50bfe6dfe686f37c4d16f574b"></a>IMPISP_ANTIFLICKER_50HZ&#160;</td><td class="fielddoc">
+<p>使能ISP抗闪频功能, 并设置频率为50HZ </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga452cdc199a01922aa7a5e10d06225f0eac2c914da54c8ce3dcef396ea0edce902"></a>IMPISP_ANTIFLICKER_60HZ&#160;</td><td class="fielddoc">
+<p>使能ISP抗闪频功能，并设置频率为60HZ </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga452cdc199a01922aa7a5e10d06225f0ea5877a1a388b494636e1250e30e5e707a"></a>IMPISP_ANTIFLICKER_BUTT&#160;</td><td class="fielddoc">
+<p>用于判断参数的有效性，参数大小必须小于这个值 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga00373cf71fd22df5eaa2f7eed6973100"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ISP 工作模式配置，正常模式或夜视模式。 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga00373cf71fd22df5eaa2f7eed6973100a3311b00220b304cc33887dc596255633"></a>IMPISP_RUNNING_MODE_DAY&#160;</td><td class="fielddoc">
+<p>正常模式 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga00373cf71fd22df5eaa2f7eed6973100aca258162fd7afe8a1a81fe5b63723c73"></a>IMPISP_RUNNING_MODE_NIGHT&#160;</td><td class="fielddoc">
+<p>夜视模式 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga00373cf71fd22df5eaa2f7eed6973100acdceafc2c7437b0cfc100c28afdc49cc"></a>IMPISP_RUNNING_MODE_BUTT&#160;</td><td class="fielddoc">
+<p>最大值 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga45aca860233255ad78614e2fa38520b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ISP功能开关 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga45aca860233255ad78614e2fa38520b9ab61200e52980316eaea2a9c2bd5abcf1"></a>IMPISP_TUNING_OPS_MODE_DISABLE&#160;</td><td class="fielddoc">
+<p>不使能该模块功能 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga45aca860233255ad78614e2fa38520b9aa3b9036e0facac6e3165ef4a24b41790"></a>IMPISP_TUNING_OPS_MODE_ENABLE&#160;</td><td class="fielddoc">
+<p>使能该模块功能 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga45aca860233255ad78614e2fa38520b9ab22cf50d640c3fa6e43566e45f60fb80"></a>IMPISP_TUNING_OPS_MODE_BUTT&#160;</td><td class="fielddoc">
+<p>用于判断参数的有效性，参数大小必须小于这个值 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga51cbf4116bb59389dc30a6840764e73e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___i_m_p___i_s_p.html#ga51cbf4116bb59389dc30a6840764e73e">IMPISPTuningOpsType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ISP功能选用开关 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga51cbf4116bb59389dc30a6840764e73ea5e63521a46939be32170e2f44596b086"></a>IMPISP_TUNING_OPS_TYPE_AUTO&#160;</td><td class="fielddoc">
+<p>该模块的操作为自动模式 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga51cbf4116bb59389dc30a6840764e73eabc9c9bf5f177c50dbc895ef196d2d825"></a>IMPISP_TUNING_OPS_TYPE_MANUAL&#160;</td><td class="fielddoc">
+<p>该模块的操作为手动模式 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga51cbf4116bb59389dc30a6840764e73ead55a5e7f03b4cf92f09ca928730d2799"></a>IMPISP_TUNING_OPS_TYPE_BUTT&#160;</td><td class="fielddoc">
+<p>用于判断参数的有效性，参数大小必须小于这个值 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga38ee4d645812c12b28cd37d5320ccfb2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">IMPSensorControlBusType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>摄像头控制总线类型枚举 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga38ee4d645812c12b28cd37d5320ccfb2a97f8ef07011482201851230c9e944752"></a>TX_SENSOR_CONTROL_INTERFACE_I2C&#160;</td><td class="fielddoc">
+<p>I2C控制总线 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga38ee4d645812c12b28cd37d5320ccfb2aacc0aa36ed6d54a7064f49eb987f7bc6"></a>TX_SENSOR_CONTROL_INTERFACE_SPI&#160;</td><td class="fielddoc">
+<p>SPI控制总线 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga15dbea9727fd70901275c90a3e5ef2d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>曝光模式 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga15dbea9727fd70901275c90a3e5ef2d2afc30999bcaa40b4d78b7917b5831857a"></a>ISP_CORE_EXPR_MODE_AUTO&#160;</td><td class="fielddoc">
+<p>自动模式 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga15dbea9727fd70901275c90a3e5ef2d2ac1c6437b2649ae7f6444dd8fabc140b5"></a>ISP_CORE_EXPR_MODE_MANUAL&#160;</td><td class="fielddoc">
+<p>手动模式 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga119b1782b6d972e38d604528ad72b65e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>曝光单位 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga119b1782b6d972e38d604528ad72b65eaccd13313b10d37bb3631b3f63222acd1"></a>ISP_CORE_EXPR_UNIT_LINE&#160;</td><td class="fielddoc">
+<p>行 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga119b1782b6d972e38d604528ad72b65ea78fe9c564ee2464a75aab02dfe770ef1"></a>ISP_CORE_EXPR_UNIT_US&#160;</td><td class="fielddoc">
+<p>毫秒 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga8322e3086b65300b1aca801a5ad1b22e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">isp_core_wb_mode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>白平衡模式 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22ea6ce1e0466ff7747983d1b152285369c9"></a>ISP_CORE_WB_MODE_AUTO&#160;</td><td class="fielddoc">
+<p>自动模式 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22ea82c9447a0616b465eae5b9a341148c6c"></a>ISP_CORE_WB_MODE_MANUAL&#160;</td><td class="fielddoc">
+<p>手动模式 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22eaaa36a59a0bc0b75b8e078ca54c96d306"></a>ISP_CORE_WB_MODE_DAY_LIGHT&#160;</td><td class="fielddoc">
+<p>晴天 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22eaf767ffefd8e9cb997495bed0c3f4017c"></a>ISP_CORE_WB_MODE_CLOUDY&#160;</td><td class="fielddoc">
+<p>阴天 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22ea4d72e8d03f8e0cfb4097e42320a8a0f4"></a>ISP_CORE_WB_MODE_INCANDESCENT&#160;</td><td class="fielddoc">
+<p>白炽灯 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22ea68920c1dbcde0b7e22af79ce92f230a2"></a>ISP_CORE_WB_MODE_FLOURESCENT&#160;</td><td class="fielddoc">
+<p>荧光灯 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22ea0b524369d95f89cc2838614378f01f15"></a>ISP_CORE_WB_MODE_TWILIGHT&#160;</td><td class="fielddoc">
+<p>黄昏 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22ea10f484032b57286297764ad66e3959b0"></a>ISP_CORE_WB_MODE_SHADE&#160;</td><td class="fielddoc">
+<p>阴影 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22ea9860e8998bd2b3f3623e60ddd2c4c763"></a>ISP_CORE_WB_MODE_WARM_FLOURESCENT&#160;</td><td class="fielddoc">
+<p>暖色荧光灯 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga8322e3086b65300b1aca801a5ad1b22ea839ad326780726d37b156d95dd0add3b"></a>ISP_CORE_WB_MODE_CUSTOM&#160;</td><td class="fielddoc">
+<p>自定义模式 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="ga8e4d951a6a80e88026f41e310090c44d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_AddSensor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> *&#160;</td>
+          <td class="paramname"><em>pinfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加一个sensor，用于向ISP模块提供数据源 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinfo</td><td>需要添加sensor的信息指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>添加一个摄像头，用于提供图像。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证摄像头驱动已经注册进内核. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5c2fdfdad046856bff32937c5ac05b90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>关闭ISP模块 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">无</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>ISP模块，ISP模块不再工作。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证所有FrameSource和效果调试功能已经关闭，所有sensor都已被卸载. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga87ea0697f417532c191bf86677e281b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_DelSensor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> *&#160;</td>
+          <td class="paramname"><em>pinfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>删除一个sensor </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinfo</td><td>需要删除sensor的信息指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>删除一个摄像头。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证摄像头已经停止工作，即调用了IMP_ISP_DisableSensor函数. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga823f71e232236129da016cbbd0079295"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_DisableSensor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>不使能一个sensor </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">无</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>不使能一个摄像头，使之停止传输图像, 这样FrameSource无法输出图像，同时ISP也不能进行效果调试。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证所有FrameSource都已停止输出图像，同时效果调试也在不使能态. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga75329730dcf100da4839ead7d585662c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_DisableTuning </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>不使能ISP效果调试功能 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">无</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证在不使能sensor之前，先不使能ISP效果调试（即调用此函数）. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga72bd61d7ffa8f06b239c1ce43a6b5274"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_EnableSensor </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使能一个sensor </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">无</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>使能一个摄像头，使之开始传输图像, 这样FrameSource才能输出图像，同时ISP才能进行效果调试。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证摄像头已经被添加进ISP模块. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga34e80ddfdcab5e5f1b500d9271e8a332"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_EnableTuning </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>使能ISP效果调试功能 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">无</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证IMP_ISP_EnableSensor被执行且返回成功. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga121bb07b3c434d708ff9d2627f230884"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_GetSensorRegister </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取sensor一个寄存器的值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>寄存器地址</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>寄存器值的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>可以直接获取一个sensor寄存器的值。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证摄像头已经被使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac80de0e7f019c1718e58bb9d728203c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Open </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>打开ISP模块 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">无</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>创建ISP模块，准备向ISP添加sensor，并开启ISP效果调试功能。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>这个函数必须在添加sensor之前被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8a86c7fac741e7d38daae9767f06a9f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_SetSensorRegister </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置sensor一个寄存器的值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">reg</td><td>寄存器地址</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>寄存器值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>可以直接设置一个sensor寄存器的值。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证摄像头已经被使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7eecfde9edb07e017907cf28b9562d1e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_ISP_Tuning_Awb_GetRgbCoefft </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structisp__core__rgb__coefft__wb__attr.html">IMPISPCOEFFTWB</a> *&#160;</td>
+          <td class="paramname"><em>isp_core_rgb_coefft_wb_attr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取sensor AWB RGB通道偏移参数。 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4259acd6ef932cbd6c9cde02fc4a5b21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetAeComp </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>comp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取AE补偿。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">comp</td><td>AE补偿参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2cbb8a56d859c6784619d0ea8715ca04"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetAeLuma </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>luma</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取画面平均亮度。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">luma</td><td>AE亮度参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga608cd103824bbb2297ff7f63c111ba65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetAntiFlickerAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a> *&#160;</td>
+          <td class="paramname"><em>pattr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获得ISP抗闪频属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pattr</td><td>获取参数值指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga95eace973c2c84c22acd607e1a81292d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetBrightness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pbright</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取ISP 综合效果图片亮度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bright</td><td>图片亮度参数指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>默认值为128，大于128增加亮度，小于128降低亮度。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa3571e3f4f0e2a5759f403241dbc1bde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetContrast </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pcontrast</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取ISP 综合效果图片对比度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">contrast</td><td>图片对比度参数指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>默认值为128，大于128增加对比度，小于128降低对比度。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7c888732fd3ca06fabb28ff65a1acdec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetExpr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a> *&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取AE参数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">expr</td><td>AE参数。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaefda984f8fb1aed9fd540edec6f2c7ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetGamma </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a> *&#160;</td>
+          <td class="paramname"><em>gamma</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取GAMMA参数. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">gamma</td><td>gamma参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab0ad06b6d923c498476e367bf2e6a401"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetISPHflip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *&#160;</td>
+          <td class="paramname"><em>pmode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取ISP图像镜面效果功能的操作状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmode</td><td>操作参数指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga15176aa01cdc235ea1877154176cda57"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetISPRunningMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> *&#160;</td>
+          <td class="paramname"><em>pmode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取ISP工作模式，正常模式或夜视模式。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmode操作参数指针</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1b6f33516c68ac7cf293efd247712dfc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetISPVflip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *&#160;</td>
+          <td class="paramname"><em>pmode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取ISP图像上下反转效果功能的操作状态 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pmode</td><td>操作参数指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab376dc9de94e58d63d0126ca3e232da3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetSaturation </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>psat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取ISP 综合效果图片饱和度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sat</td><td>图片饱和度参数指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>默认值为128，大于128增加饱和度，小于128降低饱和度。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac0b29cb7b14957eef86d65501b1979d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetSensorFPS </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>fps_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>fps_den</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取摄像头输出帧率 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps_num</td><td>获取帧率分子参数的指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps_den</td><td>获取帧率分母参数的指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证IMP_ISP_EnableSensor 和 IMP_ISP_EnableTuning已被调用。 </dd>
+<dd>
+在使能帧通道开始传输数据之前必须先调用此函数获取摄像头默认帧率。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1e088f85ea78d4a58df1983fa8c3bbae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetSharpness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>psharpness</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取ISP 综合效果图片锐度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sharpness</td><td>图片锐度参数指针</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>默认值为128，大于128增加锐度，小于128降低锐度。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0c301c0b728ffee66209fa536866a629"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetTotalGain </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>gain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取ISP输出图像的整体增益值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>获取增益值参数的指针,其数据存放格式为[24.8]，高24bit为整数，低8bit为小数。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证IMP_ISP_EnableSensor 和 IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga96d8ab201444c78b1c7c4dba013a1488"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_GetWB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *&#160;</td>
+          <td class="paramname"><em>wb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取白平衡功能设置。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">wb</td><td>获取的白平衡参数。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadc2dae32ae59f0a277b58f61087c7220"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_ISP_Tuning_GetWB_GOL_Statis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *&#160;</td>
+          <td class="paramname"><em>wb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取白平衡全局统计值。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">wb</td><td>获取的白平衡全局统计值。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad035e477da1a52c6e29c4a4d1f5f7870"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IMP_ISP_Tuning_GetWB_Statis </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *&#160;</td>
+          <td class="paramname"><em>wb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取白平衡统计值。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">wb</td><td>获取的白平衡统计值。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad53a4789425c0ca6aefa236d223c62ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetAeComp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>comp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置AE补偿。AE补偿参数可以调整图像AE target，范围为[0-255]. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">comp</td><td>AE补偿参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1c82db22ede96a92628c96a5b891ae11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetAntiFlickerAttr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a>&#160;</td>
+          <td class="paramname"><em>attr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ISP抗闪频属性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">attr</td><td>设置参数值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaa420ab671dc3ac21664e68f7471499ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetBrightness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>bright</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ISP 综合效果图片亮度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">bright</td><td>图片亮度参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>默认值为128，大于128增加亮度，小于128降低亮度。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9ad8f252ce6bdf00a3682c1ebecfb149"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetContrast </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>contrast</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ISP 综合效果图片对比度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">contrast</td><td>图片对比度参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>默认值为128，大于128增加对比度，小于128降低对比度。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga414b5866577205f3cd28b7252d463adf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetExpr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a> *&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置AE参数。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">expr</td><td>AE参数。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafbea574db862f5e4afacbb42f5cee103"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetGamma </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a> *&#160;</td>
+          <td class="paramname"><em>gamma</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置GAMMA参数. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">gamma</td><td>gamma参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga02de99774dc0257c7613d9ef4dd7ae94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetISPBypass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ISP模块是否bypass. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>是否bypass输出模式</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>无</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP模块是关闭的. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga663cc368f688229e2766a2cc2a2cdc52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetISPHflip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ISP图像镜面效果功能是否使能 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>是否使能镜面效果</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9a8ba3dfe858dde56672a5160ec1fdfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetISPRunningMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ISP工作模式，正常模式或夜视模式；默认为正常模式。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode运行模式参数</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>示例： </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;IMPISPRunningMode mode;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;     if( it is during a night now){</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        mode = IMPISP_RUNNING_MODE_NIGHT</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     }else{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        mode = IMPISP_RUNNING_MODE_DAY;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;     }</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;     ret = IMP_ISP_Tuning_SetISPRunningMode(mode);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;     if(ret){</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        IMP_LOG_ERR(TAG, &quot;IMP_ISP_Tuning_SetISPRunningMode error !\n&quot;);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        return -1;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;     }</div>
+</div><!-- fragment --><dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf1f07a434ff4d5d0786d713aad2ffc26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetISPVflip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ISP图像上下反转效果功能是否使能 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>是否使能图像上下反转</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga67c1bce041ce6ba21c81ae86a45d7a49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetSaturation </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ISP 综合效果图片饱和度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sat</td><td>图片饱和度参数值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>默认值为128，大于128增加饱和度，小于128降低饱和度。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac974214ea084793ccba91d0209ccf3a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetSensorFPS </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fps_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>fps_den</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置摄像头输出帧率 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps_num</td><td>设定帧率的分子参数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps_den</td><td>设定帧率的分母参数</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证IMP_ISP_EnableSensor 和 IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga37c58c97c2970aa01e438c189c25ef6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetSharpness </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>sharpness</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置ISP 综合效果图片锐度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sharpness</td><td>图片锐度参数值</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section remark"><dt>备注</dt><dd>默认值为128，大于128增加锐度，小于128降低锐度。</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，必须保证ISP效果调试功能已使能. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga304964ed99e1065b27eca47dada5fbab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IMP_ISP_Tuning_SetWB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *&#160;</td>
+          <td class="paramname"><em>wb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置白平衡功能设置。可以设置自动与手动模式，手动模式主要通过设置rgain、bgain实现。 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wb</td><td>设置的白平衡参数。</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>成功 </td></tr>
+    <tr><td class="paramname">非0</td><td>失败，返回错误码</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>在使用这个函数之前，IMP_ISP_EnableTuning已被调用。 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a class="anchor" id="ga90942b48db02576837a357b6cca80b5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a> mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置的曝光模式 </p>
+<p>获取的曝光模式 </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:31 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

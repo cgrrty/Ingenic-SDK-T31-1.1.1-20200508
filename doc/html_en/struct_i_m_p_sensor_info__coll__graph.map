@@ -1,0 +1,4 @@
+<map id="IMPSensorInfo" name="IMPSensorInfo">
+<area shape="rect" id="node2" href="$struct_i_m_p_i2_c_info.html" title="Defines I2C bus information. " alt="" coords="5,5,93,35"/>
+<area shape="rect" id="node4" href="$struct_i_m_p_s_p_i_info.html" title="Defines SPI bus information. " alt="" coords="117,5,208,35"/>
+</map>

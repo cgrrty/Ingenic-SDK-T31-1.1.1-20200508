@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['cb_5fref_5fmax',['cb_ref_max',['../struct_i_m_p_i_s_p_a_w_b_hist.html#a42e9da55b5d1572df9bc3c6136053287',1,'IMPISPAWBHist']]],
+  ['cb_5fref_5fmin',['cb_ref_min',['../struct_i_m_p_i_s_p_a_w_b_hist.html#a93366b866b1395eb866e7c3df5ef9023',1,'IMPISPAWBHist']]],
+  ['cbus_5ftype',['cbus_type',['../struct_i_m_p_sensor_info.html#a8aa6f715914bd7b43ecdf648e4d55060',1,'IMPSensorInfo']]],
+  ['chn0',['chn0',['../struct_i_m_p_i_s_p_m_a_s_k_attr.html#ab013e24bed55d18a48b652e47babac4d',1,'IMPISPMASKAttr']]],
+  ['chn1',['chn1',['../struct_i_m_p_i_s_p_m_a_s_k_attr.html#a6fc47da3192b7d4868b1701683fd6f86',1,'IMPISPMASKAttr']]],
+  ['chn2',['chn2',['../struct_i_m_p_i_s_p_m_a_s_k_attr.html#ad812cde474168e5f5b32f1fa7f22c875',1,'IMPISPMASKAttr']]],
+  ['chnbusynum',['chnBusyNum',['../group___i_m_p___audio.html#ga03a9d760ecd529e9684e7bde3203548f',1,'IMPAudioOChnState']]],
+  ['chncnt',['chnCnt',['../group___i_m_p___audio.html#gad5d4292ea021c4630a9aa06296018e93',1,'IMPAudioIOAttr']]],
+  ['chnfreenum',['chnFreeNum',['../group___i_m_p___audio.html#gacfe0b3687c7e8b5287e06bd3e645eb04',1,'IMPAudioOChnState']]],
+  ['chntotalnum',['chnTotalNum',['../group___i_m_p___audio.html#ga558a8f313528f920f73f59c16de4751d',1,'IMPAudioOChnState']]],
+  ['chr',['chr',['../struct_s_u_model_num.html#a668d6d7474c173fe106b563b785e66db',1,'SUModelNum::chr()'],['../struct_s_u_version.html#a668d6d7474c173fe106b563b785e66db',1,'SUVersion::chr()'],['../union_s_u_dev_i_d.html#a668d6d7474c173fe106b563b785e66db',1,'SUDevID::chr()']]],
+  ['color',['color',['../structline_rect_data.html#a66b2ef8398a8bbb0f5816f22a7b138da',1,'lineRectData::color()'],['../structcover_data.html#a66b2ef8398a8bbb0f5816f22a7b138da',1,'coverData::color()']]],
+  ['compressiongaindb',['CompressionGaindB',['../group___i_m_p___audio.html#gafa7cd850575e0a605f4cbcfdd7514ac5',1,'IMPAudioAgcConfig']]],
+  ['coverdata',['coverData',['../structcover_data.html',1,'coverData'],['../union_i_m_p_o_s_d_rgn_attr_data.html#a80539b7df7ca7a8dc548644e3a9a520b',1,'IMPOSDRgnAttrData::coverData()']]],
+  ['cr_5fref_5fmax',['cr_ref_max',['../struct_i_m_p_i_s_p_a_w_b_hist.html#a86e9bbfbe9880ce659caf7cd9ff08825',1,'IMPISPAWBHist']]],
+  ['cr_5fref_5fmin',['cr_ref_min',['../struct_i_m_p_i_s_p_a_w_b_hist.html#a3e5b53f2f2f5688999366b57813afc04',1,'IMPISPAWBHist']]],
+  ['crop',['crop',['../struct_i_m_p_f_s_chn_attr.html#a897937226d6da603896bbb99553fb229',1,'IMPFSChnAttr::crop()'],['../struct_i_m_p_encoder_enc_attr.html#a14fe62879245a5bf62f1f34906c58257',1,'IMPEncoderEncAttr::crop()']]],
+  ['curpacks',['curPacks',['../struct_i_m_p_encoder_chn_stat.html#ae8559cfe8405d76c2f16f574032779cf',1,'IMPEncoderChnStat']]]
+];

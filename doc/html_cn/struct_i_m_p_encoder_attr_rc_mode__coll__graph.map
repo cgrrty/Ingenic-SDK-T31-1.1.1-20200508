@@ -1,0 +1,6 @@
+<map id="IMPEncoderAttrRcMode" name="IMPEncoderAttrRcMode">
+<area shape="rect" id="node2" href="$struct_i_m_p_encoder_attr_cbr.html" title="IMPEncoderAttrCbr" alt="" coords="5,5,141,35"/>
+<area shape="rect" id="node4" href="$struct_i_m_p_encoder_attr_vbr.html" title="IMPEncoderAttrVbr" alt="" coords="165,5,299,35"/>
+<area shape="rect" id="node6" href="$struct_i_m_p_encoder_attr_fix_q_p.html" title="IMPEncoderAttrFixQP" alt="" coords="323,5,475,35"/>
+<area shape="rect" id="node8" href="$struct_i_m_p_encoder_attr_capped_vbr.html" title="IMPEncoderAttrCappedVbr" alt="" coords="499,5,677,35"/>
+</map>

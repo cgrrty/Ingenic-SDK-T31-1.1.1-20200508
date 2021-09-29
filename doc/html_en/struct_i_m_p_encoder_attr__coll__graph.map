@@ -1,0 +1,4 @@
+<map id="IMPEncoderAttr" name="IMPEncoderAttr">
+<area shape="rect" id="node2" href="$struct_i_m_p_encoder_user_data_cfg.html" title="Define insert user data attribute of h264 and h265 channel. " alt="" coords="5,5,176,35"/>
+<area shape="rect" id="node4" href="$struct_i_m_p_encoder_crop_cfg.html" title="Define the encoder crop attribute(crop first, scaler second) " alt="" coords="200,5,341,35"/>
+</map>

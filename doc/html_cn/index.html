@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: Ingenic Smart Video Platform</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li class="current"><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Ingenic Smart Video Platform </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2>1. ISVP SDK简介</h2>
+<p>ISVP SDK，即软件开发工具包，包括API库、开源源码、文档、Samples等等。开发者可以通过SDK快速的开展产品功能开发。以下是ISVP SDK的内容概览图： </p><div class="image">
+<img src="sdk_figure.png" alt="sdk_figure.png"/>
+</div>
+<p>具体内容如下：</p>
+<h3>1.1 应用库</h3>
+<h4>1.1.1 imp库</h4>
+<ul>
+<li>System——实现模块间的数据和系统控制功能</li>
+<li>ISP——图像信号处理单元。包括WDR，3D-Denoise和Iridix等功能</li>
+<li>FrameSource——视频源。输出ISP处理后的原始视频</li>
+<li>Encoder——编码器，实现H264和JPEG编码</li>
+<li>Audio——音频模块，包括录放音，音量调节，音频编码，回音消除等功能</li>
+<li>OSD——视频叠加，实现字符点阵叠加的功能</li>
+<li>IVS——智能分析，包括IVS通道管理，移动侦测功能</li>
+</ul>
+<h4>1.1.2 sysutils库</h4>
+<ul>
+<li>su_base——基础功能，包括关机、重启、获取RTC时间等</li>
+<li>su_cipher——数据加解密模块</li>
+<li>su_adc——数模转换数据读取接口</li>
+<li>su_misc——其他功能，包括获取按键事件等</li>
+</ul>
+<h3>1.2 开源代码</h3>
+<h4>1.2.1 u-boot与Linux内核</h4>
+<ul>
+<li>u-boot基于2013.07版本，支持常用的网络、Nor Flash操作以及TF卡，Fat文件系统操作</li>
+<li>Linux Kernel版本为3.10.14，支持常用的总线驱动。开发者可直接编译使用或者进行拓展开发</li>
+</ul>
+<h4>1.2.2 drivers</h4>
+<ul>
+<li>ISP &amp; Sensor driver. 支持Sensor探测识别</li>
+<li>EEPROM driver, Timer driver等系统驱动</li>
+</ul>
+<h2>2. 系统结构</h2>
+<p>ISVP-SDK的系统结构如下图所示： </p><div class="image">
+<img src="system_framework.png" alt="system_framework.png"/>
+</div>
+<p> 在上图中，系统的各层依次为:</p><ul>
+<li>Hardware: 硬件层，完成I/O等具体的硬件功能。</li>
+<li>Linux Kernel: 内核层。完成基础的系统功能，定义硬件资源</li>
+<li>drivers: ko模块驱动，可通过driver进行硬件操作</li>
+<li>API lib: 接口库，实现硬件功能的抽象，方便于应用层的开发。API库主要有五部分：<ul>
+<li>libimp: 多媒体功能库。如H264编码，JPEG编码，IVS和Audio等</li>
+<li>libsysutils: 系统功能库。如重启，设置系统时间和电池功能等</li>
+<li>libalog: ISVP-SDK的log实现库</li>
+<li>libivs_inf: IVS算法库，包括人脸检测，人形检测，周界防范等</li>
+<li>libmxu: 128位SIMD加速指令算子库</li>
+</ul>
+</li>
+<li>Application: 应用层。实现功能逻辑等</li>
+<li>Application推荐使用SDK库提供的API及配合drivers进行开发。对于一些特殊的功能需求，也可以直接调用内核接口进行开发</li>
+</ul>
+<h2>3. SDK版本号定义</h2>
+<p>SDK的版本号的格式为“x.y.z”。其意义分别为：</p><ul>
+<li>x：当SDK有较大结构性变动时更新</li>
+<li>y：当API有更新时更新</li>
+<li>z：API没有更新但是API内部实现有更新时更新</li>
+</ul>
+<p>当发生x，y版本变化时，需要开发者更新API头文件，否则可能出现数据结构不匹配，造成未知的错误。 </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:32 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

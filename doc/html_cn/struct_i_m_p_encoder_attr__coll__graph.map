@@ -1,0 +1,4 @@
+<map id="IMPEncoderAttr" name="IMPEncoderAttr">
+<area shape="rect" id="node2" href="$struct_i_m_p_encoder_user_data_cfg.html" title="定义编码器插入用户数据属性,只针对H264和H.265 " alt="" coords="5,5,176,35"/>
+<area shape="rect" id="node4" href="$struct_i_m_p_encoder_crop_cfg.html" title="定义编码器裁剪属性，针对输入编码器的图像先做裁剪，与编码通道的尺寸进行比较再做缩放 ..." alt="" coords="200,5,341,35"/>
+</map>

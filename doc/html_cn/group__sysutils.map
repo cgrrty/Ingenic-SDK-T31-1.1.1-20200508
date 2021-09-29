@@ -1,0 +1,7 @@
+<map id="System Utils" name="System Utils">
+<area shape="rect" id="node1" href="$group___sysutils___battery.html" title="电池管理 " alt="" coords="153,5,271,35"/>
+<area shape="rect" id="node2" href="$group___sysutils___cipher.html" title="加解密管理 " alt="" coords="155,59,269,88"/>
+<area shape="rect" id="node3" href="$group___sysutils___a_d_c.html" title="模数转化模块 " alt="" coords="160,112,264,141"/>
+<area shape="rect" id="node4" href="$group___sysutils___misc.html" title="其他功能. " alt="" coords="160,165,264,195"/>
+<area shape="rect" id="node6" href="$group___sysutils___base.html" title="系统基础功能. " alt="" coords="159,219,265,248"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="IMP_IVS_MoveParam" name="IMP_IVS_MoveParam">
+<area shape="rect" id="node2" href="$struct_i_m_p_rect.html" title="IMP 矩形区域信息. " alt="" coords="5,117,80,147"/>
+<area shape="rect" id="node4" href="$struct_i_m_p_point.html" title="IMP点坐标信息. " alt="" coords="5,5,80,35"/>
+<area shape="rect" id="node6" href="$struct_i_m_p_frame_info.html" title="IMP帧图像信息定义. " alt="" coords="104,117,208,147"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="IMPSensorInfo" name="IMPSensorInfo">
+<area shape="rect" id="node2" href="$struct_i_m_p_i2_c_info.html" title="摄像头控制总线类型是I2C时，需要配置的参数结构体 " alt="" coords="5,5,93,35"/>
+<area shape="rect" id="node4" href="$struct_i_m_p_s_p_i_info.html" title="摄像头控制总线类型是SPI时，需要配置的参数结构体 " alt="" coords="117,5,208,35"/>
+</map>

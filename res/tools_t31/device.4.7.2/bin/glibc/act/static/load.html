@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Apical Control Tool</title>
+    <link rel="shortcut icon" type="image/png" href="/img/acs.png">
+    <link rel="icon" type="image/png" href="/img/acs.png">
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css"/>
+</head>
+<body>
+<div class="xml-loader">
+    <h3>Apical Control Tool <span id="version"></span></h3>
+    <p>Apical Control Tool requires "ApicalControl.xml" file.</p>
+    <p>To load this configuration file, please click the button below:</p>
+    <input type="file" id="file-loader" accept=".xml"/>
+    <div>
+        <progress id="progress" class="hidden" max="100" value="0"></progress>
+        <p id="error"></p>
+    </div>
+</div>
+<script src="/js/loader.min.js"></script>
+</body>
+</html>

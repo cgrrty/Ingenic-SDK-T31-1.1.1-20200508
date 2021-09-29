@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: api/cn/imp/imp_osd.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="dir_31a1ac01d37bc983c5b5cff3958563ba.html">cn</a></li><li class="navelem"><a class="el" href="dir_c1bd294425c88ba3746096703af56b56.html">imp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imp_osd.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imp__osd_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * IMP OSD header file.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2015 Ingenic Semiconductor Co.,Ltd</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __IMP_OSD_H__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __IMP_OSD_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imp__common_8h.html">imp_common.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gadb17f033bc3cbd6212e32d0b75a0a761">   64</a></span>&#160;<span class="preprocessor">#define INVHANDLE               (-1)</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">   69</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#ga07a129ad144ef8f2e0df27e448ac6dfb">   74</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba4062b4faf6cfe005ac90c7abcecdfba4">   75</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba4062b4faf6cfe005ac90c7abcecdfba4">OSD_BLACK</a>       = 0xff000000, </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba4a0c4635891f6a2ee0ebbdded19b3317">   76</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba4a0c4635891f6a2ee0ebbdded19b3317">OSD_WHITE</a>       = 0xffffffff, </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba34d2fe7ad73b8a94e670df571a9e5adc">   77</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba34d2fe7ad73b8a94e670df571a9e5adc">OSD_RED</a>         = 0xffff0000, </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfbadbe20f373ed8b2446e89bfeb76b87917">   78</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfbadbe20f373ed8b2446e89bfeb76b87917">OSD_GREEN</a>       = 0xff00ff00, </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba4c85f2a60bcc904c74aa787f5dd2a4d5">   79</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba4c85f2a60bcc904c74aa787f5dd2a4d5">OSD_BLUE</a>        = 0xff0000ff, </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}<a class="code" href="group___i_m_p___o_s_d.html#ga07a129ad144ef8f2e0df27e448ac6dfb">IMPOsdColour</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#ga79528856a7d533a7e5ce8f47577beb2c">   85</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca04ecb838a529cbed99a079c3e88fb159">   86</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca04ecb838a529cbed99a079c3e88fb159">OSD_REG_INV</a>                     = 0, </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca4d19195a69c1d1717b52f0ef9e716066">   87</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca4d19195a69c1d1717b52f0ef9e716066">OSD_REG_LINE</a>            = 1, </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca071cc4253393618911f8fb8d0624ff64">   88</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca071cc4253393618911f8fb8d0624ff64">OSD_REG_RECT</a>            = 2, </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca1027eeb5d48d35dadb41e4277bd957d0">   89</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca1027eeb5d48d35dadb41e4277bd957d0">OSD_REG_BITMAP</a>          = 3, </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca8a43dbf552eb563a9e897744014dc6c6">   90</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca8a43dbf552eb563a9e897744014dc6c6">OSD_REG_COVER</a>           = 4, </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca9db8b58618342a2796bda61daf06efe7">   91</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca9db8b58618342a2796bda61daf06efe7">OSD_REG_PIC</a>                     = 5, </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca6c898aeb57b8c2283c95e19f02c6d4ee">   92</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca6c898aeb57b8c2283c95e19f02c6d4ee">OSD_REG_PIC_RMEM</a>        = 6, </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <a class="code" href="group___i_m_p___o_s_d.html#ga79528856a7d533a7e5ce8f47577beb2c">IMPOsdRgnType</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="structline_rect_data.html">   98</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="structline_rect_data.html#a66b2ef8398a8bbb0f5816f22a7b138da">   99</a></span>&#160;        uint32_t                <a class="code" href="structline_rect_data.html#a66b2ef8398a8bbb0f5816f22a7b138da">color</a>;                  </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="structline_rect_data.html#a4328f314dbc02d556d0c7c4fb6b6852a">  100</a></span>&#160;        uint32_t                <a class="code" href="structline_rect_data.html#a4328f314dbc02d556d0c7c4fb6b6852a">linewidth</a>;              </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} <a class="code" href="structline_rect_data.html">lineRectData</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="structcover_data.html">  106</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="structcover_data.html#a66b2ef8398a8bbb0f5816f22a7b138da">  107</a></span>&#160;        uint32_t                <a class="code" href="structcover_data.html#a66b2ef8398a8bbb0f5816f22a7b138da">color</a>;                  </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;} <a class="code" href="structcover_data.html">coverData</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="structpic_data.html">  114</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="structpic_data.html#aa92f08987c51e4eb7b92e84944ca2af3">  115</a></span>&#160;        <span class="keywordtype">void</span>                            *<a class="code" href="structpic_data.html#aa92f08987c51e4eb7b92e84944ca2af3">pData</a>;                 </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;} <a class="code" href="structpic_data.html">picData</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="union_i_m_p_o_s_d_rgn_attr_data.html">  121</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="union_i_m_p_o_s_d_rgn_attr_data.html#af30baa550426466190740874f80b4f05">  122</a></span>&#160;        <span class="keywordtype">void</span>                            *<a class="code" href="union_i_m_p_o_s_d_rgn_attr_data.html#af30baa550426466190740874f80b4f05">bitmapData</a>;            </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="union_i_m_p_o_s_d_rgn_attr_data.html#a6058ec90e05bd727872f143242343423">  123</a></span>&#160;        <a class="code" href="structline_rect_data.html">lineRectData</a>                    <a class="code" href="union_i_m_p_o_s_d_rgn_attr_data.html#a6058ec90e05bd727872f143242343423">lineRectData</a>;           </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="union_i_m_p_o_s_d_rgn_attr_data.html#a80539b7df7ca7a8dc548644e3a9a520b">  124</a></span>&#160;        <a class="code" href="structcover_data.html">coverData</a>                       <a class="code" href="union_i_m_p_o_s_d_rgn_attr_data.html#a80539b7df7ca7a8dc548644e3a9a520b">coverData</a>;              </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="union_i_m_p_o_s_d_rgn_attr_data.html#aa83292c4055209339c27a7c123d5a9ab">  125</a></span>&#160;        <a class="code" href="structpic_data.html">picData</a>                         <a class="code" href="union_i_m_p_o_s_d_rgn_attr_data.html#aa83292c4055209339c27a7c123d5a9ab">picData</a>;                </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;} <a class="code" href="union_i_m_p_o_s_d_rgn_attr_data.html">IMPOSDRgnAttrData</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_rgn_attr.html">  131</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_rgn_attr.html#acbe9eb1e079fd574c5de3f85cee44dac">  132</a></span>&#160;        <a class="code" href="group___i_m_p___o_s_d.html#ga79528856a7d533a7e5ce8f47577beb2c">IMPOsdRgnType</a>           <a class="code" href="struct_i_m_p_o_s_d_rgn_attr.html#acbe9eb1e079fd574c5de3f85cee44dac">type</a>;                   </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_rgn_attr.html#a1b58d18ece5ec331d26eb49692211d25">  133</a></span>&#160;        <a class="code" href="struct_i_m_p_rect.html">IMPRect</a>                         <a class="code" href="struct_i_m_p_o_s_d_rgn_attr.html#a1b58d18ece5ec331d26eb49692211d25">rect</a>;                   </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_rgn_attr.html#a4f6c11c557397431854a096d7282aa27">  134</a></span>&#160;        <a class="code" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a>          <a class="code" href="struct_i_m_p_o_s_d_rgn_attr.html#a4f6c11c557397431854a096d7282aa27">fmt</a>;                    </div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_rgn_attr.html#a7d65fefb322442fb37da6d16990027ac">  135</a></span>&#160;        <a class="code" href="union_i_m_p_o_s_d_rgn_attr_data.html">IMPOSDRgnAttrData</a>       <a class="code" href="struct_i_m_p_o_s_d_rgn_attr.html#a7d65fefb322442fb37da6d16990027ac">data</a>;                   </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <a class="code" href="struct_i_m_p_o_s_d_rgn_attr.html">IMPOSDRgnAttr</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_rgn_timestamp.html">  141</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_rgn_timestamp.html#a131a989fbc337ab14b4d6b81de3506a6">  142</a></span>&#160;        uint64_t <a class="code" href="struct_i_m_p_o_s_d_rgn_timestamp.html#a131a989fbc337ab14b4d6b81de3506a6">ts</a>;                                            </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_rgn_timestamp.html#a0bc9ca232a67a305fd187d45b891a356">  143</a></span>&#160;        uint64_t <a class="code" href="struct_i_m_p_o_s_d_rgn_timestamp.html#a0bc9ca232a67a305fd187d45b891a356">minus</a>;                                         </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_rgn_timestamp.html#a0f94c630c279711b6d5af0de7c753437">  144</a></span>&#160;        uint64_t <a class="code" href="struct_i_m_p_o_s_d_rgn_timestamp.html#a0f94c630c279711b6d5af0de7c753437">plus</a>;                                          </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;} <a class="code" href="struct_i_m_p_o_s_d_rgn_timestamp.html">IMPOSDRgnTimestamp</a>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_grp_rgn_attr.html">  150</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#a8edb576620c4067ec1f261380e7c2249">  151</a></span>&#160;        <span class="keywordtype">int</span>                                     <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#a8edb576620c4067ec1f261380e7c2249">show</a>;                   </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#ab24573f94a01670e80f0a2a59da7733e">  152</a></span>&#160;        <a class="code" href="struct_i_m_p_point.html">IMPPoint</a>                        <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#ab24573f94a01670e80f0a2a59da7733e">offPos</a>;                 </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#a83698467d9e081f2e623496ea7088957">  153</a></span>&#160;        <span class="keywordtype">float</span>                           <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#a83698467d9e081f2e623496ea7088957">scalex</a>;                 </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#a0efc777e8e5dbca130c0ca42778b7ee9">  154</a></span>&#160;        <span class="keywordtype">float</span>                           <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#a0efc777e8e5dbca130c0ca42778b7ee9">scaley</a>;                 </div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#aa6dc0fcaed7b3c7408f00695454605db">  155</a></span>&#160;        <span class="keywordtype">int</span>                                     <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#aa6dc0fcaed7b3c7408f00695454605db">gAlphaEn</a>;               </div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#afba219c9cdafe17b0b4b16e5bfb5d3e8">  156</a></span>&#160;        <span class="keywordtype">int</span>                                     <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#afba219c9cdafe17b0b4b16e5bfb5d3e8">fgAlhpa</a>;                </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#aba570fe9f2c51a3fccefd2c5a43e6123">  157</a></span>&#160;        <span class="keywordtype">int</span>                                     <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#aba570fe9f2c51a3fccefd2c5a43e6123">bgAlhpa</a>;                </div>
+<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#af5e6403cb6864751421a5e7249e4cc62">  158</a></span>&#160;        <span class="keywordtype">int</span>                                     <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html#af5e6403cb6864751421a5e7249e4cc62">layer</a>;                  </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;} <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html">IMPOSDGrpRgnAttr</a>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#ga0f20b9a82881e0bde124eaf23d8d8a05">IMP_OSD_CreateGroup</a>(<span class="keywordtype">int</span> grpNum);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#gad57af8e427360576e3caf123ccea1486">IMP_OSD_DestroyGroup</a>(<span class="keywordtype">int</span> grpNum);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#ga7ee1c973352a6c63a9d94ced838b73d5">IMP_OSD_AttachToGroup</a>(<a class="code" href="struct_i_m_p_cell.html">IMPCell</a> *from, <a class="code" href="struct_i_m_p_cell.html">IMPCell</a> *to);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;IMPRgnHandle <a class="code" href="group___i_m_p___o_s_d.html#ga64e2cdf694b204d4cdb6f03792271810">IMP_OSD_CreateRgn</a>(<a class="code" href="struct_i_m_p_o_s_d_rgn_attr.html">IMPOSDRgnAttr</a> *prAttr);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___i_m_p___o_s_d.html#gae5c2059b379bc06d6a3272fdb638c7f8">IMP_OSD_DestroyRgn</a>(IMPRgnHandle handle);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#gada9245a734dcec9ad3ff64a8f9f1a379">IMP_OSD_RegisterRgn</a>(IMPRgnHandle handle, <span class="keywordtype">int</span> grpNum, <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html">IMPOSDGrpRgnAttr</a> *pgrAttr);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#gac6c935a002ba3508e07a159c46543332">IMP_OSD_UnRegisterRgn</a>(IMPRgnHandle handle, <span class="keywordtype">int</span> grpNum);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#ga9fa0dcefef685eb851b1457e7a0cafbc">IMP_OSD_SetRgnAttr</a>(IMPRgnHandle handle, <a class="code" href="struct_i_m_p_o_s_d_rgn_attr.html">IMPOSDRgnAttr</a> *prAttr);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#ga33af621054ccc4e4387db4945a341345">IMP_OSD_SetRgnAttrWithTimestamp</a>(IMPRgnHandle handle, <a class="code" href="struct_i_m_p_o_s_d_rgn_attr.html">IMPOSDRgnAttr</a> *prAttr, <a class="code" href="struct_i_m_p_o_s_d_rgn_timestamp.html">IMPOSDRgnTimestamp</a> *prTs);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#ga816fe110eda1f2e5bb221f78a6177ade">IMP_OSD_GetRgnAttr</a>(IMPRgnHandle handle, <a class="code" href="struct_i_m_p_o_s_d_rgn_attr.html">IMPOSDRgnAttr</a> *prAttr);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#ga880823c92f7258f2791aa91725683198">IMP_OSD_UpdateRgnAttrData</a>(IMPRgnHandle handle, <a class="code" href="union_i_m_p_o_s_d_rgn_attr_data.html">IMPOSDRgnAttrData</a> *prAttrData);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#ga6dfff960bc63be5139a8317fa3c2a1ed">IMP_OSD_SetGrpRgnAttr</a>(IMPRgnHandle handle, <span class="keywordtype">int</span> grpNum, <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html">IMPOSDGrpRgnAttr</a> *pgrAttr);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#ga72ed932c29bcf7ed54ad8f650403ca12">IMP_OSD_GetGrpRgnAttr</a>(IMPRgnHandle handle, <span class="keywordtype">int</span> grpNum, <a class="code" href="struct_i_m_p_o_s_d_grp_rgn_attr.html">IMPOSDGrpRgnAttr</a> *pgrAttr);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#gafbbc33cd778b48dd78bc97dabfe933c2">IMP_OSD_ShowRgn</a>(IMPRgnHandle handle, <span class="keywordtype">int</span> grpNum, <span class="keywordtype">int</span> showFlag);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#gab588ad815812fe2da722467b1e602eb3">IMP_OSD_Start</a>(<span class="keywordtype">int</span> grpNum);</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___o_s_d.html#gae44fa63f34dc18d2d539a2563308fd55">IMP_OSD_Stop</a>(<span class="keywordtype">int</span> grpNum);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;}</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __IMP_OSD_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_grp_rgn_attr_html_ab24573f94a01670e80f0a2a59da7733e"><div class="ttname"><a href="struct_i_m_p_o_s_d_grp_rgn_attr.html#ab24573f94a01670e80f0a2a59da7733e">IMPOSDGrpRgnAttr::offPos</a></div><div class="ttdeci">IMPPoint offPos</div><div class="ttdoc">显示起始坐标 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:152</div></div>
+<div class="ttc" id="structpic_data_html_aa92f08987c51e4eb7b92e84944ca2af3"><div class="ttname"><a href="structpic_data.html#aa92f08987c51e4eb7b92e84944ca2af3">picData::pData</a></div><div class="ttdeci">void * pData</div><div class="ttdoc">图片数据指针 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:115</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga79528856a7d533a7e5ce8f47577beb2ca8a43dbf552eb563a9e897744014dc6c6"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca8a43dbf552eb563a9e897744014dc6c6">OSD_REG_COVER</a></div><div class="ttdoc">矩形遮挡 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:90</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_grp_rgn_attr_html_a83698467d9e081f2e623496ea7088957"><div class="ttname"><a href="struct_i_m_p_o_s_d_grp_rgn_attr.html#a83698467d9e081f2e623496ea7088957">IMPOSDGrpRgnAttr::scalex</a></div><div class="ttdeci">float scalex</div><div class="ttdoc">缩放x参数 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:153</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga79528856a7d533a7e5ce8f47577beb2ca071cc4253393618911f8fb8d0624ff64"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca071cc4253393618911f8fb8d0624ff64">OSD_REG_RECT</a></div><div class="ttdoc">矩形 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:88</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga79528856a7d533a7e5ce8f47577beb2ca6c898aeb57b8c2283c95e19f02c6d4ee"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca6c898aeb57b8c2283c95e19f02c6d4ee">OSD_REG_PIC_RMEM</a></div><div class="ttdoc">图片，适合用作Logo或时间戳, 使用RMEM内存 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:92</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_grp_rgn_attr_html"><div class="ttname"><a href="struct_i_m_p_o_s_d_grp_rgn_attr.html">IMPOSDGrpRgnAttr</a></div><div class="ttdoc">OSD组区域属性 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:150</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_grp_rgn_attr_html_a0efc777e8e5dbca130c0ca42778b7ee9"><div class="ttname"><a href="struct_i_m_p_o_s_d_grp_rgn_attr.html#a0efc777e8e5dbca130c0ca42778b7ee9">IMPOSDGrpRgnAttr::scaley</a></div><div class="ttdeci">float scaley</div><div class="ttdoc">缩放y参数 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:154</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga33af621054ccc4e4387db4945a341345"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga33af621054ccc4e4387db4945a341345">IMP_OSD_SetRgnAttrWithTimestamp</a></div><div class="ttdeci">int IMP_OSD_SetRgnAttrWithTimestamp(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr, IMPOSDRgnTimestamp *prTs)</div><div class="ttdoc">设置区域属性和生效时间 </div></div>
+<div class="ttc" id="union_i_m_p_o_s_d_rgn_attr_data_html_a80539b7df7ca7a8dc548644e3a9a520b"><div class="ttname"><a href="union_i_m_p_o_s_d_rgn_attr_data.html#a80539b7df7ca7a8dc548644e3a9a520b">IMPOSDRgnAttrData::coverData</a></div><div class="ttdeci">coverData coverData</div><div class="ttdoc">遮挡数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:124</div></div>
+<div class="ttc" id="structline_rect_data_html_a4328f314dbc02d556d0c7c4fb6b6852a"><div class="ttname"><a href="structline_rect_data.html#a4328f314dbc02d556d0c7c4fb6b6852a">lineRectData::linewidth</a></div><div class="ttdeci">uint32_t linewidth</div><div class="ttdoc">线宽 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:100</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga6dfff960bc63be5139a8317fa3c2a1ed"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga6dfff960bc63be5139a8317fa3c2a1ed">IMP_OSD_SetGrpRgnAttr</a></div><div class="ttdeci">int IMP_OSD_SetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAttr)</div><div class="ttdoc">设置OSD组区域属性 </div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_rgn_attr_html_acbe9eb1e079fd574c5de3f85cee44dac"><div class="ttname"><a href="struct_i_m_p_o_s_d_rgn_attr.html#acbe9eb1e079fd574c5de3f85cee44dac">IMPOSDRgnAttr::type</a></div><div class="ttdeci">IMPOsdRgnType type</div><div class="ttdoc">OSD区域类型 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:132</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga07a129ad144ef8f2e0df27e448ac6dfba4c85f2a60bcc904c74aa787f5dd2a4d5"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba4c85f2a60bcc904c74aa787f5dd2a4d5">OSD_BLUE</a></div><div class="ttdoc">蓝色 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:79</div></div>
+<div class="ttc" id="structpic_data_html"><div class="ttname"><a href="structpic_data.html">picData</a></div><div class="ttdoc">OSD区域图片数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:114</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_rgn_attr_html_a7d65fefb322442fb37da6d16990027ac"><div class="ttname"><a href="struct_i_m_p_o_s_d_rgn_attr.html#a7d65fefb322442fb37da6d16990027ac">IMPOSDRgnAttr::data</a></div><div class="ttdeci">IMPOSDRgnAttrData data</div><div class="ttdoc">OSD区域属性数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:135</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga07a129ad144ef8f2e0df27e448ac6dfba34d2fe7ad73b8a94e670df571a9e5adc"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba34d2fe7ad73b8a94e670df571a9e5adc">OSD_RED</a></div><div class="ttdoc">红色 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:77</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga79528856a7d533a7e5ce8f47577beb2ca4d19195a69c1d1717b52f0ef9e716066"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca4d19195a69c1d1717b52f0ef9e716066">OSD_REG_LINE</a></div><div class="ttdoc">线 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:87</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga07a129ad144ef8f2e0df27e448ac6dfbadbe20f373ed8b2446e89bfeb76b87917"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfbadbe20f373ed8b2446e89bfeb76b87917">OSD_GREEN</a></div><div class="ttdoc">绿色 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:78</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_rgn_attr_html"><div class="ttname"><a href="struct_i_m_p_o_s_d_rgn_attr.html">IMPOSDRgnAttr</a></div><div class="ttdoc">OSD区域属性 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:131</div></div>
+<div class="ttc" id="union_i_m_p_o_s_d_rgn_attr_data_html"><div class="ttname"><a href="union_i_m_p_o_s_d_rgn_attr_data.html">IMPOSDRgnAttrData</a></div><div class="ttdoc">OSD区域属性数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:121</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gae44fa63f34dc18d2d539a2563308fd55"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gae44fa63f34dc18d2d539a2563308fd55">IMP_OSD_Stop</a></div><div class="ttdeci">int IMP_OSD_Stop(int grpNum)</div><div class="ttdoc">设置停止OSD组的显示 </div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gac6c935a002ba3508e07a159c46543332"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gac6c935a002ba3508e07a159c46543332">IMP_OSD_UnRegisterRgn</a></div><div class="ttdeci">int IMP_OSD_UnRegisterRgn(IMPRgnHandle handle, int grpNum)</div><div class="ttdoc">注销OSD区域 </div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_rgn_attr_html_a4f6c11c557397431854a096d7282aa27"><div class="ttname"><a href="struct_i_m_p_o_s_d_rgn_attr.html#a4f6c11c557397431854a096d7282aa27">IMPOSDRgnAttr::fmt</a></div><div class="ttdeci">IMPPixelFormat fmt</div><div class="ttdoc">点格式 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:134</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga816fe110eda1f2e5bb221f78a6177ade"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga816fe110eda1f2e5bb221f78a6177ade">IMP_OSD_GetRgnAttr</a></div><div class="ttdeci">int IMP_OSD_GetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr)</div><div class="ttdoc">获取区域属性 </div></div>
+<div class="ttc" id="structcover_data_html_a66b2ef8398a8bbb0f5816f22a7b138da"><div class="ttname"><a href="structcover_data.html#a66b2ef8398a8bbb0f5816f22a7b138da">coverData::color</a></div><div class="ttdeci">uint32_t color</div><div class="ttdoc">颜色，只支持bgra颜色格式 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:107</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga79528856a7d533a7e5ce8f47577beb2ca04ecb838a529cbed99a079c3e88fb159"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca04ecb838a529cbed99a079c3e88fb159">OSD_REG_INV</a></div><div class="ttdoc">未定义区域类型 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:86</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_rgn_timestamp_html_a131a989fbc337ab14b4d6b81de3506a6"><div class="ttname"><a href="struct_i_m_p_o_s_d_rgn_timestamp.html#a131a989fbc337ab14b4d6b81de3506a6">IMPOSDRgnTimestamp::ts</a></div><div class="ttdeci">uint64_t ts</div><div class="ttdoc">时间戳 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:142</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gab588ad815812fe2da722467b1e602eb3"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gab588ad815812fe2da722467b1e602eb3">IMP_OSD_Start</a></div><div class="ttdeci">int IMP_OSD_Start(int grpNum)</div><div class="ttdoc">设置开始OSD组的显示 </div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gad57af8e427360576e3caf123ccea1486"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gad57af8e427360576e3caf123ccea1486">IMP_OSD_DestroyGroup</a></div><div class="ttdeci">int IMP_OSD_DestroyGroup(int grpNum)</div><div class="ttdoc">销毁OSD组 </div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_grp_rgn_attr_html_aa6dc0fcaed7b3c7408f00695454605db"><div class="ttname"><a href="struct_i_m_p_o_s_d_grp_rgn_attr.html#aa6dc0fcaed7b3c7408f00695454605db">IMPOSDGrpRgnAttr::gAlphaEn</a></div><div class="ttdeci">int gAlphaEn</div><div class="ttdoc">Alpha开关 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:155</div></div>
+<div class="ttc" id="structline_rect_data_html"><div class="ttname"><a href="structline_rect_data.html">lineRectData</a></div><div class="ttdoc">OSD区域线和矩形数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:98</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga79528856a7d533a7e5ce8f47577beb2c"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga79528856a7d533a7e5ce8f47577beb2c">IMPOsdRgnType</a></div><div class="ttdeci">IMPOsdRgnType</div><div class="ttdoc">OSD区域类型 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:85</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gafbbc33cd778b48dd78bc97dabfe933c2"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gafbbc33cd778b48dd78bc97dabfe933c2">IMP_OSD_ShowRgn</a></div><div class="ttdeci">int IMP_OSD_ShowRgn(IMPRgnHandle handle, int grpNum, int showFlag)</div><div class="ttdoc">设置组区域是否显示 </div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga07a129ad144ef8f2e0df27e448ac6dfba4a0c4635891f6a2ee0ebbdded19b3317"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba4a0c4635891f6a2ee0ebbdded19b3317">OSD_WHITE</a></div><div class="ttdoc">白色 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:76</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gadc0d2d62f9e28e13ca872973e8ff6fa9"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gadc0d2d62f9e28e13ca872973e8ff6fa9">IMPRgnHandle</a></div><div class="ttdeci">int IMPRgnHandle</div><div class="ttdoc">OSD 区域句柄 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:69</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga64e2cdf694b204d4cdb6f03792271810"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga64e2cdf694b204d4cdb6f03792271810">IMP_OSD_CreateRgn</a></div><div class="ttdeci">IMPRgnHandle IMP_OSD_CreateRgn(IMPOSDRgnAttr *prAttr)</div><div class="ttdoc">创建OSD区域 </div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga9fa0dcefef685eb851b1457e7a0cafbc"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga9fa0dcefef685eb851b1457e7a0cafbc">IMP_OSD_SetRgnAttr</a></div><div class="ttdeci">int IMP_OSD_SetRgnAttr(IMPRgnHandle handle, IMPOSDRgnAttr *prAttr)</div><div class="ttdoc">设置区域属性 </div></div>
+<div class="ttc" id="structline_rect_data_html_a66b2ef8398a8bbb0f5816f22a7b138da"><div class="ttname"><a href="structline_rect_data.html#a66b2ef8398a8bbb0f5816f22a7b138da">lineRectData::color</a></div><div class="ttdeci">uint32_t color</div><div class="ttdoc">颜色，只支持OSD_WHITE，OSD_BLACK，OSD_RED三种格式 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:99</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_rgn_timestamp_html_a0f94c630c279711b6d5af0de7c753437"><div class="ttname"><a href="struct_i_m_p_o_s_d_rgn_timestamp.html#a0f94c630c279711b6d5af0de7c753437">IMPOSDRgnTimestamp::plus</a></div><div class="ttdeci">uint64_t plus</div><div class="ttdoc">上限 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:144</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_rgn_timestamp_html"><div class="ttname"><a href="struct_i_m_p_o_s_d_rgn_timestamp.html">IMPOSDRgnTimestamp</a></div><div class="ttdoc">OSD区域生效时间戳 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:141</div></div>
+<div class="ttc" id="union_i_m_p_o_s_d_rgn_attr_data_html_aa83292c4055209339c27a7c123d5a9ab"><div class="ttname"><a href="union_i_m_p_o_s_d_rgn_attr_data.html#aa83292c4055209339c27a7c123d5a9ab">IMPOSDRgnAttrData::picData</a></div><div class="ttdeci">picData picData</div><div class="ttdoc">图片数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:125</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_grp_rgn_attr_html_afba219c9cdafe17b0b4b16e5bfb5d3e8"><div class="ttname"><a href="struct_i_m_p_o_s_d_grp_rgn_attr.html#afba219c9cdafe17b0b4b16e5bfb5d3e8">IMPOSDGrpRgnAttr::fgAlhpa</a></div><div class="ttdeci">int fgAlhpa</div><div class="ttdoc">前景Alpha </div><div class="ttdef"><b>Definition:</b> imp_osd.h:156</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gada9245a734dcec9ad3ff64a8f9f1a379"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gada9245a734dcec9ad3ff64a8f9f1a379">IMP_OSD_RegisterRgn</a></div><div class="ttdeci">int IMP_OSD_RegisterRgn(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAttr)</div><div class="ttdoc">注册OSD区域 </div></div>
+<div class="ttc" id="union_i_m_p_o_s_d_rgn_attr_data_html_af30baa550426466190740874f80b4f05"><div class="ttname"><a href="union_i_m_p_o_s_d_rgn_attr_data.html#af30baa550426466190740874f80b4f05">IMPOSDRgnAttrData::bitmapData</a></div><div class="ttdeci">void * bitmapData</div><div class="ttdoc">点阵数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:122</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_grp_rgn_attr_html_af5e6403cb6864751421a5e7249e4cc62"><div class="ttname"><a href="struct_i_m_p_o_s_d_grp_rgn_attr.html#af5e6403cb6864751421a5e7249e4cc62">IMPOSDGrpRgnAttr::layer</a></div><div class="ttdeci">int layer</div><div class="ttdoc">显示层 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:158</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga0f20b9a82881e0bde124eaf23d8d8a05"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga0f20b9a82881e0bde124eaf23d8d8a05">IMP_OSD_CreateGroup</a></div><div class="ttdeci">int IMP_OSD_CreateGroup(int grpNum)</div><div class="ttdoc">创建OSD组 </div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga880823c92f7258f2791aa91725683198"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga880823c92f7258f2791aa91725683198">IMP_OSD_UpdateRgnAttrData</a></div><div class="ttdeci">int IMP_OSD_UpdateRgnAttrData(IMPRgnHandle handle, IMPOSDRgnAttrData *prAttrData)</div><div class="ttdoc">更新区域数据属性，只针对OSD_REG_BITMAP和OSD_REG_PIC的区域类型 </div></div>
+<div class="ttc" id="struct_i_m_p_point_html"><div class="ttname"><a href="struct_i_m_p_point.html">IMPPoint</a></div><div class="ttdoc">IMP点坐标信息. </div><div class="ttdef"><b>Definition:</b> imp_common.h:144</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga72ed932c29bcf7ed54ad8f650403ca12"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga72ed932c29bcf7ed54ad8f650403ca12">IMP_OSD_GetGrpRgnAttr</a></div><div class="ttdeci">int IMP_OSD_GetGrpRgnAttr(IMPRgnHandle handle, int grpNum, IMPOSDGrpRgnAttr *pgrAttr)</div><div class="ttdoc">获取OSD组区域属性 </div></div>
+<div class="ttc" id="union_i_m_p_o_s_d_rgn_attr_data_html_a6058ec90e05bd727872f143242343423"><div class="ttname"><a href="union_i_m_p_o_s_d_rgn_attr_data.html#a6058ec90e05bd727872f143242343423">IMPOSDRgnAttrData::lineRectData</a></div><div class="ttdeci">lineRectData lineRectData</div><div class="ttdoc">线、矩形数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:123</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_grp_rgn_attr_html_a8edb576620c4067ec1f261380e7c2249"><div class="ttname"><a href="struct_i_m_p_o_s_d_grp_rgn_attr.html#a8edb576620c4067ec1f261380e7c2249">IMPOSDGrpRgnAttr::show</a></div><div class="ttdeci">int show</div><div class="ttdoc">是否显示 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:151</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_rgn_attr_html_a1b58d18ece5ec331d26eb49692211d25"><div class="ttname"><a href="struct_i_m_p_o_s_d_rgn_attr.html#a1b58d18ece5ec331d26eb49692211d25">IMPOSDRgnAttr::rect</a></div><div class="ttdeci">IMPRect rect</div><div class="ttdoc">矩形数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:133</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gae5c2059b379bc06d6a3272fdb638c7f8"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gae5c2059b379bc06d6a3272fdb638c7f8">IMP_OSD_DestroyRgn</a></div><div class="ttdeci">void IMP_OSD_DestroyRgn(IMPRgnHandle handle)</div><div class="ttdoc">销毁OSD区域 </div></div>
+<div class="ttc" id="imp__common_8h_html_a41dd79af5cc134fac5e24c98272824c0"><div class="ttname"><a href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a></div><div class="ttdeci">IMPPixelFormat</div><div class="ttdoc">IMP图像格式定义. </div><div class="ttdef"><b>Definition:</b> imp_common.h:91</div></div>
+<div class="ttc" id="struct_i_m_p_cell_html"><div class="ttname"><a href="struct_i_m_p_cell.html">IMPCell</a></div><div class="ttdoc">IMPCell枚举定义. </div><div class="ttdef"><b>Definition:</b> imp_common.h:45</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga79528856a7d533a7e5ce8f47577beb2ca9db8b58618342a2796bda61daf06efe7"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca9db8b58618342a2796bda61daf06efe7">OSD_REG_PIC</a></div><div class="ttdoc">图片，适合用作Logo或时间戳 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:91</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga79528856a7d533a7e5ce8f47577beb2ca1027eeb5d48d35dadb41e4277bd957d0"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga79528856a7d533a7e5ce8f47577beb2ca1027eeb5d48d35dadb41e4277bd957d0">OSD_REG_BITMAP</a></div><div class="ttdoc">点阵图片 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:89</div></div>
+<div class="ttc" id="structcover_data_html"><div class="ttname"><a href="structcover_data.html">coverData</a></div><div class="ttdoc">OSD区域遮挡数据 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:106</div></div>
+<div class="ttc" id="imp__common_8h_html"><div class="ttname"><a href="imp__common_8h.html">imp_common.h</a></div><div class="ttdoc">SDK-T15公共数据结构头文件 </div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_rgn_timestamp_html_a0bc9ca232a67a305fd187d45b891a356"><div class="ttname"><a href="struct_i_m_p_o_s_d_rgn_timestamp.html#a0bc9ca232a67a305fd187d45b891a356">IMPOSDRgnTimestamp::minus</a></div><div class="ttdeci">uint64_t minus</div><div class="ttdoc">下限 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:143</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga07a129ad144ef8f2e0df27e448ac6dfb"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga07a129ad144ef8f2e0df27e448ac6dfb">IMPOsdColour</a></div><div class="ttdeci">IMPOsdColour</div><div class="ttdoc">OSD颜色类型，颜色格式为bgra. </div><div class="ttdef"><b>Definition:</b> imp_osd.h:74</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_gga07a129ad144ef8f2e0df27e448ac6dfba4062b4faf6cfe005ac90c7abcecdfba4"><div class="ttname"><a href="group___i_m_p___o_s_d.html#gga07a129ad144ef8f2e0df27e448ac6dfba4062b4faf6cfe005ac90c7abcecdfba4">OSD_BLACK</a></div><div class="ttdoc">黑色 </div><div class="ttdef"><b>Definition:</b> imp_osd.h:75</div></div>
+<div class="ttc" id="struct_i_m_p_o_s_d_grp_rgn_attr_html_aba570fe9f2c51a3fccefd2c5a43e6123"><div class="ttname"><a href="struct_i_m_p_o_s_d_grp_rgn_attr.html#aba570fe9f2c51a3fccefd2c5a43e6123">IMPOSDGrpRgnAttr::bgAlhpa</a></div><div class="ttdeci">int bgAlhpa</div><div class="ttdoc">背景Alpha </div><div class="ttdef"><b>Definition:</b> imp_osd.h:157</div></div>
+<div class="ttc" id="group___i_m_p___o_s_d_html_ga7ee1c973352a6c63a9d94ced838b73d5"><div class="ttname"><a href="group___i_m_p___o_s_d.html#ga7ee1c973352a6c63a9d94ced838b73d5">IMP_OSD_AttachToGroup</a></div><div class="ttdeci">int IMP_OSD_AttachToGroup(IMPCell *from, IMPCell *to)</div><div class="ttdoc">将OSD组加入到系统中 </div></div>
+<div class="ttc" id="struct_i_m_p_rect_html"><div class="ttname"><a href="struct_i_m_p_rect.html">IMPRect</a></div><div class="ttdoc">IMP 矩形区域信息. </div><div class="ttdef"><b>Definition:</b> imp_common.h:163</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:31 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

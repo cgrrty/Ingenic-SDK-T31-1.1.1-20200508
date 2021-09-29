@@ -1,0 +1,5 @@
+<map id="IMPOSDRgnAttrData" name="IMPOSDRgnAttrData">
+<area shape="rect" id="node2" href="$structpic_data.html" title="OSD region picture data. " alt="" coords="5,5,72,35"/>
+<area shape="rect" id="node4" href="$structcover_data.html" title="OSD region cover data. " alt="" coords="96,5,179,35"/>
+<area shape="rect" id="node6" href="$structline_rect_data.html" title="OSD region line and rectangle data. " alt="" coords="203,5,301,35"/>
+</map>

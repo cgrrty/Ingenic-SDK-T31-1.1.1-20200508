@@ -1,0 +1,10 @@
+<map id="IMP(Ingenic Media Platform)" name="IMP(Ingenic Media Platform)">
+<area shape="rect" id="node1" href="$group___i_m_p___system.html" title="系统控制模块，包括IMP的基础功能以及模块间绑定的相关功能 " alt="" coords="259,5,357,35"/>
+<area shape="rect" id="node2" href="$group___i_m_p___i_s_p.html" title="图像信号处理单元。主要包含图像效果设置、模式切换以及Sensor的注册添加删除等操作 " alt="" coords="271,59,345,88"/>
+<area shape="rect" id="node3" href="$group___i_m_p___i_v_s.html" title="IVS智能分析通用接口API. " alt="" coords="271,112,345,141"/>
+<area shape="rect" id="node4" href="$group___i_m_p___encoder.html" title="视频编码（JPEG, H264, H265）模块，包含编码通道管理，编码参数设置等功能 " alt="" coords="257,165,359,195"/>
+<area shape="rect" id="node5" href="$group___i_m_p___decoder.html" title="视频解码模块，当前只支持JPEG解码 " alt="" coords="257,219,359,248"/>
+<area shape="rect" id="node6" href="$group___i_m_p___frame_source.html" title="视频源，是IMP系统的图像数据源，可设置图像的分辨率、裁减、缩放等属性，以及后端降噪功能 ..." alt="" coords="243,272,373,301"/>
+<area shape="rect" id="node7" href="$group___i_m_p___o_s_d.html" title="OSD模块，可在视频流上叠加图片、位图、直线、矩形框 " alt="" coords="267,325,349,355"/>
+<area shape="rect" id="node9" href="$group___i_m_p___audio.html" title="音频模块，包含录放音、音频编解码、音量及增益设置、回声消除、自动增益等功能 " alt="" coords="265,379,351,408"/>
+</map>

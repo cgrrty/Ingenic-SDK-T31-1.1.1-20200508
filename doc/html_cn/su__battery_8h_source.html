@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: api/cn/sysutils/su_battery.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="dir_31a1ac01d37bc983c5b5cff3958563ba.html">cn</a></li><li class="navelem"><a class="el" href="dir_d60ccb389d80ffbe4d99960bf0f9d40d.html">sysutils</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">su_battery.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="su__battery_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Battery utils header file.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2014 Ingenic Semiconductor Co.,Ltd</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __SU_BATTERY_H__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __SU_BATTERY_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#ga91be632ce036c3567e44ea25c6817cdd">   32</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda4e81c184ac3ad48a389cd4454c4a05bb">   33</a></span>&#160;        <a class="code" href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda4e81c184ac3ad48a389cd4454c4a05bb">Unknown</a> = -1,           </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda5a86ae1482947377a116685c168d1773">   34</a></span>&#160;        <a class="code" href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda5a86ae1482947377a116685c168d1773">Charging</a>,                       </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda7512835d248d65e58e50932431342b54">   35</a></span>&#160;        <a class="code" href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda7512835d248d65e58e50932431342b54">Discharging</a>,            </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda8b7c5cd8bd8eb51ee6d3fd0eac584679">   36</a></span>&#160;        <a class="code" href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda8b7c5cd8bd8eb51ee6d3fd0eac584679">Full</a>,                           </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <a class="code" href="group___sysutils___battery.html#ga91be632ce036c3567e44ea25c6817cdd">SUBatStatus</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#ga796e8e61af243bf07d3c0004e69fd212">   42</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212a4417380846eada75297f55b0596d4482">   43</a></span>&#160;        <a class="code" href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212a4417380846eada75297f55b0596d4482">AC_ONLINE</a>,                      </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212aefa8de4c2c15870b86f20d980c57dc69">   44</a></span>&#160;        <a class="code" href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212aefa8de4c2c15870b86f20d980c57dc69">AC_OFFLINE</a>,                     </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212aa927cc44976251f070b6f2203690f657">   45</a></span>&#160;        <a class="code" href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212aa927cc44976251f070b6f2203690f657">USB_ONLINE</a>,                     </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212a6655ec4534dcf306598a18274a35c4fd">   46</a></span>&#160;        <a class="code" href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212a6655ec4534dcf306598a18274a35c4fd">USB_OFFLINE</a>,            </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <a class="code" href="group___sysutils___battery.html#ga796e8e61af243bf07d3c0004e69fd212">SUBatEvent</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___sysutils___battery.html#gaf779247ca725de14cbbc1abc204ad8d1">SU_Battery_GetStatus</a>(<a class="code" href="group___sysutils___battery.html#ga91be632ce036c3567e44ea25c6817cdd">SUBatStatus</a> *status);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___sysutils___battery.html#ga95d53420c33e1a1a8e31362fbc218996">SU_Battery_GetEvent</a>(<a class="code" href="group___sysutils___battery.html#ga796e8e61af243bf07d3c0004e69fd212">SUBatEvent</a> *event);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___sysutils___battery.html#gab8cdd4f16760c1fdd9a398a121406834">SU_Battery_GetCapacity</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___sysutils___battery.html#gac13c4371a0be7d6d8861ffdab943a203">SU_Battery_GetVoltageUV</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __SU_BATTERY_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group___sysutils___battery_html_gga796e8e61af243bf07d3c0004e69fd212a4417380846eada75297f55b0596d4482"><div class="ttname"><a href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212a4417380846eada75297f55b0596d4482">AC_ONLINE</a></div><div class="ttdoc">AC Adapter插入 </div><div class="ttdef"><b>Definition:</b> su_battery.h:43</div></div>
+<div class="ttc" id="group___sysutils___battery_html_gga91be632ce036c3567e44ea25c6817cdda4e81c184ac3ad48a389cd4454c4a05bb"><div class="ttname"><a href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda4e81c184ac3ad48a389cd4454c4a05bb">Unknown</a></div><div class="ttdoc">未知状态或者没有电池 </div><div class="ttdef"><b>Definition:</b> su_battery.h:33</div></div>
+<div class="ttc" id="group___sysutils___battery_html_gga91be632ce036c3567e44ea25c6817cdda8b7c5cd8bd8eb51ee6d3fd0eac584679"><div class="ttname"><a href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda8b7c5cd8bd8eb51ee6d3fd0eac584679">Full</a></div><div class="ttdoc">充满电 </div><div class="ttdef"><b>Definition:</b> su_battery.h:36</div></div>
+<div class="ttc" id="group___sysutils___battery_html_ga91be632ce036c3567e44ea25c6817cdd"><div class="ttname"><a href="group___sysutils___battery.html#ga91be632ce036c3567e44ea25c6817cdd">SUBatStatus</a></div><div class="ttdeci">SUBatStatus</div><div class="ttdoc">电池状态. </div><div class="ttdef"><b>Definition:</b> su_battery.h:32</div></div>
+<div class="ttc" id="group___sysutils___battery_html_gga796e8e61af243bf07d3c0004e69fd212aefa8de4c2c15870b86f20d980c57dc69"><div class="ttname"><a href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212aefa8de4c2c15870b86f20d980c57dc69">AC_OFFLINE</a></div><div class="ttdoc">AC Adapter拔出 </div><div class="ttdef"><b>Definition:</b> su_battery.h:44</div></div>
+<div class="ttc" id="group___sysutils___battery_html_gga796e8e61af243bf07d3c0004e69fd212aa927cc44976251f070b6f2203690f657"><div class="ttname"><a href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212aa927cc44976251f070b6f2203690f657">USB_ONLINE</a></div><div class="ttdoc">USB插入 </div><div class="ttdef"><b>Definition:</b> su_battery.h:45</div></div>
+<div class="ttc" id="group___sysutils___battery_html_gac13c4371a0be7d6d8861ffdab943a203"><div class="ttname"><a href="group___sysutils___battery.html#gac13c4371a0be7d6d8861ffdab943a203">SU_Battery_GetVoltageUV</a></div><div class="ttdeci">int SU_Battery_GetVoltageUV(void)</div><div class="ttdoc">获取电池当前电压. </div></div>
+<div class="ttc" id="group___sysutils___battery_html_gaf779247ca725de14cbbc1abc204ad8d1"><div class="ttname"><a href="group___sysutils___battery.html#gaf779247ca725de14cbbc1abc204ad8d1">SU_Battery_GetStatus</a></div><div class="ttdeci">int SU_Battery_GetStatus(SUBatStatus *status)</div><div class="ttdoc">获取电池状态. </div></div>
+<div class="ttc" id="group___sysutils___battery_html_gga91be632ce036c3567e44ea25c6817cdda7512835d248d65e58e50932431342b54"><div class="ttname"><a href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda7512835d248d65e58e50932431342b54">Discharging</a></div><div class="ttdoc">未充电 </div><div class="ttdef"><b>Definition:</b> su_battery.h:35</div></div>
+<div class="ttc" id="group___sysutils___battery_html_gga796e8e61af243bf07d3c0004e69fd212a6655ec4534dcf306598a18274a35c4fd"><div class="ttname"><a href="group___sysutils___battery.html#gga796e8e61af243bf07d3c0004e69fd212a6655ec4534dcf306598a18274a35c4fd">USB_OFFLINE</a></div><div class="ttdoc">USB拔出 </div><div class="ttdef"><b>Definition:</b> su_battery.h:46</div></div>
+<div class="ttc" id="group___sysutils___battery_html_ga796e8e61af243bf07d3c0004e69fd212"><div class="ttname"><a href="group___sysutils___battery.html#ga796e8e61af243bf07d3c0004e69fd212">SUBatEvent</a></div><div class="ttdeci">SUBatEvent</div><div class="ttdoc">电池事件. </div><div class="ttdef"><b>Definition:</b> su_battery.h:42</div></div>
+<div class="ttc" id="group___sysutils___battery_html_gab8cdd4f16760c1fdd9a398a121406834"><div class="ttname"><a href="group___sysutils___battery.html#gab8cdd4f16760c1fdd9a398a121406834">SU_Battery_GetCapacity</a></div><div class="ttdeci">int SU_Battery_GetCapacity(void)</div><div class="ttdoc">获取电池电量百分比. </div></div>
+<div class="ttc" id="group___sysutils___battery_html_gga91be632ce036c3567e44ea25c6817cdda5a86ae1482947377a116685c168d1773"><div class="ttname"><a href="group___sysutils___battery.html#gga91be632ce036c3567e44ea25c6817cdda5a86ae1482947377a116685c168d1773">Charging</a></div><div class="ttdoc">充电中 </div><div class="ttdef"><b>Definition:</b> su_battery.h:34</div></div>
+<div class="ttc" id="group___sysutils___battery_html_ga95d53420c33e1a1a8e31362fbc218996"><div class="ttname"><a href="group___sysutils___battery.html#ga95d53420c33e1a1a8e31362fbc218996">SU_Battery_GetEvent</a></div><div class="ttdeci">int SU_Battery_GetEvent(SUBatEvent *event)</div><div class="ttdoc">获取电池事件. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:31 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

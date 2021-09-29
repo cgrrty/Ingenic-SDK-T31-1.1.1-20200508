@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: api/cn/imp/imp_system.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="dir_31a1ac01d37bc983c5b5cff3958563ba.html">cn</a></li><li class="navelem"><a class="el" href="dir_c1bd294425c88ba3746096703af56b56.html">imp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imp_system.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imp__system_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * IMP System header file.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2014 Ingenic Semiconductor Co.,Ltd</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __IMP_SYSTEM_H__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __IMP_SYSTEM_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imp__common_8h.html">imp_common.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="struct_i_m_p_version.html">  144</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="struct_i_m_p_version.html#a0e20ba2983ccbe0ffa7423673604e61e">  145</a></span>&#160;        <span class="keywordtype">char</span> aVersion[64];      </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;} <a class="code" href="struct_i_m_p_version.html">IMPVersion</a>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___system.html#gaad7c81108a7083275a367446fd7aca34">IMP_System_Init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___system.html#gaefcc500e7341780f43b89fe79499365e">IMP_System_Exit</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;int64_t <a class="code" href="group___i_m_p___system.html#gad68f51c90e4b9767ae0e630f43b0e393">IMP_System_GetTimeStamp</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___system.html#gab874319e64261966350d807b4b97804a">IMP_System_RebaseTimeStamp</a>(int64_t basets);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;uint32_t <a class="code" href="group___i_m_p___system.html#ga9d59d9242046c456aa5dfd25547a47db">IMP_System_ReadReg32</a>(uint32_t regAddr);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group___i_m_p___system.html#ga2f10436194b07b600047ca926cc3660c">IMP_System_WriteReg32</a>(uint32_t regAddr, uint32_t value);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___system.html#ga1350c4d1dfdef3d95b92c981fee82ad2">IMP_System_GetVersion</a>(<a class="code" href="struct_i_m_p_version.html">IMPVersion</a> *pstVersion);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="group___i_m_p___system.html#gaf6bd7318365f365afd757f6b4046802d">IMP_System_GetCPUInfo</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___system.html#gab53c6fd017fab6386696320af29354ed">IMP_System_Bind</a>(<a class="code" href="struct_i_m_p_cell.html">IMPCell</a> *srcCell, <a class="code" href="struct_i_m_p_cell.html">IMPCell</a> *dstCell);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___system.html#ga759fa36b68ecc83e15362316809ba23d">IMP_System_UnBind</a>(<a class="code" href="struct_i_m_p_cell.html">IMPCell</a> *srcCell, <a class="code" href="struct_i_m_p_cell.html">IMPCell</a> *dstCell);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___system.html#gae9f076d33c9f09b238fc958851b8799b">IMP_System_GetBindbyDest</a>(<a class="code" href="struct_i_m_p_cell.html">IMPCell</a> *dstCell, <a class="code" href="struct_i_m_p_cell.html">IMPCell</a> *srcCell);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __IMP_SYSTEM_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group___i_m_p___system_html_gab874319e64261966350d807b4b97804a"><div class="ttname"><a href="group___i_m_p___system.html#gab874319e64261966350d807b4b97804a">IMP_System_RebaseTimeStamp</a></div><div class="ttdeci">int IMP_System_RebaseTimeStamp(int64_t basets)</div><div class="ttdoc">设置IMP系统的时间戳，单位为微秒。 </div></div>
+<div class="ttc" id="group___i_m_p___system_html_gaad7c81108a7083275a367446fd7aca34"><div class="ttname"><a href="group___i_m_p___system.html#gaad7c81108a7083275a367446fd7aca34">IMP_System_Init</a></div><div class="ttdeci">int IMP_System_Init(void)</div><div class="ttdoc">IMP系统初始化. </div></div>
+<div class="ttc" id="group___i_m_p___system_html_gaefcc500e7341780f43b89fe79499365e"><div class="ttname"><a href="group___i_m_p___system.html#gaefcc500e7341780f43b89fe79499365e">IMP_System_Exit</a></div><div class="ttdeci">int IMP_System_Exit(void)</div><div class="ttdoc">IMP系统去初始化. </div></div>
+<div class="ttc" id="group___i_m_p___system_html_ga1350c4d1dfdef3d95b92c981fee82ad2"><div class="ttname"><a href="group___i_m_p___system.html#ga1350c4d1dfdef3d95b92c981fee82ad2">IMP_System_GetVersion</a></div><div class="ttdeci">int IMP_System_GetVersion(IMPVersion *pstVersion)</div><div class="ttdoc">获取IMP系统版本号. </div></div>
+<div class="ttc" id="group___i_m_p___system_html_gae9f076d33c9f09b238fc958851b8799b"><div class="ttname"><a href="group___i_m_p___system.html#gae9f076d33c9f09b238fc958851b8799b">IMP_System_GetBindbyDest</a></div><div class="ttdeci">int IMP_System_GetBindbyDest(IMPCell *dstCell, IMPCell *srcCell)</div><div class="ttdoc">获取绑定在目的Cell的源Cell信息. </div></div>
+<div class="ttc" id="group___i_m_p___system_html_ga2f10436194b07b600047ca926cc3660c"><div class="ttname"><a href="group___i_m_p___system.html#ga2f10436194b07b600047ca926cc3660c">IMP_System_WriteReg32</a></div><div class="ttdeci">void IMP_System_WriteReg32(uint32_t regAddr, uint32_t value)</div><div class="ttdoc">向32位寄存器中写值。 </div></div>
+<div class="ttc" id="group___i_m_p___system_html_ga9d59d9242046c456aa5dfd25547a47db"><div class="ttname"><a href="group___i_m_p___system.html#ga9d59d9242046c456aa5dfd25547a47db">IMP_System_ReadReg32</a></div><div class="ttdeci">uint32_t IMP_System_ReadReg32(uint32_t regAddr)</div><div class="ttdoc">读取32位寄存器的值。 </div></div>
+<div class="ttc" id="group___i_m_p___system_html_gab53c6fd017fab6386696320af29354ed"><div class="ttname"><a href="group___i_m_p___system.html#gab53c6fd017fab6386696320af29354ed">IMP_System_Bind</a></div><div class="ttdeci">int IMP_System_Bind(IMPCell *srcCell, IMPCell *dstCell)</div><div class="ttdoc">绑定源Cell和目的Cell. </div></div>
+<div class="ttc" id="group___i_m_p___system_html_gad68f51c90e4b9767ae0e630f43b0e393"><div class="ttname"><a href="group___i_m_p___system.html#gad68f51c90e4b9767ae0e630f43b0e393">IMP_System_GetTimeStamp</a></div><div class="ttdeci">int64_t IMP_System_GetTimeStamp(void)</div><div class="ttdoc">获得IMP系统的时间戳，单位为微秒。 </div></div>
+<div class="ttc" id="struct_i_m_p_version_html"><div class="ttname"><a href="struct_i_m_p_version.html">IMPVersion</a></div><div class="ttdoc">IMP系统版本号定义. </div><div class="ttdef"><b>Definition:</b> imp_system.h:144</div></div>
+<div class="ttc" id="group___i_m_p___system_html_ga759fa36b68ecc83e15362316809ba23d"><div class="ttname"><a href="group___i_m_p___system.html#ga759fa36b68ecc83e15362316809ba23d">IMP_System_UnBind</a></div><div class="ttdeci">int IMP_System_UnBind(IMPCell *srcCell, IMPCell *dstCell)</div><div class="ttdoc">解除源Cell和目的Cell的绑定. </div></div>
+<div class="ttc" id="struct_i_m_p_cell_html"><div class="ttname"><a href="struct_i_m_p_cell.html">IMPCell</a></div><div class="ttdoc">IMPCell枚举定义. </div><div class="ttdef"><b>Definition:</b> imp_common.h:45</div></div>
+<div class="ttc" id="imp__common_8h_html"><div class="ttname"><a href="imp__common_8h.html">imp_common.h</a></div><div class="ttdoc">SDK-T15公共数据结构头文件 </div></div>
+<div class="ttc" id="group___i_m_p___system_html_gaf6bd7318365f365afd757f6b4046802d"><div class="ttname"><a href="group___i_m_p___system.html#gaf6bd7318365f365afd757f6b4046802d">IMP_System_GetCPUInfo</a></div><div class="ttdeci">const char * IMP_System_GetCPUInfo(void)</div><div class="ttdoc">获取CPU型号信息. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:31 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

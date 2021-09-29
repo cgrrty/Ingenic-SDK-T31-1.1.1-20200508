@@ -1,0 +1,8 @@
+<map id="IMPEncoderRcAttr" name="IMPEncoderRcAttr">
+<area shape="rect" id="node2" href="$struct_i_m_p_encoder_attr_rc_mode.html" title="IMPEncoderAttrRcMode" alt="" coords="233,117,396,147"/>
+<area shape="rect" id="node4" href="$struct_i_m_p_encoder_attr_cbr.html" title="IMPEncoderAttrCbr" alt="" coords="5,5,141,35"/>
+<area shape="rect" id="node6" href="$struct_i_m_p_encoder_attr_vbr.html" title="IMPEncoderAttrVbr" alt="" coords="165,5,299,35"/>
+<area shape="rect" id="node8" href="$struct_i_m_p_encoder_attr_fix_q_p.html" title="IMPEncoderAttrFixQP" alt="" coords="323,5,475,35"/>
+<area shape="rect" id="node10" href="$struct_i_m_p_encoder_attr_capped_vbr.html" title="IMPEncoderAttrCappedVbr" alt="" coords="499,5,677,35"/>
+<area shape="rect" id="node12" href="$struct_i_m_p_encoder_frm_rate.html" title="定义编码channel帧率结构体,frmRateNum和frmRateDen经过最大公约数整除后两者之间的最小公倍数不能超过64，�..." alt="" coords="420,117,564,147"/>
+</map>

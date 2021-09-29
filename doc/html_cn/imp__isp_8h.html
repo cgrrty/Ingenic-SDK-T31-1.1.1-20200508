@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: api/cn/imp/imp_isp.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="dir_31a1ac01d37bc983c5b5cff3958563ba.html">cn</a></li><li class="navelem"><a class="el" href="dir_c1bd294425c88ba3746096703af56b56.html">imp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#enum-members">枚举</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">imp_isp.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>ISP模块头文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="imp__common_8h_source.html">imp_common.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+imp_isp.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="imp__isp_8h__incl.png" border="0" usemap="#api_2cn_2imp_2imp__isp_8h" alt=""/></div>
+<map name="api_2cn_2imp_2imp__isp_8h" id="api_2cn_2imp_2imp__isp_8h">
+<area shape="rect" id="node5" href="imp__common_8h.html" title="SDK&#45;T15公共数据结构头文件 " alt="" coords="137,83,247,112"/></map>
+</div>
+</div>
+<p><a href="imp__isp_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_i2_c_info.html">IMPI2CInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头控制总线类型是I2C时，需要配置的参数结构体  <a href="struct_i_m_p_i2_c_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_s_p_i_info.html">IMPSPIInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头控制总线类型是SPI时，需要配置的参数结构体  <a href="struct_i_m_p_s_p_i_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头注册信息结构体  <a href="struct_i_m_p_sensor_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">gamma  <a href="struct_i_m_p_i_s_p_gamma.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionisp__core__expr__attr.html">isp_core_expr_attr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光参数  <a href="unionisp__core__expr__attr.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionisp__core__ae__roi__select.html">isp_core_ae_roi_select</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光统计区域选择  <a href="unionisp__core__ae__roi__select.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structisp__core__wb__attr.html">isp_core_wb_attr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">白平衡参数  <a href="structisp__core__wb__attr.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ga42cce6933c6242e9944874321756f62c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga42cce6933c6242e9944874321756f62c"></a>
+typedef union <a class="el" href="unionisp__core__expr__attr.html">isp_core_expr_attr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a></td></tr>
+<tr class="memdesc:ga42cce6933c6242e9944874321756f62c"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光参数 <br /></td></tr>
+<tr class="separator:ga42cce6933c6242e9944874321756f62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad50c1f6042c643570d9148832ac60dba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad50c1f6042c643570d9148832ac60dba"></a>
+typedef union <a class="el" href="unionisp__core__ae__roi__select.html">isp_core_ae_roi_select</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gad50c1f6042c643570d9148832ac60dba">IMPISPAERoi</a></td></tr>
+<tr class="memdesc:gad50c1f6042c643570d9148832ac60dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光统计区域选择 <br /></td></tr>
+<tr class="separator:gad50c1f6042c643570d9148832ac60dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb085866bbf4d5576e01762beb11b2e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadb085866bbf4d5576e01762beb11b2e1"></a>
+typedef struct <a class="el" href="structisp__core__wb__attr.html">isp_core_wb_attr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a></td></tr>
+<tr class="memdesc:gadb085866bbf4d5576e01762beb11b2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">白平衡参数 <br /></td></tr>
+<tr class="separator:gadb085866bbf4d5576e01762beb11b2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56f9af7c26bc010f60faa8776339fc3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga56f9af7c26bc010f60faa8776339fc3a"></a>
+typedef struct <a class="el" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>IMPISPCOEFFTWB</b></td></tr>
+<tr class="separator:ga56f9af7c26bc010f60faa8776339fc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ga38ee4d645812c12b28cd37d5320ccfb2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">IMPSensorControlBusType</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2a97f8ef07011482201851230c9e944752">TX_SENSOR_CONTROL_INTERFACE_I2C</a> = 1, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2aacc0aa36ed6d54a7064f49eb987f7bc6">TX_SENSOR_CONTROL_INTERFACE_SPI</a>
+ }</td></tr>
+<tr class="memdesc:ga38ee4d645812c12b28cd37d5320ccfb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">摄像头控制总线类型枚举  <a href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">更多...</a><br /></td></tr>
+<tr class="separator:ga38ee4d645812c12b28cd37d5320ccfb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45aca860233255ad78614e2fa38520b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab61200e52980316eaea2a9c2bd5abcf1">IMPISP_TUNING_OPS_MODE_DISABLE</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9aa3b9036e0facac6e3165ef4a24b41790">IMPISP_TUNING_OPS_MODE_ENABLE</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab22cf50d640c3fa6e43566e45f60fb80">IMPISP_TUNING_OPS_MODE_BUTT</a>
+ }</td></tr>
+<tr class="memdesc:ga45aca860233255ad78614e2fa38520b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP功能开关  <a href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">更多...</a><br /></td></tr>
+<tr class="separator:ga45aca860233255ad78614e2fa38520b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga51cbf4116bb59389dc30a6840764e73e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga51cbf4116bb59389dc30a6840764e73e">IMPISPTuningOpsType</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ea5e63521a46939be32170e2f44596b086">IMPISP_TUNING_OPS_TYPE_AUTO</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73eabc9c9bf5f177c50dbc895ef196d2d825">IMPISP_TUNING_OPS_TYPE_MANUAL</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ead55a5e7f03b4cf92f09ca928730d2799">IMPISP_TUNING_OPS_TYPE_BUTT</a>
+ }</td></tr>
+<tr class="memdesc:ga51cbf4116bb59389dc30a6840764e73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP功能选用开关  <a href="group___i_m_p___i_s_p.html#ga51cbf4116bb59389dc30a6840764e73e">更多...</a><br /></td></tr>
+<tr class="separator:ga51cbf4116bb59389dc30a6840764e73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga452cdc199a01922aa7a5e10d06225f0e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea87cb7a4e8538d789e73e25fcf030ccf2">IMPISP_ANTIFLICKER_DISABLE</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eada18ffe50bfe6dfe686f37c4d16f574b">IMPISP_ANTIFLICKER_50HZ</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eac2c914da54c8ce3dcef396ea0edce902">IMPISP_ANTIFLICKER_60HZ</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea5877a1a388b494636e1250e30e5e707a">IMPISP_ANTIFLICKER_BUTT</a>
+ }</td></tr>
+<tr class="memdesc:ga452cdc199a01922aa7a5e10d06225f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP抗闪频属性参数结构体。  <a href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">更多...</a><br /></td></tr>
+<tr class="separator:ga452cdc199a01922aa7a5e10d06225f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00373cf71fd22df5eaa2f7eed6973100"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100a3311b00220b304cc33887dc596255633">IMPISP_RUNNING_MODE_DAY</a> = 0, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100aca258162fd7afe8a1a81fe5b63723c73">IMPISP_RUNNING_MODE_NIGHT</a> = 1, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100acdceafc2c7437b0cfc100c28afdc49cc">IMPISP_RUNNING_MODE_BUTT</a>
+ }</td></tr>
+<tr class="memdesc:ga00373cf71fd22df5eaa2f7eed6973100"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP 工作模式配置，正常模式或夜视模式。  <a href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">更多...</a><br /></td></tr>
+<tr class="separator:ga00373cf71fd22df5eaa2f7eed6973100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15dbea9727fd70901275c90a3e5ef2d2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2afc30999bcaa40b4d78b7917b5831857a">ISP_CORE_EXPR_MODE_AUTO</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2ac1c6437b2649ae7f6444dd8fabc140b5">ISP_CORE_EXPR_MODE_MANUAL</a>
+ }</td></tr>
+<tr class="memdesc:ga15dbea9727fd70901275c90a3e5ef2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光模式  <a href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">更多...</a><br /></td></tr>
+<tr class="separator:ga15dbea9727fd70901275c90a3e5ef2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga119b1782b6d972e38d604528ad72b65e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a> { <a class="el" href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65eaccd13313b10d37bb3631b3f63222acd1">ISP_CORE_EXPR_UNIT_LINE</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65ea78fe9c564ee2464a75aab02dfe770ef1">ISP_CORE_EXPR_UNIT_US</a>
+ }</td></tr>
+<tr class="memdesc:ga119b1782b6d972e38d604528ad72b65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">曝光单位  <a href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">更多...</a><br /></td></tr>
+<tr class="separator:ga119b1782b6d972e38d604528ad72b65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8322e3086b65300b1aca801a5ad1b22e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">isp_core_wb_mode</a> { <br />
+&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea6ce1e0466ff7747983d1b152285369c9">ISP_CORE_WB_MODE_AUTO</a> = 0, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea82c9447a0616b465eae5b9a341148c6c">ISP_CORE_WB_MODE_MANUAL</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaaa36a59a0bc0b75b8e078ca54c96d306">ISP_CORE_WB_MODE_DAY_LIGHT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaf767ffefd8e9cb997495bed0c3f4017c">ISP_CORE_WB_MODE_CLOUDY</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea4d72e8d03f8e0cfb4097e42320a8a0f4">ISP_CORE_WB_MODE_INCANDESCENT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea68920c1dbcde0b7e22af79ce92f230a2">ISP_CORE_WB_MODE_FLOURESCENT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea0b524369d95f89cc2838614378f01f15">ISP_CORE_WB_MODE_TWILIGHT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea10f484032b57286297764ad66e3959b0">ISP_CORE_WB_MODE_SHADE</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea9860e8998bd2b3f3623e60ddd2c4c763">ISP_CORE_WB_MODE_WARM_FLOURESCENT</a>, 
+<a class="el" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea839ad326780726d37b156d95dd0add3b">ISP_CORE_WB_MODE_CUSTOM</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga8322e3086b65300b1aca801a5ad1b22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">白平衡模式  <a href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">更多...</a><br /></td></tr>
+<tr class="separator:ga8322e3086b65300b1aca801a5ad1b22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:gac80de0e7f019c1718e58bb9d728203c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gac80de0e7f019c1718e58bb9d728203c3">IMP_ISP_Open</a> (void)</td></tr>
+<tr class="memdesc:gac80de0e7f019c1718e58bb9d728203c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">打开ISP模块  <a href="group___i_m_p___i_s_p.html#gac80de0e7f019c1718e58bb9d728203c3">更多...</a><br /></td></tr>
+<tr class="separator:gac80de0e7f019c1718e58bb9d728203c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c2fdfdad046856bff32937c5ac05b90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga5c2fdfdad046856bff32937c5ac05b90">IMP_ISP_Close</a> (void)</td></tr>
+<tr class="memdesc:ga5c2fdfdad046856bff32937c5ac05b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭ISP模块  <a href="group___i_m_p___i_s_p.html#ga5c2fdfdad046856bff32937c5ac05b90">更多...</a><br /></td></tr>
+<tr class="separator:ga5c2fdfdad046856bff32937c5ac05b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e4d951a6a80e88026f41e310090c44d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga8e4d951a6a80e88026f41e310090c44d">IMP_ISP_AddSensor</a> (<a class="el" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> *pinfo)</td></tr>
+<tr class="memdesc:ga8e4d951a6a80e88026f41e310090c44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加一个sensor，用于向ISP模块提供数据源  <a href="group___i_m_p___i_s_p.html#ga8e4d951a6a80e88026f41e310090c44d">更多...</a><br /></td></tr>
+<tr class="separator:ga8e4d951a6a80e88026f41e310090c44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87ea0697f417532c191bf86677e281b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga87ea0697f417532c191bf86677e281b5">IMP_ISP_DelSensor</a> (<a class="el" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> *pinfo)</td></tr>
+<tr class="memdesc:ga87ea0697f417532c191bf86677e281b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除一个sensor  <a href="group___i_m_p___i_s_p.html#ga87ea0697f417532c191bf86677e281b5">更多...</a><br /></td></tr>
+<tr class="separator:ga87ea0697f417532c191bf86677e281b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72bd61d7ffa8f06b239c1ce43a6b5274"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga72bd61d7ffa8f06b239c1ce43a6b5274">IMP_ISP_EnableSensor</a> (void)</td></tr>
+<tr class="memdesc:ga72bd61d7ffa8f06b239c1ce43a6b5274"><td class="mdescLeft">&#160;</td><td class="mdescRight">使能一个sensor  <a href="group___i_m_p___i_s_p.html#ga72bd61d7ffa8f06b239c1ce43a6b5274">更多...</a><br /></td></tr>
+<tr class="separator:ga72bd61d7ffa8f06b239c1ce43a6b5274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga823f71e232236129da016cbbd0079295"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga823f71e232236129da016cbbd0079295">IMP_ISP_DisableSensor</a> (void)</td></tr>
+<tr class="memdesc:ga823f71e232236129da016cbbd0079295"><td class="mdescLeft">&#160;</td><td class="mdescRight">不使能一个sensor  <a href="group___i_m_p___i_s_p.html#ga823f71e232236129da016cbbd0079295">更多...</a><br /></td></tr>
+<tr class="separator:ga823f71e232236129da016cbbd0079295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a86c7fac741e7d38daae9767f06a9f7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga8a86c7fac741e7d38daae9767f06a9f7">IMP_ISP_SetSensorRegister</a> (uint32_t reg, uint32_t value)</td></tr>
+<tr class="memdesc:ga8a86c7fac741e7d38daae9767f06a9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置sensor一个寄存器的值  <a href="group___i_m_p___i_s_p.html#ga8a86c7fac741e7d38daae9767f06a9f7">更多...</a><br /></td></tr>
+<tr class="separator:ga8a86c7fac741e7d38daae9767f06a9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga121bb07b3c434d708ff9d2627f230884"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga121bb07b3c434d708ff9d2627f230884">IMP_ISP_GetSensorRegister</a> (uint32_t reg, uint32_t *value)</td></tr>
+<tr class="memdesc:ga121bb07b3c434d708ff9d2627f230884"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sensor一个寄存器的值  <a href="group___i_m_p___i_s_p.html#ga121bb07b3c434d708ff9d2627f230884">更多...</a><br /></td></tr>
+<tr class="separator:ga121bb07b3c434d708ff9d2627f230884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34e80ddfdcab5e5f1b500d9271e8a332"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga34e80ddfdcab5e5f1b500d9271e8a332">IMP_ISP_EnableTuning</a> (void)</td></tr>
+<tr class="memdesc:ga34e80ddfdcab5e5f1b500d9271e8a332"><td class="mdescLeft">&#160;</td><td class="mdescRight">使能ISP效果调试功能  <a href="group___i_m_p___i_s_p.html#ga34e80ddfdcab5e5f1b500d9271e8a332">更多...</a><br /></td></tr>
+<tr class="separator:ga34e80ddfdcab5e5f1b500d9271e8a332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75329730dcf100da4839ead7d585662c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga75329730dcf100da4839ead7d585662c">IMP_ISP_DisableTuning</a> (void)</td></tr>
+<tr class="memdesc:ga75329730dcf100da4839ead7d585662c"><td class="mdescLeft">&#160;</td><td class="mdescRight">不使能ISP效果调试功能  <a href="group___i_m_p___i_s_p.html#ga75329730dcf100da4839ead7d585662c">更多...</a><br /></td></tr>
+<tr class="separator:ga75329730dcf100da4839ead7d585662c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac974214ea084793ccba91d0209ccf3a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gac974214ea084793ccba91d0209ccf3a7">IMP_ISP_Tuning_SetSensorFPS</a> (uint32_t fps_num, uint32_t fps_den)</td></tr>
+<tr class="memdesc:gac974214ea084793ccba91d0209ccf3a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置摄像头输出帧率  <a href="group___i_m_p___i_s_p.html#gac974214ea084793ccba91d0209ccf3a7">更多...</a><br /></td></tr>
+<tr class="separator:gac974214ea084793ccba91d0209ccf3a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0b29cb7b14957eef86d65501b1979d3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gac0b29cb7b14957eef86d65501b1979d3">IMP_ISP_Tuning_GetSensorFPS</a> (uint32_t *fps_num, uint32_t *fps_den)</td></tr>
+<tr class="memdesc:gac0b29cb7b14957eef86d65501b1979d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取摄像头输出帧率  <a href="group___i_m_p___i_s_p.html#gac0b29cb7b14957eef86d65501b1979d3">更多...</a><br /></td></tr>
+<tr class="separator:gac0b29cb7b14957eef86d65501b1979d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c82db22ede96a92628c96a5b891ae11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga1c82db22ede96a92628c96a5b891ae11">IMP_ISP_Tuning_SetAntiFlickerAttr</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a> attr)</td></tr>
+<tr class="memdesc:ga1c82db22ede96a92628c96a5b891ae11"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP抗闪频属性  <a href="group___i_m_p___i_s_p.html#ga1c82db22ede96a92628c96a5b891ae11">更多...</a><br /></td></tr>
+<tr class="separator:ga1c82db22ede96a92628c96a5b891ae11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga608cd103824bbb2297ff7f63c111ba65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga608cd103824bbb2297ff7f63c111ba65">IMP_ISP_Tuning_GetAntiFlickerAttr</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a> *pattr)</td></tr>
+<tr class="memdesc:ga608cd103824bbb2297ff7f63c111ba65"><td class="mdescLeft">&#160;</td><td class="mdescRight">获得ISP抗闪频属性  <a href="group___i_m_p___i_s_p.html#ga608cd103824bbb2297ff7f63c111ba65">更多...</a><br /></td></tr>
+<tr class="separator:ga608cd103824bbb2297ff7f63c111ba65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa420ab671dc3ac21664e68f7471499ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaa420ab671dc3ac21664e68f7471499ce">IMP_ISP_Tuning_SetBrightness</a> (unsigned char bright)</td></tr>
+<tr class="memdesc:gaa420ab671dc3ac21664e68f7471499ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP 综合效果图片亮度  <a href="group___i_m_p___i_s_p.html#gaa420ab671dc3ac21664e68f7471499ce">更多...</a><br /></td></tr>
+<tr class="separator:gaa420ab671dc3ac21664e68f7471499ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95eace973c2c84c22acd607e1a81292d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga95eace973c2c84c22acd607e1a81292d">IMP_ISP_Tuning_GetBrightness</a> (unsigned char *pbright)</td></tr>
+<tr class="memdesc:ga95eace973c2c84c22acd607e1a81292d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP 综合效果图片亮度  <a href="group___i_m_p___i_s_p.html#ga95eace973c2c84c22acd607e1a81292d">更多...</a><br /></td></tr>
+<tr class="separator:ga95eace973c2c84c22acd607e1a81292d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ad8f252ce6bdf00a3682c1ebecfb149"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga9ad8f252ce6bdf00a3682c1ebecfb149">IMP_ISP_Tuning_SetContrast</a> (unsigned char contrast)</td></tr>
+<tr class="memdesc:ga9ad8f252ce6bdf00a3682c1ebecfb149"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP 综合效果图片对比度  <a href="group___i_m_p___i_s_p.html#ga9ad8f252ce6bdf00a3682c1ebecfb149">更多...</a><br /></td></tr>
+<tr class="separator:ga9ad8f252ce6bdf00a3682c1ebecfb149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3571e3f4f0e2a5759f403241dbc1bde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaa3571e3f4f0e2a5759f403241dbc1bde">IMP_ISP_Tuning_GetContrast</a> (unsigned char *pcontrast)</td></tr>
+<tr class="memdesc:gaa3571e3f4f0e2a5759f403241dbc1bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP 综合效果图片对比度  <a href="group___i_m_p___i_s_p.html#gaa3571e3f4f0e2a5759f403241dbc1bde">更多...</a><br /></td></tr>
+<tr class="separator:gaa3571e3f4f0e2a5759f403241dbc1bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37c58c97c2970aa01e438c189c25ef6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga37c58c97c2970aa01e438c189c25ef6d">IMP_ISP_Tuning_SetSharpness</a> (unsigned char sharpness)</td></tr>
+<tr class="memdesc:ga37c58c97c2970aa01e438c189c25ef6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP 综合效果图片锐度  <a href="group___i_m_p___i_s_p.html#ga37c58c97c2970aa01e438c189c25ef6d">更多...</a><br /></td></tr>
+<tr class="separator:ga37c58c97c2970aa01e438c189c25ef6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e088f85ea78d4a58df1983fa8c3bbae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga1e088f85ea78d4a58df1983fa8c3bbae">IMP_ISP_Tuning_GetSharpness</a> (unsigned char *psharpness)</td></tr>
+<tr class="memdesc:ga1e088f85ea78d4a58df1983fa8c3bbae"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP 综合效果图片锐度  <a href="group___i_m_p___i_s_p.html#ga1e088f85ea78d4a58df1983fa8c3bbae">更多...</a><br /></td></tr>
+<tr class="separator:ga1e088f85ea78d4a58df1983fa8c3bbae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67c1bce041ce6ba21c81ae86a45d7a49"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga67c1bce041ce6ba21c81ae86a45d7a49">IMP_ISP_Tuning_SetSaturation</a> (unsigned char sat)</td></tr>
+<tr class="memdesc:ga67c1bce041ce6ba21c81ae86a45d7a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP 综合效果图片饱和度  <a href="group___i_m_p___i_s_p.html#ga67c1bce041ce6ba21c81ae86a45d7a49">更多...</a><br /></td></tr>
+<tr class="separator:ga67c1bce041ce6ba21c81ae86a45d7a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab376dc9de94e58d63d0126ca3e232da3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gab376dc9de94e58d63d0126ca3e232da3">IMP_ISP_Tuning_GetSaturation</a> (unsigned char *psat)</td></tr>
+<tr class="memdesc:gab376dc9de94e58d63d0126ca3e232da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP 综合效果图片饱和度  <a href="group___i_m_p___i_s_p.html#gab376dc9de94e58d63d0126ca3e232da3">更多...</a><br /></td></tr>
+<tr class="separator:gab376dc9de94e58d63d0126ca3e232da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02de99774dc0257c7613d9ef4dd7ae94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga02de99774dc0257c7613d9ef4dd7ae94">IMP_ISP_Tuning_SetISPBypass</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> enable)</td></tr>
+<tr class="memdesc:ga02de99774dc0257c7613d9ef4dd7ae94"><td class="mdescLeft">&#160;</td><td class="mdescRight">ISP模块是否bypass.  <a href="group___i_m_p___i_s_p.html#ga02de99774dc0257c7613d9ef4dd7ae94">更多...</a><br /></td></tr>
+<tr class="separator:ga02de99774dc0257c7613d9ef4dd7ae94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c301c0b728ffee66209fa536866a629"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga0c301c0b728ffee66209fa536866a629">IMP_ISP_Tuning_GetTotalGain</a> (uint32_t *gain)</td></tr>
+<tr class="memdesc:ga0c301c0b728ffee66209fa536866a629"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP输出图像的整体增益值  <a href="group___i_m_p___i_s_p.html#ga0c301c0b728ffee66209fa536866a629">更多...</a><br /></td></tr>
+<tr class="separator:ga0c301c0b728ffee66209fa536866a629"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga663cc368f688229e2766a2cc2a2cdc52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga663cc368f688229e2766a2cc2a2cdc52">IMP_ISP_Tuning_SetISPHflip</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
+<tr class="memdesc:ga663cc368f688229e2766a2cc2a2cdc52"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP图像镜面效果功能是否使能  <a href="group___i_m_p___i_s_p.html#ga663cc368f688229e2766a2cc2a2cdc52">更多...</a><br /></td></tr>
+<tr class="separator:ga663cc368f688229e2766a2cc2a2cdc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0ad06b6d923c498476e367bf2e6a401"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gab0ad06b6d923c498476e367bf2e6a401">IMP_ISP_Tuning_GetISPHflip</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pmode)</td></tr>
+<tr class="memdesc:gab0ad06b6d923c498476e367bf2e6a401"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP图像镜面效果功能的操作状态  <a href="group___i_m_p___i_s_p.html#gab0ad06b6d923c498476e367bf2e6a401">更多...</a><br /></td></tr>
+<tr class="separator:gab0ad06b6d923c498476e367bf2e6a401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1f07a434ff4d5d0786d713aad2ffc26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaf1f07a434ff4d5d0786d713aad2ffc26">IMP_ISP_Tuning_SetISPVflip</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode)</td></tr>
+<tr class="memdesc:gaf1f07a434ff4d5d0786d713aad2ffc26"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP图像上下反转效果功能是否使能  <a href="group___i_m_p___i_s_p.html#gaf1f07a434ff4d5d0786d713aad2ffc26">更多...</a><br /></td></tr>
+<tr class="separator:gaf1f07a434ff4d5d0786d713aad2ffc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b6f33516c68ac7cf293efd247712dfc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga1b6f33516c68ac7cf293efd247712dfc">IMP_ISP_Tuning_GetISPVflip</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pmode)</td></tr>
+<tr class="memdesc:ga1b6f33516c68ac7cf293efd247712dfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP图像上下反转效果功能的操作状态  <a href="group___i_m_p___i_s_p.html#ga1b6f33516c68ac7cf293efd247712dfc">更多...</a><br /></td></tr>
+<tr class="separator:ga1b6f33516c68ac7cf293efd247712dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a8ba3dfe858dde56672a5160ec1fdfd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga9a8ba3dfe858dde56672a5160ec1fdfd">IMP_ISP_Tuning_SetISPRunningMode</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> mode)</td></tr>
+<tr class="memdesc:ga9a8ba3dfe858dde56672a5160ec1fdfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置ISP工作模式，正常模式或夜视模式；默认为正常模式。  <a href="group___i_m_p___i_s_p.html#ga9a8ba3dfe858dde56672a5160ec1fdfd">更多...</a><br /></td></tr>
+<tr class="separator:ga9a8ba3dfe858dde56672a5160ec1fdfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15176aa01cdc235ea1877154176cda57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga15176aa01cdc235ea1877154176cda57">IMP_ISP_Tuning_GetISPRunningMode</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> *pmode)</td></tr>
+<tr class="memdesc:ga15176aa01cdc235ea1877154176cda57"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取ISP工作模式，正常模式或夜视模式。  <a href="group___i_m_p___i_s_p.html#ga15176aa01cdc235ea1877154176cda57">更多...</a><br /></td></tr>
+<tr class="separator:ga15176aa01cdc235ea1877154176cda57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafbea574db862f5e4afacbb42f5cee103"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gafbea574db862f5e4afacbb42f5cee103">IMP_ISP_Tuning_SetGamma</a> (<a class="el" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a> *gamma)</td></tr>
+<tr class="memdesc:gafbea574db862f5e4afacbb42f5cee103"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置GAMMA参数.  <a href="group___i_m_p___i_s_p.html#gafbea574db862f5e4afacbb42f5cee103">更多...</a><br /></td></tr>
+<tr class="separator:gafbea574db862f5e4afacbb42f5cee103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaefda984f8fb1aed9fd540edec6f2c7ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gaefda984f8fb1aed9fd540edec6f2c7ad">IMP_ISP_Tuning_GetGamma</a> (<a class="el" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a> *gamma)</td></tr>
+<tr class="memdesc:gaefda984f8fb1aed9fd540edec6f2c7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取GAMMA参数.  <a href="group___i_m_p___i_s_p.html#gaefda984f8fb1aed9fd540edec6f2c7ad">更多...</a><br /></td></tr>
+<tr class="separator:gaefda984f8fb1aed9fd540edec6f2c7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad53a4789425c0ca6aefa236d223c62ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gad53a4789425c0ca6aefa236d223c62ef">IMP_ISP_Tuning_SetAeComp</a> (int comp)</td></tr>
+<tr class="memdesc:gad53a4789425c0ca6aefa236d223c62ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置AE补偿。AE补偿参数可以调整图像AE target，范围为[0-255].  <a href="group___i_m_p___i_s_p.html#gad53a4789425c0ca6aefa236d223c62ef">更多...</a><br /></td></tr>
+<tr class="separator:gad53a4789425c0ca6aefa236d223c62ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4259acd6ef932cbd6c9cde02fc4a5b21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga4259acd6ef932cbd6c9cde02fc4a5b21">IMP_ISP_Tuning_GetAeComp</a> (int *comp)</td></tr>
+<tr class="memdesc:ga4259acd6ef932cbd6c9cde02fc4a5b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取AE补偿。  <a href="group___i_m_p___i_s_p.html#ga4259acd6ef932cbd6c9cde02fc4a5b21">更多...</a><br /></td></tr>
+<tr class="separator:ga4259acd6ef932cbd6c9cde02fc4a5b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2cbb8a56d859c6784619d0ea8715ca04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga2cbb8a56d859c6784619d0ea8715ca04">IMP_ISP_Tuning_GetAeLuma</a> (int *luma)</td></tr>
+<tr class="memdesc:ga2cbb8a56d859c6784619d0ea8715ca04"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取画面平均亮度。  <a href="group___i_m_p___i_s_p.html#ga2cbb8a56d859c6784619d0ea8715ca04">更多...</a><br /></td></tr>
+<tr class="separator:ga2cbb8a56d859c6784619d0ea8715ca04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga414b5866577205f3cd28b7252d463adf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga414b5866577205f3cd28b7252d463adf">IMP_ISP_Tuning_SetExpr</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a> *expr)</td></tr>
+<tr class="memdesc:ga414b5866577205f3cd28b7252d463adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置AE参数。  <a href="group___i_m_p___i_s_p.html#ga414b5866577205f3cd28b7252d463adf">更多...</a><br /></td></tr>
+<tr class="separator:ga414b5866577205f3cd28b7252d463adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c888732fd3ca06fabb28ff65a1acdec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga7c888732fd3ca06fabb28ff65a1acdec">IMP_ISP_Tuning_GetExpr</a> (<a class="el" href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a> *expr)</td></tr>
+<tr class="memdesc:ga7c888732fd3ca06fabb28ff65a1acdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取AE参数。  <a href="group___i_m_p___i_s_p.html#ga7c888732fd3ca06fabb28ff65a1acdec">更多...</a><br /></td></tr>
+<tr class="separator:ga7c888732fd3ca06fabb28ff65a1acdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga304964ed99e1065b27eca47dada5fbab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga304964ed99e1065b27eca47dada5fbab">IMP_ISP_Tuning_SetWB</a> (<a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *wb)</td></tr>
+<tr class="memdesc:ga304964ed99e1065b27eca47dada5fbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置白平衡功能设置。可以设置自动与手动模式，手动模式主要通过设置rgain、bgain实现。  <a href="group___i_m_p___i_s_p.html#ga304964ed99e1065b27eca47dada5fbab">更多...</a><br /></td></tr>
+<tr class="separator:ga304964ed99e1065b27eca47dada5fbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96d8ab201444c78b1c7c4dba013a1488"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga96d8ab201444c78b1c7c4dba013a1488">IMP_ISP_Tuning_GetWB</a> (<a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *wb)</td></tr>
+<tr class="memdesc:ga96d8ab201444c78b1c7c4dba013a1488"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取白平衡功能设置。  <a href="group___i_m_p___i_s_p.html#ga96d8ab201444c78b1c7c4dba013a1488">更多...</a><br /></td></tr>
+<tr class="separator:ga96d8ab201444c78b1c7c4dba013a1488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad035e477da1a52c6e29c4a4d1f5f7870"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gad035e477da1a52c6e29c4a4d1f5f7870">IMP_ISP_Tuning_GetWB_Statis</a> (<a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *wb)</td></tr>
+<tr class="memdesc:gad035e477da1a52c6e29c4a4d1f5f7870"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取白平衡统计值。  <a href="group___i_m_p___i_s_p.html#gad035e477da1a52c6e29c4a4d1f5f7870">更多...</a><br /></td></tr>
+<tr class="separator:gad035e477da1a52c6e29c4a4d1f5f7870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc2dae32ae59f0a277b58f61087c7220"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#gadc2dae32ae59f0a277b58f61087c7220">IMP_ISP_Tuning_GetWB_GOL_Statis</a> (<a class="el" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a> *wb)</td></tr>
+<tr class="memdesc:gadc2dae32ae59f0a277b58f61087c7220"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取白平衡全局统计值。  <a href="group___i_m_p___i_s_p.html#gadc2dae32ae59f0a277b58f61087c7220">更多...</a><br /></td></tr>
+<tr class="separator:gadc2dae32ae59f0a277b58f61087c7220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eecfde9edb07e017907cf28b9562d1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i_m_p___i_s_p.html#ga7eecfde9edb07e017907cf28b9562d1e">IMP_ISP_Tuning_Awb_GetRgbCoefft</a> (<a class="el" href="structisp__core__rgb__coefft__wb__attr.html">IMPISPCOEFFTWB</a> *<a class="el" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a>)</td></tr>
+<tr class="memdesc:ga7eecfde9edb07e017907cf28b9562d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取sensor AWB RGB通道偏移参数。  <a href="group___i_m_p___i_s_p.html#ga7eecfde9edb07e017907cf28b9562d1e">更多...</a><br /></td></tr>
+<tr class="separator:ga7eecfde9edb07e017907cf28b9562d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>ISP模块头文件 </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:31 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<map id="IMPOSDRgnAttr" name="IMPOSDRgnAttr">
+<area shape="rect" id="node2" href="$union_i_m_p_o_s_d_rgn_attr_data.html" title="OSD region attribute data. " alt="" coords="87,117,233,147"/>
+<area shape="rect" id="node4" href="$structpic_data.html" title="OSD region picture data. " alt="" coords="5,5,72,35"/>
+<area shape="rect" id="node6" href="$structcover_data.html" title="OSD region cover data. " alt="" coords="96,5,179,35"/>
+<area shape="rect" id="node8" href="$structline_rect_data.html" title="OSD region line and rectangle data. " alt="" coords="203,5,301,35"/>
+<area shape="rect" id="node10" href="$struct_i_m_p_rect.html" title="IMP Rectangle area information. " alt="" coords="303,117,377,147"/>
+<area shape="rect" id="node12" href="$struct_i_m_p_point.html" title="IMP point coordinate information. " alt="" coords="325,5,400,35"/>
+</map>

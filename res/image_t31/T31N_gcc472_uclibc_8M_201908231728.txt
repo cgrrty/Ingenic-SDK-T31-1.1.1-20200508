@@ -1,0 +1,4 @@
+gcc_version: gcc version 4.7.2 (Ingenic r2.3.3 2016.12)
+uboot_model: T31_N
+roofs_libc : uclibc
+driver :  audio  avpu  sensor_gc2053_t31  sensor_jxf23_t31  sensor_sc2310_t31  sinfo  tx-isp-t31

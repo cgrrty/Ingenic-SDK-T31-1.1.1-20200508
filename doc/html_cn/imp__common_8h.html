@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: api/cn/imp/imp_common.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="dir_31a1ac01d37bc983c5b5cff3958563ba.html">cn</a></li><li class="navelem"><a class="el" href="dir_c1bd294425c88ba3746096703af56b56.html">imp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">结构体</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle">
+<div class="title">imp_common.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>SDK-T15公共数据结构头文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &lt;linux/videodev2.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+imp_common.h 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="imp__common_8h__incl.png" border="0" usemap="#api_2cn_2imp_2imp__common_8h" alt=""/></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="imp__common_8h__dep__incl.png" border="0" usemap="#api_2cn_2imp_2imp__common_8hdep" alt=""/></div>
+<map name="api_2cn_2imp_2imp__common_8hdep" id="api_2cn_2imp_2imp__common_8hdep">
+<area shape="rect" id="node3" href="imp__system_8h.html" title="IMP系统模块头文件 " alt="" coords="5,83,173,112"/><area shape="rect" id="node5" href="imp__framesource_8h.html" title="FrameSource模块头文件 " alt="" coords="197,83,395,112"/><area shape="rect" id="node7" href="imp__isp_8h.html" title="ISP模块头文件 " alt="" coords="419,83,560,112"/><area shape="rect" id="node9" href="imp__osd_8h.html" title="IMP OSD模块头文件 " alt="" coords="584,83,731,112"/><area shape="rect" id="node11" href="imp__ivs_8h.html" title="IMP IVS模块 " alt="" coords="755,83,896,112"/><area shape="rect" id="node13" href="imp__ivs__move_8h.html" title="IMP IVS 移动侦测模块 " alt="" coords="760,161,891,207"/></map>
+</div>
+</div>
+<p><a href="imp__common_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_cell.html">IMPCell</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMPCell枚举定义.  <a href="struct_i_m_p_cell.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_frame_info.html">IMPFrameInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMP帧图像信息定义.  <a href="struct_i_m_p_frame_info.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_frame_timestamp.html">IMPFrameTimestamp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMP帧时间参数.  <a href="struct_i_m_p_frame_timestamp.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_point.html">IMPPoint</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMP点坐标信息.  <a href="struct_i_m_p_point.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i_m_p_rect.html">IMPRect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMP 矩形区域信息.  <a href="struct_i_m_p_rect.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a7bdedd4eacf2e3fc19a7827c0f43fbbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bdedd4eacf2e3fc19a7827c0f43fbbf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BPP</b>(FMT,  A,  B)&#160;&#160;&#160;case FMT: bpp1 = A;bpp2 = B;break</td></tr>
+<tr class="separator:a7bdedd4eacf2e3fc19a7827c0f43fbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a6dadfc8115cc4a18ce760e442584c4e7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7">IMPDeviceID</a> { <br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7a162de33439c347ecba2e19b30644b208">DEV_ID_FS</a>, 
+<a class="el" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7a132bce719450c185ea6fe09090e39c9c">DEV_ID_ENC</a>, 
+<a class="el" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7a8f67a5e4c4b25676975ae7a52805dbd1">DEV_ID_DEC</a>, 
+<a class="el" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7ae0021eea40513cbb341cd5078bca3da6">DEV_ID_IVS</a>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7aaaafd084a936f2a8b60bb5e13e30acba">DEV_ID_OSD</a>, 
+<a class="el" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7a20ffd238c1b14036bf0cd11c2a6c7aab">DEV_ID_FG1DIRECT</a>, 
+<b>DEV_ID_RESERVED_START</b>, 
+<b>DEV_ID_RESERVED_END</b> = 23, 
+<br />
+&#160;&#160;<b>NR_MAX_DEVICES</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a6dadfc8115cc4a18ce760e442584c4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMP 设备ID枚举定义.  <a href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7">更多...</a><br /></td></tr>
+<tr class="separator:a6dadfc8115cc4a18ce760e442584c4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad505915c7d90c3f6ff7f21df277fbe21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imp__common_8h.html#ad505915c7d90c3f6ff7f21df277fbe21">IMPPayloadType</a> { <a class="el" href="imp__common_8h.html#ad505915c7d90c3f6ff7f21df277fbe21a3fdcf2cb7c4348eb729bbda85c9c8b1a">PT_JPEG</a>, 
+<a class="el" href="imp__common_8h.html#ad505915c7d90c3f6ff7f21df277fbe21ab08825164e49f50cfed94180494e7ad7">PT_H264</a>, 
+<a class="el" href="imp__common_8h.html#ad505915c7d90c3f6ff7f21df277fbe21ac510d3eb36a6c22914df0523e2b30254">PT_H265</a>
+ }</td></tr>
+<tr class="memdesc:ad505915c7d90c3f6ff7f21df277fbe21"><td class="mdescLeft">&#160;</td><td class="mdescRight">编解码协议类型  <a href="imp__common_8h.html#ad505915c7d90c3f6ff7f21df277fbe21">更多...</a><br /></td></tr>
+<tr class="separator:ad505915c7d90c3f6ff7f21df277fbe21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41dd79af5cc134fac5e24c98272824c0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a> { <br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0aec990b392e8ae3dc9b75105fec653dd4">PIX_FMT_YUV420P</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a2bbf7bf6e9a366188eb4ab5d0cf6f20a">PIX_FMT_YUYV422</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ad807d1f5d7eaf35453e348c536a15833">PIX_FMT_UYVY422</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a3c7e7e6066c6c748a8be5e0dc2bd9727">PIX_FMT_YUV422P</a>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a497de7bd9f1d2265470009528f02a533">PIX_FMT_YUV444P</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ab2063f2581a3325a4e36c57d0f9c1c50">PIX_FMT_YUV410P</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a47770de8f5acd94b6c5506602f67eee2">PIX_FMT_YUV411P</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a9a97169b5b2b8f8768879ae699f4458e">PIX_FMT_GRAY8</a>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ab2562c88f4d491c5a091a4924d985e55">PIX_FMT_MONOWHITE</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a63df9ff29cdb3e442ca235d7741f9e0c">PIX_FMT_MONOBLACK</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ade518e7f48c29de6b877a63115d970dc">PIX_FMT_NV12</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a5f9661a7159620e5913f631505c390b4">PIX_FMT_NV21</a>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ac4f1af6c892ebca0e1e9524b6ac901ae">PIX_FMT_RGB24</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0af506ed2ad47c370a46dfa3b3e145b6d5">PIX_FMT_BGR24</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ac2ceaf5c4d25bc1c96da677862f8aefa">PIX_FMT_ARGB</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a540e13d5a8c9eec10c49d685f4906c3b">PIX_FMT_RGBA</a>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a244391e43ac32d33140b77599b99ea9c">PIX_FMT_ABGR</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a8363dc7b894ceba76f98db13dd165d66">PIX_FMT_BGRA</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0aaf24607eef8bb5a508bbc23d7d33abde">PIX_FMT_RGB565BE</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a4d667f3258ab3c085575827e50215643">PIX_FMT_RGB565LE</a>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a35c769fbf02160921ab47151df780563">PIX_FMT_RGB555BE</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0adebacc234127c48f00dc199fac1cf2d9">PIX_FMT_RGB555LE</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0aa08b9ae015cc108458d2e7e5c3e2486b">PIX_FMT_BGR565BE</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ae2c37ca84dc54b91d6e877877de34b8e">PIX_FMT_BGR565LE</a>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ac751d7a354773d046f1d35c3d04699d4">PIX_FMT_BGR555BE</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a6469340ff914a18445ef0e084f504a7c">PIX_FMT_BGR555LE</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a2fef25410e7e5cafc27890d9a0ddb632">PIX_FMT_0RGB</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a29df9af3d190a8f8ba241601947b52d0">PIX_FMT_RGB0</a>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a5a4df001e7c6c9f959f84f994868b9af">PIX_FMT_0BGR</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a208d51c1207980b6ab25b9b83c7af474">PIX_FMT_BGR0</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ac57b1bc5c453112f75f55f63b9afadbe">PIX_FMT_BAYER_BGGR8</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0aaad3e51a426696b0b81c93e78819bb83">PIX_FMT_BAYER_RGGB8</a>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0ae4f2a2f36be0a4d06014677b5bfc0171">PIX_FMT_BAYER_GBRG8</a>, 
+<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a93edabef6c41cdf8c2e8cd3305088c4c">PIX_FMT_BAYER_GRBG8</a>, 
+<b>PIX_FMT_RAW</b>, 
+<b>PIX_FMT_HSV</b>, 
+<br />
+&#160;&#160;<a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0a276e24b4c33f3bc9cec7a01523d6011b">PIX_FMT_NB</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a41dd79af5cc134fac5e24c98272824c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMP图像格式定义.  <a href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">更多...</a><br /></td></tr>
+<tr class="separator:a41dd79af5cc134fac5e24c98272824c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>SDK-T15公共数据结构头文件 </p>
+</div><h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="a6dadfc8115cc4a18ce760e442584c4e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="imp__common_8h.html#a6dadfc8115cc4a18ce760e442584c4e7">IMPDeviceID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IMP 设备ID枚举定义. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a6dadfc8115cc4a18ce760e442584c4e7a162de33439c347ecba2e19b30644b208"></a>DEV_ID_FS&#160;</td><td class="fielddoc">
+<p>视频源 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6dadfc8115cc4a18ce760e442584c4e7a132bce719450c185ea6fe09090e39c9c"></a>DEV_ID_ENC&#160;</td><td class="fielddoc">
+<p>编码器 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6dadfc8115cc4a18ce760e442584c4e7a8f67a5e4c4b25676975ae7a52805dbd1"></a>DEV_ID_DEC&#160;</td><td class="fielddoc">
+<p>解码器 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6dadfc8115cc4a18ce760e442584c4e7ae0021eea40513cbb341cd5078bca3da6"></a>DEV_ID_IVS&#160;</td><td class="fielddoc">
+<p>算法 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6dadfc8115cc4a18ce760e442584c4e7aaaafd084a936f2a8b60bb5e13e30acba"></a>DEV_ID_OSD&#160;</td><td class="fielddoc">
+<p>图像叠加 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a6dadfc8115cc4a18ce760e442584c4e7a20ffd238c1b14036bf0cd11c2a6c7aab"></a>DEV_ID_FG1DIRECT&#160;</td><td class="fielddoc">
+<p>FB FG1Direct. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ad505915c7d90c3f6ff7f21df277fbe21"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="imp__common_8h.html#ad505915c7d90c3f6ff7f21df277fbe21">IMPPayloadType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>编解码协议类型 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="ad505915c7d90c3f6ff7f21df277fbe21a3fdcf2cb7c4348eb729bbda85c9c8b1a"></a>PT_JPEG&#160;</td><td class="fielddoc">
+<p>JPEG图像协议类型 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad505915c7d90c3f6ff7f21df277fbe21ab08825164e49f50cfed94180494e7ad7"></a>PT_H264&#160;</td><td class="fielddoc">
+<p>H264视频协议类型 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad505915c7d90c3f6ff7f21df277fbe21ac510d3eb36a6c22914df0523e2b30254"></a>PT_H265&#160;</td><td class="fielddoc">
+<p>H265视频协议类型 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="imp__common_8h.html#a41dd79af5cc134fac5e24c98272824c0">IMPPixelFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IMP图像格式定义. </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0aec990b392e8ae3dc9b75105fec653dd4"></a>PIX_FMT_YUV420P&#160;</td><td class="fielddoc">
+<p>planar YUV 4:2:0, 12bpp, (1 Cr &amp; Cb sample per 2x2 Y samples) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a2bbf7bf6e9a366188eb4ab5d0cf6f20a"></a>PIX_FMT_YUYV422&#160;</td><td class="fielddoc">
+<p>packed YUV 4:2:2, 16bpp, Y0 Cb Y1 Cr </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ad807d1f5d7eaf35453e348c536a15833"></a>PIX_FMT_UYVY422&#160;</td><td class="fielddoc">
+<p>packed YUV 4:2:2, 16bpp, Cb Y0 Cr Y1 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a3c7e7e6066c6c748a8be5e0dc2bd9727"></a>PIX_FMT_YUV422P&#160;</td><td class="fielddoc">
+<p>planar YUV 4:2:2, 16bpp, (1 Cr &amp; Cb sample per 2x1 Y samples) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a497de7bd9f1d2265470009528f02a533"></a>PIX_FMT_YUV444P&#160;</td><td class="fielddoc">
+<p>planar YUV 4:4:4, 24bpp, (1 Cr &amp; Cb sample per 1x1 Y samples) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ab2063f2581a3325a4e36c57d0f9c1c50"></a>PIX_FMT_YUV410P&#160;</td><td class="fielddoc">
+<p>planar YUV 4:1:0, 9bpp, (1 Cr &amp; Cb sample per 4x4 Y samples) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a47770de8f5acd94b6c5506602f67eee2"></a>PIX_FMT_YUV411P&#160;</td><td class="fielddoc">
+<p>planar YUV 4:1:1, 12bpp, (1 Cr &amp; Cb sample per 4x1 Y samples) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a9a97169b5b2b8f8768879ae699f4458e"></a>PIX_FMT_GRAY8&#160;</td><td class="fielddoc">
+<p>Y , 8bpp. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ab2562c88f4d491c5a091a4924d985e55"></a>PIX_FMT_MONOWHITE&#160;</td><td class="fielddoc">
+<p>Y , 1bpp, 0 is white, 1 is black, in each byte pixels are ordered from the msb to the lsb. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a63df9ff29cdb3e442ca235d7741f9e0c"></a>PIX_FMT_MONOBLACK&#160;</td><td class="fielddoc">
+<p>Y , 1bpp, 0 is black, 1 is white, in each byte pixels are ordered from the msb to the lsb. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ade518e7f48c29de6b877a63115d970dc"></a>PIX_FMT_NV12&#160;</td><td class="fielddoc">
+<p>planar YUV 4:2:0, 12bpp, 1 plane for Y and 1 plane for the UV components, which are interleaved (first byte U and the following byte V) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a5f9661a7159620e5913f631505c390b4"></a>PIX_FMT_NV21&#160;</td><td class="fielddoc">
+<p>as above, but U and V bytes are swapped </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ac4f1af6c892ebca0e1e9524b6ac901ae"></a>PIX_FMT_RGB24&#160;</td><td class="fielddoc">
+<p>packed RGB 8:8:8, 24bpp, RGBRGB... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0af506ed2ad47c370a46dfa3b3e145b6d5"></a>PIX_FMT_BGR24&#160;</td><td class="fielddoc">
+<p>packed RGB 8:8:8, 24bpp, BGRBGR... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ac2ceaf5c4d25bc1c96da677862f8aefa"></a>PIX_FMT_ARGB&#160;</td><td class="fielddoc">
+<p>packed ARGB 8:8:8:8, 32bpp, ARGBARGB... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a540e13d5a8c9eec10c49d685f4906c3b"></a>PIX_FMT_RGBA&#160;</td><td class="fielddoc">
+<p>packed RGBA 8:8:8:8, 32bpp, RGBARGBA... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a244391e43ac32d33140b77599b99ea9c"></a>PIX_FMT_ABGR&#160;</td><td class="fielddoc">
+<p>packed ABGR 8:8:8:8, 32bpp, ABGRABGR... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a8363dc7b894ceba76f98db13dd165d66"></a>PIX_FMT_BGRA&#160;</td><td class="fielddoc">
+<p>packed BGRA 8:8:8:8, 32bpp, BGRABGRA... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0aaf24607eef8bb5a508bbc23d7d33abde"></a>PIX_FMT_RGB565BE&#160;</td><td class="fielddoc">
+<p>packed RGB 5:6:5, 16bpp, (msb) 5R 6G 5B(lsb), big-endian </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a4d667f3258ab3c085575827e50215643"></a>PIX_FMT_RGB565LE&#160;</td><td class="fielddoc">
+<p>packed RGB 5:6:5, 16bpp, (msb) 5R 6G 5B(lsb), little-endian </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a35c769fbf02160921ab47151df780563"></a>PIX_FMT_RGB555BE&#160;</td><td class="fielddoc">
+<p>packed RGB 5:5:5, 16bpp, (msb)1A 5R 5G 5B(lsb), big-endian, most significant bit to 0 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0adebacc234127c48f00dc199fac1cf2d9"></a>PIX_FMT_RGB555LE&#160;</td><td class="fielddoc">
+<p>packed RGB 5:5:5, 16bpp, (msb)1A 5R 5G 5B(lsb), little-endian, most significant bit to 0 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0aa08b9ae015cc108458d2e7e5c3e2486b"></a>PIX_FMT_BGR565BE&#160;</td><td class="fielddoc">
+<p>packed BGR 5:6:5, 16bpp, (msb) 5B 6G 5R(lsb), big-endian </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ae2c37ca84dc54b91d6e877877de34b8e"></a>PIX_FMT_BGR565LE&#160;</td><td class="fielddoc">
+<p>packed BGR 5:6:5, 16bpp, (msb) 5B 6G 5R(lsb), little-endian </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ac751d7a354773d046f1d35c3d04699d4"></a>PIX_FMT_BGR555BE&#160;</td><td class="fielddoc">
+<p>packed BGR 5:5:5, 16bpp, (msb)1A 5B 5G 5R(lsb), big-endian, most significant bit to 1 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a6469340ff914a18445ef0e084f504a7c"></a>PIX_FMT_BGR555LE&#160;</td><td class="fielddoc">
+<p>packed BGR 5:5:5, 16bpp, (msb)1A 5B 5G 5R(lsb), little-endian, most significant bit to 1 </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a2fef25410e7e5cafc27890d9a0ddb632"></a>PIX_FMT_0RGB&#160;</td><td class="fielddoc">
+<p>packed RGB 8:8:8, 32bpp, 0RGB0RGB... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a29df9af3d190a8f8ba241601947b52d0"></a>PIX_FMT_RGB0&#160;</td><td class="fielddoc">
+<p>packed RGB 8:8:8, 32bpp, RGB0RGB0... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a5a4df001e7c6c9f959f84f994868b9af"></a>PIX_FMT_0BGR&#160;</td><td class="fielddoc">
+<p>packed BGR 8:8:8, 32bpp, 0BGR0BGR... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a208d51c1207980b6ab25b9b83c7af474"></a>PIX_FMT_BGR0&#160;</td><td class="fielddoc">
+<p>packed BGR 8:8:8, 32bpp, BGR0BGR0... </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ac57b1bc5c453112f75f55f63b9afadbe"></a>PIX_FMT_BAYER_BGGR8&#160;</td><td class="fielddoc">
+<p>bayer, BGBG..(odd line), GRGR..(even line), 8-bit samples </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0aaad3e51a426696b0b81c93e78819bb83"></a>PIX_FMT_BAYER_RGGB8&#160;</td><td class="fielddoc">
+<p>bayer, RGRG..(odd line), GBGB..(even line), 8-bit samples </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0ae4f2a2f36be0a4d06014677b5bfc0171"></a>PIX_FMT_BAYER_GBRG8&#160;</td><td class="fielddoc">
+<p>bayer, GBGB..(odd line), RGRG..(even line), 8-bit samples </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a93edabef6c41cdf8c2e8cd3305088c4c"></a>PIX_FMT_BAYER_GRBG8&#160;</td><td class="fielddoc">
+<p>bayer, GRGR..(odd line), BGBG..(even line), 8-bit samples </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a41dd79af5cc134fac5e24c98272824c0a276e24b4c33f3bc9cec7a01523d6011b"></a>PIX_FMT_NB&#160;</td><td class="fielddoc">
+<p>number of pixel formats. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:31 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

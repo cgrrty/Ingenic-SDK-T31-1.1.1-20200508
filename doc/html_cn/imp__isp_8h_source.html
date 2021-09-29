@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>ISVP-SDK: api/cn/imp/imp_isp.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">ISVP-SDK
+   &#160;<span id="projectnumber">T30-1.0.1</span>
+   </div>
+   <div id="projectbrief">Ingenic Smart Video Platform SDK</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_0188a3e6da905bc60aceb35bf790b8c9.html">api</a></li><li class="navelem"><a class="el" href="dir_31a1ac01d37bc983c5b5cff3958563ba.html">cn</a></li><li class="navelem"><a class="el" href="dir_c1bd294425c88ba3746096703af56b56.html">imp</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">imp_isp.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imp__isp_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * IMP ISP header file.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (C) 2014 Ingenic Semiconductor Co.,Ltd</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef __IMP_ISP_H__</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define __IMP_ISP_H__</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imp__common_8h.html">imp_common.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">  110</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2a97f8ef07011482201851230c9e944752">  111</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2a97f8ef07011482201851230c9e944752">TX_SENSOR_CONTROL_INTERFACE_I2C</a> = 1,    </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2aacc0aa36ed6d54a7064f49eb987f7bc6">  112</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2aacc0aa36ed6d54a7064f49eb987f7bc6">TX_SENSOR_CONTROL_INTERFACE_SPI</a>,        </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <a class="code" href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">IMPSensorControlBusType</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="struct_i_m_p_i2_c_info.html">  118</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga09825adf2850a069612d1ec0532928c7">  119</a></span>&#160;        <span class="keywordtype">char</span> type[20];          </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gaafb8164f20f79a2dd0290502a25367d1">  120</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gaafb8164f20f79a2dd0290502a25367d1">addr</a>;               </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gaf44d63ecdfdf0d44e6e584848fb170a2">  121</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gaf44d63ecdfdf0d44e6e584848fb170a2">i2c_adapter_id</a>;     </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;} <a class="code" href="struct_i_m_p_i2_c_info.html">IMPI2CInfo</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="struct_i_m_p_s_p_i_info.html">  126</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga4cb07b223607c73a0a0fa79d58414417">  127</a></span>&#160;        <span class="keywordtype">char</span> modalias[32];      </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gaf52aeec8ebe03bc6097d6a6438559071">  128</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gaf52aeec8ebe03bc6097d6a6438559071">bus_num</a>;            </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;} <a class="code" href="struct_i_m_p_s_p_i_info.html">IMPSPIInfo</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="struct_i_m_p_sensor_info.html">  134</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gabc1e86d7c344fe34ff09e72d4595ab7e">  135</a></span>&#160;        <span class="keywordtype">char</span> name[32];                                  </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga8aa6f715914bd7b43ecdf648e4d55060">  136</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">IMPSensorControlBusType</a> <a class="code" href="group___i_m_p___i_s_p.html#ga8aa6f715914bd7b43ecdf648e4d55060">cbus_type</a>;      </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">union </span>{</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga180f8a04199e6b151a28f0eb4c35e3bb">  138</a></span>&#160;                <a class="code" href="struct_i_m_p_i2_c_info.html">IMPI2CInfo</a> <a class="code" href="group___i_m_p___i_s_p.html#ga180f8a04199e6b151a28f0eb4c35e3bb">i2c</a>;                         </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga753b2373687b80fd47a9ccfa0b0a3da6">  139</a></span>&#160;                <a class="code" href="struct_i_m_p_s_p_i_info.html">IMPSPIInfo</a> <a class="code" href="group___i_m_p___i_s_p.html#ga753b2373687b80fd47a9ccfa0b0a3da6">spi</a>;                         </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        };</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gaaf62e57667339f400a1dcaf969601f05">  141</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="group___i_m_p___i_s_p.html#gaaf62e57667339f400a1dcaf969601f05">rst_gpio</a>;                </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gac59f20dcf3e73189b28cab8ed02e1a88">  142</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="group___i_m_p___i_s_p.html#gac59f20dcf3e73189b28cab8ed02e1a88">pwdn_gpio</a>;               </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga81d9d4822dab004a99a2d71833d9fecd">  143</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="group___i_m_p___i_s_p.html#ga81d9d4822dab004a99a2d71833d9fecd">power_gpio</a>;              </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;} <a class="code" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gac80de0e7f019c1718e58bb9d728203c3">IMP_ISP_Open</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga5c2fdfdad046856bff32937c5ac05b90">IMP_ISP_Close</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga8e4d951a6a80e88026f41e310090c44d">IMP_ISP_AddSensor</a>(<a class="code" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> *pinfo);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga87ea0697f417532c191bf86677e281b5">IMP_ISP_DelSensor</a>(<a class="code" href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a> *pinfo);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga72bd61d7ffa8f06b239c1ce43a6b5274">IMP_ISP_EnableSensor</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga823f71e232236129da016cbbd0079295">IMP_ISP_DisableSensor</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga8a86c7fac741e7d38daae9767f06a9f7">IMP_ISP_SetSensorRegister</a>(uint32_t reg, uint32_t value);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga121bb07b3c434d708ff9d2627f230884">IMP_ISP_GetSensorRegister</a>(uint32_t reg, uint32_t *value);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">  281</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab61200e52980316eaea2a9c2bd5abcf1">  282</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab61200e52980316eaea2a9c2bd5abcf1">IMPISP_TUNING_OPS_MODE_DISABLE</a>,                 </div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9aa3b9036e0facac6e3165ef4a24b41790">  283</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9aa3b9036e0facac6e3165ef4a24b41790">IMPISP_TUNING_OPS_MODE_ENABLE</a>,                  </div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab22cf50d640c3fa6e43566e45f60fb80">  284</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab22cf50d640c3fa6e43566e45f60fb80">IMPISP_TUNING_OPS_MODE_BUTT</a>,                    </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;} <a class="code" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a>;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga51cbf4116bb59389dc30a6840764e73e">  290</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ea5e63521a46939be32170e2f44596b086">  291</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ea5e63521a46939be32170e2f44596b086">IMPISP_TUNING_OPS_TYPE_AUTO</a>,                    </div>
+<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73eabc9c9bf5f177c50dbc895ef196d2d825">  292</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73eabc9c9bf5f177c50dbc895ef196d2d825">IMPISP_TUNING_OPS_TYPE_MANUAL</a>,                  </div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ead55a5e7f03b4cf92f09ca928730d2799">  293</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ead55a5e7f03b4cf92f09ca928730d2799">IMPISP_TUNING_OPS_TYPE_BUTT</a>,                    </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;} <a class="code" href="group___i_m_p___i_s_p.html#ga51cbf4116bb59389dc30a6840764e73e">IMPISPTuningOpsType</a>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga34e80ddfdcab5e5f1b500d9271e8a332">IMP_ISP_EnableTuning</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga75329730dcf100da4839ead7d585662c">IMP_ISP_DisableTuning</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gac974214ea084793ccba91d0209ccf3a7">IMP_ISP_Tuning_SetSensorFPS</a>(uint32_t fps_num, uint32_t fps_den);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gac0b29cb7b14957eef86d65501b1979d3">IMP_ISP_Tuning_GetSensorFPS</a>(uint32_t *fps_num, uint32_t *fps_den);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">  358</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea87cb7a4e8538d789e73e25fcf030ccf2">  359</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea87cb7a4e8538d789e73e25fcf030ccf2">IMPISP_ANTIFLICKER_DISABLE</a>,     </div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eada18ffe50bfe6dfe686f37c4d16f574b">  360</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eada18ffe50bfe6dfe686f37c4d16f574b">IMPISP_ANTIFLICKER_50HZ</a>,        </div>
+<div class="line"><a name="l00361"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eac2c914da54c8ce3dcef396ea0edce902">  361</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eac2c914da54c8ce3dcef396ea0edce902">IMPISP_ANTIFLICKER_60HZ</a>,        </div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea5877a1a388b494636e1250e30e5e707a">  362</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea5877a1a388b494636e1250e30e5e707a">IMPISP_ANTIFLICKER_BUTT</a>,        </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;} <a class="code" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a>;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga1c82db22ede96a92628c96a5b891ae11">IMP_ISP_Tuning_SetAntiFlickerAttr</a>(<a class="code" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a> attr);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga608cd103824bbb2297ff7f63c111ba65">IMP_ISP_Tuning_GetAntiFlickerAttr</a>(<a class="code" href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a> *pattr);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gaa420ab671dc3ac21664e68f7471499ce">IMP_ISP_Tuning_SetBrightness</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> bright);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga95eace973c2c84c22acd607e1a81292d">IMP_ISP_Tuning_GetBrightness</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pbright);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga9ad8f252ce6bdf00a3682c1ebecfb149">IMP_ISP_Tuning_SetContrast</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> contrast);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gaa3571e3f4f0e2a5759f403241dbc1bde">IMP_ISP_Tuning_GetContrast</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pcontrast);</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga37c58c97c2970aa01e438c189c25ef6d">IMP_ISP_Tuning_SetSharpness</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> sharpness);</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga1e088f85ea78d4a58df1983fa8c3bbae">IMP_ISP_Tuning_GetSharpness</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *psharpness);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga67c1bce041ce6ba21c81ae86a45d7a49">IMP_ISP_Tuning_SetSaturation</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> sat);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gab376dc9de94e58d63d0126ca3e232da3">IMP_ISP_Tuning_GetSaturation</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *psat);</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga02de99774dc0257c7613d9ef4dd7ae94">IMP_ISP_Tuning_SetISPBypass</a>(<a class="code" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> enable);</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga0c301c0b728ffee66209fa536866a629">IMP_ISP_Tuning_GetTotalGain</a>(uint32_t *gain);</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga663cc368f688229e2766a2cc2a2cdc52">IMP_ISP_Tuning_SetISPHflip</a>(<a class="code" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode);</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gab0ad06b6d923c498476e367bf2e6a401">IMP_ISP_Tuning_GetISPHflip</a>(<a class="code" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pmode);</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gaf1f07a434ff4d5d0786d713aad2ffc26">IMP_ISP_Tuning_SetISPVflip</a>(<a class="code" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode);</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga1b6f33516c68ac7cf293efd247712dfc">IMP_ISP_Tuning_GetISPVflip</a>(<a class="code" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> *pmode);</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
+<div class="line"><a name="l00610"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">  610</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00611"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100a3311b00220b304cc33887dc596255633">  611</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100a3311b00220b304cc33887dc596255633">IMPISP_RUNNING_MODE_DAY</a> = 0,                            </div>
+<div class="line"><a name="l00612"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100aca258162fd7afe8a1a81fe5b63723c73">  612</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100aca258162fd7afe8a1a81fe5b63723c73">IMPISP_RUNNING_MODE_NIGHT</a> = 1,                          </div>
+<div class="line"><a name="l00613"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100acdceafc2c7437b0cfc100c28afdc49cc">  613</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100acdceafc2c7437b0cfc100c28afdc49cc">IMPISP_RUNNING_MODE_BUTT</a>,                                       </div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;} <a class="code" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a>;</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga9a8ba3dfe858dde56672a5160ec1fdfd">IMP_ISP_Tuning_SetISPRunningMode</a>(<a class="code" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> mode);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga15176aa01cdc235ea1877154176cda57">IMP_ISP_Tuning_GetISPRunningMode</a>(<a class="code" href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a> *pmode);</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;</div>
+<div class="line"><a name="l00664"></a><span class="lineno"><a class="line" href="struct_i_m_p_i_s_p_gamma.html">  664</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00665"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga938265016058f7e4d028d8a81ec1187a">  665</a></span>&#160;        uint16_t gamma[129];            </div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;} <a class="code" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a>;</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gafbea574db862f5e4afacbb42f5cee103">IMP_ISP_Tuning_SetGamma</a>(<a class="code" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a> *gamma);</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gaefda984f8fb1aed9fd540edec6f2c7ad">IMP_ISP_Tuning_GetGamma</a>(<a class="code" href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a> *gamma);</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gad53a4789425c0ca6aefa236d223c62ef">IMP_ISP_Tuning_SetAeComp</a>(<span class="keywordtype">int</span> comp);</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga4259acd6ef932cbd6c9cde02fc4a5b21">IMP_ISP_Tuning_GetAeComp</a>(<span class="keywordtype">int</span> *comp);</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga2cbb8a56d859c6784619d0ea8715ca04">IMP_ISP_Tuning_GetAeLuma</a>(<span class="keywordtype">int</span> *luma);</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;</div>
+<div class="line"><a name="l00737"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">  737</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a> {</div>
+<div class="line"><a name="l00738"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2afc30999bcaa40b4d78b7917b5831857a">  738</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2afc30999bcaa40b4d78b7917b5831857a">ISP_CORE_EXPR_MODE_AUTO</a>,                        </div>
+<div class="line"><a name="l00739"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2ac1c6437b2649ae7f6444dd8fabc140b5">  739</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2ac1c6437b2649ae7f6444dd8fabc140b5">ISP_CORE_EXPR_MODE_MANUAL</a>,                      </div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;};</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;</div>
+<div class="line"><a name="l00745"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">  745</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a> {</div>
+<div class="line"><a name="l00746"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65eaccd13313b10d37bb3631b3f63222acd1">  746</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65eaccd13313b10d37bb3631b3f63222acd1">ISP_CORE_EXPR_UNIT_LINE</a>,                        </div>
+<div class="line"><a name="l00747"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65ea78fe9c564ee2464a75aab02dfe770ef1">  747</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65ea78fe9c564ee2464a75aab02dfe770ef1">ISP_CORE_EXPR_UNIT_US</a>,                          </div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;};</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;</div>
+<div class="line"><a name="l00753"></a><span class="lineno"><a class="line" href="unionisp__core__expr__attr.html">  753</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span><a class="code" href="unionisp__core__expr__attr.html">isp_core_expr_attr</a>{</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;        <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00755"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga90942b48db02576837a357b6cca80b5a">  755</a></span>&#160;                <span class="keyword">enum</span> <a class="code" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a> <a class="code" href="group___i_m_p___i_s_p.html#ga90942b48db02576837a357b6cca80b5a">mode</a>;           </div>
+<div class="line"><a name="l00756"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga4a2606244fcaa169a4cee6637b23b631">  756</a></span>&#160;                <span class="keyword">enum</span> <a class="code" href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a> <a class="code" href="group___i_m_p___i_s_p.html#ga4a2606244fcaa169a4cee6637b23b631">unit</a>;           </div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;                uint16_t time;</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        } s_attr;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00760"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga90942b48db02576837a357b6cca80b5a">  760</a></span>&#160;                <span class="keyword">enum</span> <a class="code" href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a> <a class="code" href="group___i_m_p___i_s_p.html#ga90942b48db02576837a357b6cca80b5a">mode</a>;                   </div>
+<div class="line"><a name="l00761"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga96980ba333fab92cd7644b36ba95bfc5">  761</a></span>&#160;                uint16_t <a class="code" href="group___i_m_p___i_s_p.html#ga96980ba333fab92cd7644b36ba95bfc5">integration_time</a>;              </div>
+<div class="line"><a name="l00762"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gaeccca892064ffc76ae67ac0a6e107d33">  762</a></span>&#160;                uint16_t <a class="code" href="group___i_m_p___i_s_p.html#gaeccca892064ffc76ae67ac0a6e107d33">integration_time_min</a>;  </div>
+<div class="line"><a name="l00763"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga46a6f04217cc911114612141031d7f30">  763</a></span>&#160;                uint16_t <a class="code" href="group___i_m_p___i_s_p.html#ga46a6f04217cc911114612141031d7f30">integration_time_max</a>;  </div>
+<div class="line"><a name="l00764"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gabae4cbcea455fe602d251e31fbbe84cb">  764</a></span>&#160;                uint16_t <a class="code" href="group___i_m_p___i_s_p.html#gabae4cbcea455fe602d251e31fbbe84cb">one_line_expr_in_us</a>;           </div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        } g_attr;</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;}<a class="code" href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a>;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga414b5866577205f3cd28b7252d463adf">IMP_ISP_Tuning_SetExpr</a>(<a class="code" href="unionisp__core__expr__attr.html">IMPISPExpr</a> *expr);</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga7c888732fd3ca06fabb28ff65a1acdec">IMP_ISP_Tuning_GetExpr</a>(<a class="code" href="unionisp__core__expr__attr.html">IMPISPExpr</a> *expr);</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;</div>
+<div class="line"><a name="l00800"></a><span class="lineno"><a class="line" href="unionisp__core__ae__roi__select.html">  800</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span><a class="code" href="unionisp__core__ae__roi__select.html">isp_core_ae_roi_select</a>{</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;        <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00802"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga0a25bccb37d1487a6cc25a5b5f63ac62">  802</a></span>&#160;                <span class="keywordtype">unsigned</span> <a class="code" href="group___i_m_p___i_s_p.html#ga0a25bccb37d1487a6cc25a5b5f63ac62">endy</a> :8;                   </div>
+<div class="line"><a name="l00803"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga9fc7e0562d8f0f2042fe798cbd269d06">  803</a></span>&#160;                <span class="keywordtype">unsigned</span> <a class="code" href="group___i_m_p___i_s_p.html#ga9fc7e0562d8f0f2042fe798cbd269d06">endx</a> :8;                   </div>
+<div class="line"><a name="l00804"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gad5fe62a920781a2b00dd82dfc62d7e5b">  804</a></span>&#160;                <span class="keywordtype">unsigned</span> <a class="code" href="group___i_m_p___i_s_p.html#gad5fe62a920781a2b00dd82dfc62d7e5b">starty</a> :8;                 </div>
+<div class="line"><a name="l00805"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gac56adabf276501db035d01b2881703c0">  805</a></span>&#160;                <span class="keywordtype">unsigned</span> <a class="code" href="group___i_m_p___i_s_p.html#gac56adabf276501db035d01b2881703c0">startx</a> :8;                 </div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        };</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        uint32_t value;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;} <a class="code" href="group___i_m_p___i_s_p.html#gad50c1f6042c643570d9148832ac60dba">IMPISPAERoi</a>;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;</div>
+<div class="line"><a name="l00813"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">  813</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">isp_core_wb_mode</a> {</div>
+<div class="line"><a name="l00814"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea6ce1e0466ff7747983d1b152285369c9">  814</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea6ce1e0466ff7747983d1b152285369c9">ISP_CORE_WB_MODE_AUTO</a> = 0,                      </div>
+<div class="line"><a name="l00815"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea82c9447a0616b465eae5b9a341148c6c">  815</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea82c9447a0616b465eae5b9a341148c6c">ISP_CORE_WB_MODE_MANUAL</a>,                        </div>
+<div class="line"><a name="l00816"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaaa36a59a0bc0b75b8e078ca54c96d306">  816</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaaa36a59a0bc0b75b8e078ca54c96d306">ISP_CORE_WB_MODE_DAY_LIGHT</a>,                     </div>
+<div class="line"><a name="l00817"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaf767ffefd8e9cb997495bed0c3f4017c">  817</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaf767ffefd8e9cb997495bed0c3f4017c">ISP_CORE_WB_MODE_CLOUDY</a>,                        </div>
+<div class="line"><a name="l00818"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea4d72e8d03f8e0cfb4097e42320a8a0f4">  818</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea4d72e8d03f8e0cfb4097e42320a8a0f4">ISP_CORE_WB_MODE_INCANDESCENT</a>,          </div>
+<div class="line"><a name="l00819"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea68920c1dbcde0b7e22af79ce92f230a2">  819</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea68920c1dbcde0b7e22af79ce92f230a2">ISP_CORE_WB_MODE_FLOURESCENT</a>,           </div>
+<div class="line"><a name="l00820"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea0b524369d95f89cc2838614378f01f15">  820</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea0b524369d95f89cc2838614378f01f15">ISP_CORE_WB_MODE_TWILIGHT</a>,                      </div>
+<div class="line"><a name="l00821"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea10f484032b57286297764ad66e3959b0">  821</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea10f484032b57286297764ad66e3959b0">ISP_CORE_WB_MODE_SHADE</a>,                         </div>
+<div class="line"><a name="l00822"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea9860e8998bd2b3f3623e60ddd2c4c763">  822</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea9860e8998bd2b3f3623e60ddd2c4c763">ISP_CORE_WB_MODE_WARM_FLOURESCENT</a>,      </div>
+<div class="line"><a name="l00823"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea839ad326780726d37b156d95dd0add3b">  823</a></span>&#160;        <a class="code" href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea839ad326780726d37b156d95dd0add3b">ISP_CORE_WB_MODE_CUSTOM</a>,        </div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;};</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;</div>
+<div class="line"><a name="l00829"></a><span class="lineno"><a class="line" href="structisp__core__wb__attr.html">  829</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structisp__core__wb__attr.html">isp_core_wb_attr</a>{</div>
+<div class="line"><a name="l00830"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#gaebf901d84977e706770650e7184ff47e">  830</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">isp_core_wb_mode</a> <a class="code" href="group___i_m_p___i_s_p.html#gaebf901d84977e706770650e7184ff47e">mode</a>;             </div>
+<div class="line"><a name="l00831"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga6077cc12a1bb17d6eb6085a0b6c50bef">  831</a></span>&#160;        uint16_t <a class="code" href="group___i_m_p___i_s_p.html#ga6077cc12a1bb17d6eb6085a0b6c50bef">rgain</a>;                 </div>
+<div class="line"><a name="l00832"></a><span class="lineno"><a class="line" href="group___i_m_p___i_s_p.html#ga545465fa1af0708dbd6c98443f06438f">  832</a></span>&#160;        uint16_t <a class="code" href="group___i_m_p___i_s_p.html#ga545465fa1af0708dbd6c98443f06438f">bgain</a>;                 </div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;}<a class="code" href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a>;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga304964ed99e1065b27eca47dada5fbab">IMP_ISP_Tuning_SetWB</a>(<a class="code" href="structisp__core__wb__attr.html">IMPISPWB</a> *wb);</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga96d8ab201444c78b1c7c4dba013a1488">IMP_ISP_Tuning_GetWB</a>(<a class="code" href="structisp__core__wb__attr.html">IMPISPWB</a> *wb);</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gad035e477da1a52c6e29c4a4d1f5f7870">IMP_ISP_Tuning_GetWB_Statis</a>(<a class="code" href="structisp__core__wb__attr.html">IMPISPWB</a> *wb);</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#gadc2dae32ae59f0a277b58f61087c7220">IMP_ISP_Tuning_GetWB_GOL_Statis</a>(<a class="code" href="structisp__core__wb__attr.html">IMPISPWB</a> *wb);</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;</div>
+<div class="line"><a name="l00904"></a><span class="lineno"><a class="line" href="structisp__core__rgb__coefft__wb__attr.html">  904</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a> {</div>
+<div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> rgb_coefft_wb_r;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> rgb_coefft_wb_g;</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> rgb_coefft_wb_b;</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;}<a class="code" href="structisp__core__rgb__coefft__wb__attr.html">IMPISPCOEFFTWB</a>;</div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___i_m_p___i_s_p.html#ga7eecfde9edb07e017907cf28b9562d1e">IMP_ISP_Tuning_Awb_GetRgbCoefft</a>(<a class="code" href="structisp__core__rgb__coefft__wb__attr.html">IMPISPCOEFFTWB</a> *<a class="code" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a>);</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_Awb_SetRgbCoefft(<a class="code" href="structisp__core__rgb__coefft__wb__attr.html">IMPISPCOEFFTWB</a> *<a class="code" href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a>);</div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetMaxAgain(uint32_t gain);</div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetMaxAgain(uint32_t *gain);</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetMaxDgain(uint32_t gain);</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;</div>
+<div class="line"><a name="l00988"></a><span class="lineno">  988</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetMaxDgain(uint32_t *gain);</div>
+<div class="line"><a name="l00989"></a><span class="lineno">  989</span>&#160;</div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetVideoDrop(<span class="keywordtype">void</span> (*cb)(<span class="keywordtype">void</span>));</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetHiLightDepress(uint32_t strength);</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetHiLightDepress(uint32_t *strength);</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetTemperStrength(uint32_t ratio);</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetSinterStrength(uint32_t ratio);</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;        uint32_t ev;                    </div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;        uint32_t expr_us;               </div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;        uint32_t ev_log2;               </div>
+<div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;        uint32_t again;                 </div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;        uint32_t dgain;                 </div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;        uint32_t gain_log2;             </div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;}IMPISPEVAttr;</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetEVAttr(IMPISPEVAttr *attr);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_EnableMovestate(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_DisableMovestate(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;        IMPISP_TUNING_MODE_AUTO,    </div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;        IMPISP_TUNING_MODE_MANUAL,    </div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;        IMPISP_TUNING_MODE_RANGE,    </div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;        IMPISP_TUNING_MODE_BUTT,    </div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;} IMPISPTuningMode;</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> weight[15][15];    </div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;} IMPISPWeight;</div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;</div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetAeWeight(IMPISPWeight *ae_weight);</div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;</div>
+<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAeWeight(IMPISPWeight *ae_weight);</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;</div>
+<div class="line"><a name="l01165"></a><span class="lineno"> 1165</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_AE_GetROI(IMPISPWeight *roi_weight);</div>
+<div class="line"><a name="l01166"></a><span class="lineno"> 1166</span>&#160;</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_AE_SetROI(IMPISPWeight *roi_weight);</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;</div>
+<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetAwbWeight(IMPISPWeight *awb_weight);</div>
+<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;</div>
+<div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAwbWeight(IMPISPWeight *awb_weight);</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;</div>
+<div class="line"><a name="l01212"></a><span class="lineno"> 1212</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01213"></a><span class="lineno"> 1213</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> zone_r[225];    </div>
+<div class="line"><a name="l01214"></a><span class="lineno"> 1214</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> zone_g[225];    </div>
+<div class="line"><a name="l01215"></a><span class="lineno"> 1215</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> zone_b[225];    </div>
+<div class="line"><a name="l01216"></a><span class="lineno"> 1216</span>&#160;} IMPISPAWBZone;</div>
+<div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAwbZone(IMPISPAWBZone *awb_zone);</div>
+<div class="line"><a name="l01230"></a><span class="lineno"> 1230</span>&#160;</div>
+<div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ae_histhresh[4];    </div>
+<div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> ae_hist[5];    </div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ae_stat_nodeh;    </div>
+<div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ae_stat_nodev;    </div>
+<div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;} IMPISPAEHist;</div>
+<div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;</div>
+<div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ae_hist[256];    </div>
+<div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;} IMPISPAEHistOrigin;</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetAeHist(IMPISPAEHist *ae_hist);</div>
+<div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;</div>
+<div class="line"><a name="l01274"></a><span class="lineno"> 1274</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAeHist(IMPISPAEHist *ae_hist);</div>
+<div class="line"><a name="l01275"></a><span class="lineno"> 1275</span>&#160;</div>
+<div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAeHist_Origin(IMPISPAEHistOrigin *ae_hist);</div>
+<div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;</div>
+<div class="line"><a name="l01293"></a><span class="lineno"> 1293</span>&#160;<span class="keyword">struct </span>isp_core_awb_sta_info{</div>
+<div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> r_gain;    </div>
+<div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> b_gain;    </div>
+<div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> awb_sum;    </div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;};</div>
+<div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;<span class="keyword">enum</span> isp_core_awb_stats_mode{</div>
+<div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;        IMPISP_AWB_STATS_LEGACY_MODE = 0,    </div>
+<div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160;        IMPISP_AWB_STATS_CURRENT_MODE = 1,    </div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;        IMPISP_AWB_STATS_MODE_BUTT,</div>
+<div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;};</div>
+<div class="line"><a name="l01309"></a><span class="lineno"> 1309</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;        <span class="keyword">struct </span>isp_core_awb_sta_info awb_stat;    </div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;        <span class="keyword">enum</span> isp_core_awb_stats_mode awb_stats_mode;    </div>
+<div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> awb_whitelevel;    </div>
+<div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> awb_blacklevel;    </div>
+<div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> cr_ref_max;    </div>
+<div class="line"><a name="l01315"></a><span class="lineno"> 1315</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> cr_ref_min;    </div>
+<div class="line"><a name="l01316"></a><span class="lineno"> 1316</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> cb_ref_max;    </div>
+<div class="line"><a name="l01317"></a><span class="lineno"> 1317</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> cb_ref_min;    </div>
+<div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> awb_stat_nodeh;    </div>
+<div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> awb_stat_nodev;    </div>
+<div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;} IMPISPAWBHist;</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;</div>
+<div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAwbHist(IMPISPAWBHist *awb_hist);</div>
+<div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;</div>
+<div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetAwbHist(IMPISPAWBHist *awb_hist);</div>
+<div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;</div>
+<div class="line"><a name="l01353"></a><span class="lineno"> 1353</span>&#160;<span class="keyword">struct </span>isp_core_af_sta_info{</div>
+<div class="line"><a name="l01354"></a><span class="lineno"> 1354</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> af_metrics;</div>
+<div class="line"><a name="l01355"></a><span class="lineno"> 1355</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> af_metrics_alt;</div>
+<div class="line"><a name="l01356"></a><span class="lineno"> 1356</span>&#160;};</div>
+<div class="line"><a name="l01360"></a><span class="lineno"> 1360</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01361"></a><span class="lineno"> 1361</span>&#160;        <span class="keyword">struct </span>isp_core_af_sta_info af_stat;    </div>
+<div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> af_enable;    </div>
+<div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> af_metrics_shift;    </div>
+<div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> af_delta;    </div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> af_theta;    </div>
+<div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> af_hilight_th;    </div>
+<div class="line"><a name="l01367"></a><span class="lineno"> 1367</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> af_alpha_alt;    </div>
+<div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  af_hstart;    </div>
+<div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  af_vstart;    </div>
+<div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  af_stat_nodeh;    </div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  af_stat_nodev;    </div>
+<div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160;} IMPISPAFHist;</div>
+<div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAFMetrices(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *metric);</div>
+<div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160;</div>
+<div class="line"><a name="l01400"></a><span class="lineno"> 1400</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAfHist(IMPISPAFHist *af_hist);</div>
+<div class="line"><a name="l01401"></a><span class="lineno"> 1401</span>&#160;</div>
+<div class="line"><a name="l01414"></a><span class="lineno"> 1414</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetAfHist(IMPISPAFHist *af_hist);</div>
+<div class="line"><a name="l01427"></a><span class="lineno"> 1427</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetAfWeight(IMPISPWeight *af_weigh);</div>
+<div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAfWeight(IMPISPWeight *af_weight);</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;</div>
+<div class="line"><a name="l01445"></a><span class="lineno"> 1445</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01446"></a><span class="lineno"> 1446</span>&#160;        uint32_t timeout;               </div>
+<div class="line"><a name="l01447"></a><span class="lineno"> 1447</span>&#160;        uint64_t cnt;                   </div>
+<div class="line"><a name="l01448"></a><span class="lineno"> 1448</span>&#160;}IMPISPWaitFrameAttr;</div>
+<div class="line"><a name="l01449"></a><span class="lineno"> 1449</span>&#160;</div>
+<div class="line"><a name="l01461"></a><span class="lineno"> 1461</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_WaitFrame(IMPISPWaitFrameAttr *attr);</div>
+<div class="line"><a name="l01462"></a><span class="lineno"> 1462</span>&#160;</div>
+<div class="line"><a name="l01466"></a><span class="lineno"> 1466</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01467"></a><span class="lineno"> 1467</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> min_it;  </div>
+<div class="line"><a name="l01468"></a><span class="lineno"> 1468</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> min_again;  </div>
+<div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> min_it_short; </div>
+<div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> min_again_short; </div>
+<div class="line"><a name="l01471"></a><span class="lineno"> 1471</span>&#160;} IMPISPAEMin;</div>
+<div class="line"><a name="l01472"></a><span class="lineno"> 1472</span>&#160;</div>
+<div class="line"><a name="l01485"></a><span class="lineno"> 1485</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetAeMin(IMPISPAEMin *ae_min);</div>
+<div class="line"><a name="l01486"></a><span class="lineno"> 1486</span>&#160;</div>
+<div class="line"><a name="l01499"></a><span class="lineno"> 1499</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAeMin(IMPISPAEMin *ae_min);</div>
+<div class="line"><a name="l01500"></a><span class="lineno"> 1500</span>&#160;</div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetAe_IT_MAX(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> it_max);</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;</div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAE_IT_MAX(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *it_max);</div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> zone[15][15];    </div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;} IMPISPZone;</div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;</div>
+<div class="line"><a name="l01545"></a><span class="lineno"> 1545</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetAeZone(IMPISPZone *ae_zone);</div>
+<div class="line"><a name="l01546"></a><span class="lineno"> 1546</span>&#160;</div>
+<div class="line"><a name="l01550"></a><span class="lineno"> 1550</span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>{</div>
+<div class="line"><a name="l01551"></a><span class="lineno"> 1551</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> key;</div>
+<div class="line"><a name="l01552"></a><span class="lineno"> 1552</span>&#160;        <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01553"></a><span class="lineno"> 1553</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassBLC : 1; <span class="comment">/* [0]  */</span></div>
+<div class="line"><a name="l01554"></a><span class="lineno"> 1554</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassGIB : 1; <span class="comment">/* [1]  */</span></div>
+<div class="line"><a name="l01555"></a><span class="lineno"> 1555</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassAG : 1; <span class="comment">/* [2]  */</span></div>
+<div class="line"><a name="l01556"></a><span class="lineno"> 1556</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassWDR : 1; <span class="comment">/* [3]  */</span></div>
+<div class="line"><a name="l01557"></a><span class="lineno"> 1557</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassDPC : 1; <span class="comment">/* [4]  */</span></div>
+<div class="line"><a name="l01558"></a><span class="lineno"> 1558</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassRDNS : 1; <span class="comment">/* [5]  */</span></div>
+<div class="line"><a name="l01559"></a><span class="lineno"> 1559</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassLSC : 1; <span class="comment">/* [6]  */</span></div>
+<div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassADR : 1; <span class="comment">/* [7]    */</span></div>
+<div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassDMSC : 1; <span class="comment">/* [8]   */</span></div>
+<div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassCCM : 1; <span class="comment">/* [9]  */</span></div>
+<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassGAMMA : 1; <span class="comment">/* [10]  */</span></div>
+<div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassDEFOG : 1; <span class="comment">/* [11]         */</span></div>
+<div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassCSC : 1; <span class="comment">/* [12]   */</span></div>
+<div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassCLM : 1; <span class="comment">/* [13]   */</span></div>
+<div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassSP : 1; <span class="comment">/* [14]  */</span></div>
+<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassYDNS : 1; <span class="comment">/* [15]  */</span></div>
+<div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassBCSH : 1; <span class="comment">/* [16]  */</span></div>
+<div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassSDNS : 1; <span class="comment">/* [17]  */</span></div>
+<div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassHLDC : 1; <span class="comment">/* [18]  */</span></div>
+<div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitRsv : 12; <span class="comment">/* [19 ~ 30]  */</span></div>
+<div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> bitBypassMDNS : 1; <span class="comment">/* [31]  */</span></div>
+<div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;        };</div>
+<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;} IMPISPModuleCtl;</div>
+<div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;</div>
+<div class="line"><a name="l01589"></a><span class="lineno"> 1589</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetModuleControl(IMPISPModuleCtl *ispmodule);</div>
+<div class="line"><a name="l01590"></a><span class="lineno"> 1590</span>&#160;</div>
+<div class="line"><a name="l01603"></a><span class="lineno"> 1603</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetModuleControl(IMPISPModuleCtl *ispmodule);</div>
+<div class="line"><a name="l01604"></a><span class="lineno"> 1604</span>&#160;</div>
+<div class="line"><a name="l01608"></a><span class="lineno"> 1608</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01609"></a><span class="lineno"> 1609</span>&#160;        <span class="keywordtype">bool</span> fcrop_enable;</div>
+<div class="line"><a name="l01610"></a><span class="lineno"> 1610</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fcrop_top;</div>
+<div class="line"><a name="l01611"></a><span class="lineno"> 1611</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fcrop_left;</div>
+<div class="line"><a name="l01612"></a><span class="lineno"> 1612</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fcrop_width;</div>
+<div class="line"><a name="l01613"></a><span class="lineno"> 1613</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fcrop_height;</div>
+<div class="line"><a name="l01614"></a><span class="lineno"> 1614</span>&#160;} IMPISPFrontCrop;</div>
+<div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;</div>
+<div class="line"><a name="l01628"></a><span class="lineno"> 1628</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetFrontCrop(IMPISPFrontCrop *ispfrontcrop);</div>
+<div class="line"><a name="l01629"></a><span class="lineno"> 1629</span>&#160;</div>
+<div class="line"><a name="l01642"></a><span class="lineno"> 1642</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetFrontCrop(IMPISPFrontCrop *ispfrontcrop);</div>
+<div class="line"><a name="l01643"></a><span class="lineno"> 1643</span>&#160;</div>
+<div class="line"><a name="l01656"></a><span class="lineno"> 1656</span>&#160;<span class="keywordtype">int</span> IMP_ISP_WDR_ENABLE(<a class="code" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode);</div>
+<div class="line"><a name="l01657"></a><span class="lineno"> 1657</span>&#160;</div>
+<div class="line"><a name="l01670"></a><span class="lineno"> 1670</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetDPC_Strength(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ratio);</div>
+<div class="line"><a name="l01671"></a><span class="lineno"> 1671</span>&#160;</div>
+<div class="line"><a name="l01683"></a><span class="lineno"> 1683</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetDPC_Strength(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *ratio);</div>
+<div class="line"><a name="l01684"></a><span class="lineno"> 1684</span>&#160;</div>
+<div class="line"><a name="l01697"></a><span class="lineno"> 1697</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetDRC_Strength(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ratio);</div>
+<div class="line"><a name="l01698"></a><span class="lineno"> 1698</span>&#160;</div>
+<div class="line"><a name="l01711"></a><span class="lineno"> 1711</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetDRC_Strength(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> *ratio);</div>
+<div class="line"><a name="l01712"></a><span class="lineno"> 1712</span>&#160;</div>
+<div class="line"><a name="l01716"></a><span class="lineno"> 1716</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l01717"></a><span class="lineno"> 1717</span>&#160;        IMPISP_FLIP_NORMAL_MODE = 0,    </div>
+<div class="line"><a name="l01718"></a><span class="lineno"> 1718</span>&#160;        IMPISP_FLIP_H_MODE = 1,    </div>
+<div class="line"><a name="l01719"></a><span class="lineno"> 1719</span>&#160;        IMPISP_FLIP_V_MODE = 2,         </div>
+<div class="line"><a name="l01720"></a><span class="lineno"> 1720</span>&#160;        IMPISP_FLIP_HV_MODE = 3,        </div>
+<div class="line"><a name="l01721"></a><span class="lineno"> 1721</span>&#160;        IMPISP_FLIP_MODE_BUTT,</div>
+<div class="line"><a name="l01722"></a><span class="lineno"> 1722</span>&#160;} IMPISPHVFLIP;</div>
+<div class="line"><a name="l01723"></a><span class="lineno"> 1723</span>&#160;</div>
+<div class="line"><a name="l01736"></a><span class="lineno"> 1736</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetHVFLIP(IMPISPHVFLIP hvflip);</div>
+<div class="line"><a name="l01737"></a><span class="lineno"> 1737</span>&#160;</div>
+<div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetHVFlip(IMPISPHVFLIP *hvflip);</div>
+<div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;</div>
+<div class="line"><a name="l01755"></a><span class="lineno"> 1755</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;        IMPISP_MASK_TYPE_RGB = 0, </div>
+<div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;        IMPISP_MASK_TYPE_YUV = 1, </div>
+<div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160;} IMPISP_MASK_TYPE;</div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;</div>
+<div class="line"><a name="l01763"></a><span class="lineno"> 1763</span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span>mask_value {</div>
+<div class="line"><a name="l01764"></a><span class="lineno"> 1764</span>&#160;        <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01765"></a><span class="lineno"> 1765</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> Red; </div>
+<div class="line"><a name="l01766"></a><span class="lineno"> 1766</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> Green; </div>
+<div class="line"><a name="l01767"></a><span class="lineno"> 1767</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> Blue; </div>
+<div class="line"><a name="l01768"></a><span class="lineno"> 1768</span>&#160;        } mask_rgb; </div>
+<div class="line"><a name="l01769"></a><span class="lineno"> 1769</span>&#160;        <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01770"></a><span class="lineno"> 1770</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> y_value; </div>
+<div class="line"><a name="l01771"></a><span class="lineno"> 1771</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> u_value; </div>
+<div class="line"><a name="l01772"></a><span class="lineno"> 1772</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> v_value; </div>
+<div class="line"><a name="l01773"></a><span class="lineno"> 1773</span>&#160;        } mask_ayuv; </div>
+<div class="line"><a name="l01774"></a><span class="lineno"> 1774</span>&#160;} IMP_ISP_MASK_VALUE;</div>
+<div class="line"><a name="l01775"></a><span class="lineno"> 1775</span>&#160;</div>
+<div class="line"><a name="l01779"></a><span class="lineno"> 1779</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>isp_mask_block_par {</div>
+<div class="line"><a name="l01780"></a><span class="lineno"> 1780</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> mask_en;</div>
+<div class="line"><a name="l01781"></a><span class="lineno"> 1781</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> mask_pos_top;</div>
+<div class="line"><a name="l01782"></a><span class="lineno"> 1782</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> mask_pos_left;</div>
+<div class="line"><a name="l01783"></a><span class="lineno"> 1783</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> mask_width;</div>
+<div class="line"><a name="l01784"></a><span class="lineno"> 1784</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> mask_height;</div>
+<div class="line"><a name="l01785"></a><span class="lineno"> 1785</span>&#160;        IMP_ISP_MASK_VALUE mask_value;</div>
+<div class="line"><a name="l01786"></a><span class="lineno"> 1786</span>&#160;} IMPISP_MASK_BLOCK_PAR;</div>
+<div class="line"><a name="l01787"></a><span class="lineno"> 1787</span>&#160;</div>
+<div class="line"><a name="l01791"></a><span class="lineno"> 1791</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01792"></a><span class="lineno"> 1792</span>&#160;        IMPISP_MASK_BLOCK_PAR chn0[4];</div>
+<div class="line"><a name="l01793"></a><span class="lineno"> 1793</span>&#160;        IMPISP_MASK_BLOCK_PAR chn1[4];</div>
+<div class="line"><a name="l01794"></a><span class="lineno"> 1794</span>&#160;        IMPISP_MASK_BLOCK_PAR chn2[4];</div>
+<div class="line"><a name="l01795"></a><span class="lineno"> 1795</span>&#160;        IMPISP_MASK_TYPE mask_type;</div>
+<div class="line"><a name="l01796"></a><span class="lineno"> 1796</span>&#160;} IMPISPMASKAttr;</div>
+<div class="line"><a name="l01797"></a><span class="lineno"> 1797</span>&#160;</div>
+<div class="line"><a name="l01810"></a><span class="lineno"> 1810</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_SetMask(IMPISPMASKAttr *mask);</div>
+<div class="line"><a name="l01811"></a><span class="lineno"> 1811</span>&#160;</div>
+<div class="line"><a name="l01824"></a><span class="lineno"> 1824</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetMask(IMPISPMASKAttr *mask);</div>
+<div class="line"><a name="l01825"></a><span class="lineno"> 1825</span>&#160;</div>
+<div class="line"><a name="l01829"></a><span class="lineno"> 1829</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l01830"></a><span class="lineno"> 1830</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hts;</div>
+<div class="line"><a name="l01831"></a><span class="lineno"> 1831</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> vts;</div>
+<div class="line"><a name="l01832"></a><span class="lineno"> 1832</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fps;</div>
+<div class="line"><a name="l01833"></a><span class="lineno"> 1833</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width;</div>
+<div class="line"><a name="l01834"></a><span class="lineno"> 1834</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height;</div>
+<div class="line"><a name="l01835"></a><span class="lineno"> 1835</span>&#160;} IMPISPSENSORAttr;</div>
+<div class="line"><a name="l01848"></a><span class="lineno"> 1848</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_GetSensorAttr(IMPISPSENSORAttr *attr);</div>
+<div class="line"><a name="l01849"></a><span class="lineno"> 1849</span>&#160;</div>
+<div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_EnableDRC(<a class="code" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode);</div>
+<div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;</div>
+<div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;<span class="keywordtype">int</span> IMP_ISP_Tuning_EnableDefog(<a class="code" href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a> mode);</div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;</div>
+<div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;</div>
+<div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;<span class="preprocessor">#if __cplusplus</span></div>
+<div class="line"><a name="l01881"></a><span class="lineno"> 1881</span>&#160;}</div>
+<div class="line"><a name="l01882"></a><span class="lineno"> 1882</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01883"></a><span class="lineno"> 1883</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01884"></a><span class="lineno"> 1884</span>&#160;</div>
+<div class="line"><a name="l01889"></a><span class="lineno"> 1889</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __IMP_ISP_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga38ee4d645812c12b28cd37d5320ccfb2a97f8ef07011482201851230c9e944752"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2a97f8ef07011482201851230c9e944752">TX_SENSOR_CONTROL_INTERFACE_I2C</a></div><div class="ttdoc">I2C控制总线 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:111</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga119b1782b6d972e38d604528ad72b65e"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga119b1782b6d972e38d604528ad72b65e">isp_core_expr_unit</a></div><div class="ttdeci">isp_core_expr_unit</div><div class="ttdoc">曝光单位 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:745</div></div>
+<div class="ttc" id="structisp__core__rgb__coefft__wb__attr_html"><div class="ttname"><a href="structisp__core__rgb__coefft__wb__attr.html">isp_core_rgb_coefft_wb_attr</a></div><div class="ttdef"><b>Definition:</b> imp_isp.h:904</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga45aca860233255ad78614e2fa38520b9aa3b9036e0facac6e3165ef4a24b41790"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9aa3b9036e0facac6e3165ef4a24b41790">IMPISP_TUNING_OPS_MODE_ENABLE</a></div><div class="ttdoc">使能该模块功能 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:283</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga81d9d4822dab004a99a2d71833d9fecd"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga81d9d4822dab004a99a2d71833d9fecd">IMPSensorInfo::power_gpio</a></div><div class="ttdeci">unsigned short power_gpio</div><div class="ttdoc">摄像头power 接口链接的GPIO，注意：现在没有启用该参数 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:143</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gadb085866bbf4d5576e01762beb11b2e1"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gadb085866bbf4d5576e01762beb11b2e1">IMPISPWB</a></div><div class="ttdeci">struct isp_core_wb_attr IMPISPWB</div><div class="ttdoc">白平衡参数 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga02de99774dc0257c7613d9ef4dd7ae94"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga02de99774dc0257c7613d9ef4dd7ae94">IMP_ISP_Tuning_SetISPBypass</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetISPBypass(IMPISPTuningOpsMode enable)</div><div class="ttdoc">ISP模块是否bypass. </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga75329730dcf100da4839ead7d585662c"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga75329730dcf100da4839ead7d585662c">IMP_ISP_DisableTuning</a></div><div class="ttdeci">int IMP_ISP_DisableTuning(void)</div><div class="ttdoc">不使能ISP效果调试功能 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga87ea0697f417532c191bf86677e281b5"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga87ea0697f417532c191bf86677e281b5">IMP_ISP_DelSensor</a></div><div class="ttdeci">int IMP_ISP_DelSensor(IMPSensorInfo *pinfo)</div><div class="ttdoc">删除一个sensor </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga96d8ab201444c78b1c7c4dba013a1488"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga96d8ab201444c78b1c7c4dba013a1488">IMP_ISP_Tuning_GetWB</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetWB(IMPISPWB *wb)</div><div class="ttdoc">获取白平衡功能设置。 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gac0b29cb7b14957eef86d65501b1979d3"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gac0b29cb7b14957eef86d65501b1979d3">IMP_ISP_Tuning_GetSensorFPS</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetSensorFPS(uint32_t *fps_num, uint32_t *fps_den)</div><div class="ttdoc">获取摄像头输出帧率 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gad035e477da1a52c6e29c4a4d1f5f7870"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gad035e477da1a52c6e29c4a4d1f5f7870">IMP_ISP_Tuning_GetWB_Statis</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetWB_Statis(IMPISPWB *wb)</div><div class="ttdoc">获取白平衡统计值。 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga51cbf4116bb59389dc30a6840764e73ead55a5e7f03b4cf92f09ca928730d2799"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ead55a5e7f03b4cf92f09ca928730d2799">IMPISP_TUNING_OPS_TYPE_BUTT</a></div><div class="ttdoc">用于判断参数的有效性，参数大小必须小于这个值 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:293</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga608cd103824bbb2297ff7f63c111ba65"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga608cd103824bbb2297ff7f63c111ba65">IMP_ISP_Tuning_GetAntiFlickerAttr</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetAntiFlickerAttr(IMPISPAntiflickerAttr *pattr)</div><div class="ttdoc">获得ISP抗闪频属性 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gafbea574db862f5e4afacbb42f5cee103"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gafbea574db862f5e4afacbb42f5cee103">IMP_ISP_Tuning_SetGamma</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetGamma(IMPISPGamma *gamma)</div><div class="ttdoc">设置GAMMA参数. </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga2cbb8a56d859c6784619d0ea8715ca04"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga2cbb8a56d859c6784619d0ea8715ca04">IMP_ISP_Tuning_GetAeLuma</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetAeLuma(int *luma)</div><div class="ttdoc">获取画面平均亮度。 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22ea839ad326780726d37b156d95dd0add3b"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea839ad326780726d37b156d95dd0add3b">ISP_CORE_WB_MODE_CUSTOM</a></div><div class="ttdoc">自定义模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:823</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga00373cf71fd22df5eaa2f7eed6973100"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga00373cf71fd22df5eaa2f7eed6973100">IMPISPRunningMode</a></div><div class="ttdeci">IMPISPRunningMode</div><div class="ttdoc">ISP 工作模式配置，正常模式或夜视模式。 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:610</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga00373cf71fd22df5eaa2f7eed6973100aca258162fd7afe8a1a81fe5b63723c73"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100aca258162fd7afe8a1a81fe5b63723c73">IMPISP_RUNNING_MODE_NIGHT</a></div><div class="ttdoc">夜视模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:612</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga00373cf71fd22df5eaa2f7eed6973100acdceafc2c7437b0cfc100c28afdc49cc"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100acdceafc2c7437b0cfc100c28afdc49cc">IMPISP_RUNNING_MODE_BUTT</a></div><div class="ttdoc">最大值 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:613</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga1e088f85ea78d4a58df1983fa8c3bbae"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga1e088f85ea78d4a58df1983fa8c3bbae">IMP_ISP_Tuning_GetSharpness</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetSharpness(unsigned char *psharpness)</div><div class="ttdoc">获取ISP 综合效果图片锐度 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga15dbea9727fd70901275c90a3e5ef2d2"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga15dbea9727fd70901275c90a3e5ef2d2">isp_core_expr_mode</a></div><div class="ttdeci">isp_core_expr_mode</div><div class="ttdoc">曝光模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:737</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga38ee4d645812c12b28cd37d5320ccfb2aacc0aa36ed6d54a7064f49eb987f7bc6"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga38ee4d645812c12b28cd37d5320ccfb2aacc0aa36ed6d54a7064f49eb987f7bc6">TX_SENSOR_CONTROL_INTERFACE_SPI</a></div><div class="ttdoc">SPI控制总线 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:112</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga51cbf4116bb59389dc30a6840764e73eabc9c9bf5f177c50dbc895ef196d2d825"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73eabc9c9bf5f177c50dbc895ef196d2d825">IMPISP_TUNING_OPS_TYPE_MANUAL</a></div><div class="ttdoc">该模块的操作为手动模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:292</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga9ad8f252ce6bdf00a3682c1ebecfb149"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga9ad8f252ce6bdf00a3682c1ebecfb149">IMP_ISP_Tuning_SetContrast</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetContrast(unsigned char contrast)</div><div class="ttdoc">设置ISP 综合效果图片对比度 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaaf62e57667339f400a1dcaf969601f05"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaaf62e57667339f400a1dcaf969601f05">IMPSensorInfo::rst_gpio</a></div><div class="ttdeci">unsigned short rst_gpio</div><div class="ttdoc">摄像头reset接口链接的GPIO，注意：现在没有启用该参数 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:141</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22ea4d72e8d03f8e0cfb4097e42320a8a0f4"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea4d72e8d03f8e0cfb4097e42320a8a0f4">ISP_CORE_WB_MODE_INCANDESCENT</a></div><div class="ttdoc">白炽灯 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:818</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga72bd61d7ffa8f06b239c1ce43a6b5274"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga72bd61d7ffa8f06b239c1ce43a6b5274">IMP_ISP_EnableSensor</a></div><div class="ttdeci">int IMP_ISP_EnableSensor(void)</div><div class="ttdoc">使能一个sensor </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22ea68920c1dbcde0b7e22af79ce92f230a2"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea68920c1dbcde0b7e22af79ce92f230a2">ISP_CORE_WB_MODE_FLOURESCENT</a></div><div class="ttdoc">荧光灯 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:819</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaf52aeec8ebe03bc6097d6a6438559071"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaf52aeec8ebe03bc6097d6a6438559071">IMPSPIInfo::bus_num</a></div><div class="ttdeci">int bus_num</div><div class="ttdoc">SPI总线地址 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:128</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gad53a4789425c0ca6aefa236d223c62ef"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gad53a4789425c0ca6aefa236d223c62ef">IMP_ISP_Tuning_SetAeComp</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetAeComp(int comp)</div><div class="ttdoc">设置AE补偿。AE补偿参数可以调整图像AE target，范围为[0-255]. </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaa420ab671dc3ac21664e68f7471499ce"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaa420ab671dc3ac21664e68f7471499ce">IMP_ISP_Tuning_SetBrightness</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetBrightness(unsigned char bright)</div><div class="ttdoc">设置ISP 综合效果图片亮度 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gad5fe62a920781a2b00dd82dfc62d7e5b"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gad5fe62a920781a2b00dd82dfc62d7e5b">isp_core_ae_roi_select::starty</a></div><div class="ttdeci">unsigned starty</div><div class="ttdoc">起始点y坐标 (0 ~ 255) </div><div class="ttdef"><b>Definition:</b> imp_isp.h:804</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga452cdc199a01922aa7a5e10d06225f0eac2c914da54c8ce3dcef396ea0edce902"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eac2c914da54c8ce3dcef396ea0edce902">IMPISP_ANTIFLICKER_60HZ</a></div><div class="ttdoc">使能ISP抗闪频功能，并设置频率为60HZ </div><div class="ttdef"><b>Definition:</b> imp_isp.h:361</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga00373cf71fd22df5eaa2f7eed6973100a3311b00220b304cc33887dc596255633"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga00373cf71fd22df5eaa2f7eed6973100a3311b00220b304cc33887dc596255633">IMPISP_RUNNING_MODE_DAY</a></div><div class="ttdoc">正常模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:611</div></div>
+<div class="ttc" id="struct_i_m_p_s_p_i_info_html"><div class="ttname"><a href="struct_i_m_p_s_p_i_info.html">IMPSPIInfo</a></div><div class="ttdoc">摄像头控制总线类型是SPI时，需要配置的参数结构体 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:126</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaeccca892064ffc76ae67ac0a6e107d33"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaeccca892064ffc76ae67ac0a6e107d33">isp_core_expr_attr::@3::integration_time_min</a></div><div class="ttdeci">uint16_t integration_time_min</div><div class="ttdoc">获取的曝光最小时间，单位为行 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:762</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga51cbf4116bb59389dc30a6840764e73ea5e63521a46939be32170e2f44596b086"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga51cbf4116bb59389dc30a6840764e73ea5e63521a46939be32170e2f44596b086">IMPISP_TUNING_OPS_TYPE_AUTO</a></div><div class="ttdoc">该模块的操作为自动模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:291</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga45aca860233255ad78614e2fa38520b9"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga45aca860233255ad78614e2fa38520b9">IMPISPTuningOpsMode</a></div><div class="ttdeci">IMPISPTuningOpsMode</div><div class="ttdoc">ISP功能开关 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:281</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga4259acd6ef932cbd6c9cde02fc4a5b21"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga4259acd6ef932cbd6c9cde02fc4a5b21">IMP_ISP_Tuning_GetAeComp</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetAeComp(int *comp)</div><div class="ttdoc">获取AE补偿。 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga452cdc199a01922aa7a5e10d06225f0ea87cb7a4e8538d789e73e25fcf030ccf2"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea87cb7a4e8538d789e73e25fcf030ccf2">IMPISP_ANTIFLICKER_DISABLE</a></div><div class="ttdoc">不使能ISP抗闪频功能 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:359</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga8322e3086b65300b1aca801a5ad1b22e"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga8322e3086b65300b1aca801a5ad1b22e">isp_core_wb_mode</a></div><div class="ttdeci">isp_core_wb_mode</div><div class="ttdoc">白平衡模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:813</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga8e4d951a6a80e88026f41e310090c44d"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga8e4d951a6a80e88026f41e310090c44d">IMP_ISP_AddSensor</a></div><div class="ttdeci">int IMP_ISP_AddSensor(IMPSensorInfo *pinfo)</div><div class="ttdoc">添加一个sensor，用于向ISP模块提供数据源 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga452cdc199a01922aa7a5e10d06225f0ea5877a1a388b494636e1250e30e5e707a"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0ea5877a1a388b494636e1250e30e5e707a">IMPISP_ANTIFLICKER_BUTT</a></div><div class="ttdoc">用于判断参数的有效性，参数大小必须小于这个值 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:362</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga0c301c0b728ffee66209fa536866a629"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga0c301c0b728ffee66209fa536866a629">IMP_ISP_Tuning_GetTotalGain</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetTotalGain(uint32_t *gain)</div><div class="ttdoc">获取ISP输出图像的整体增益值 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga545465fa1af0708dbd6c98443f06438f"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga545465fa1af0708dbd6c98443f06438f">isp_core_wb_attr::bgain</a></div><div class="ttdeci">uint16_t bgain</div><div class="ttdoc">蓝色增益，手动模式时有效 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:832</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gac59f20dcf3e73189b28cab8ed02e1a88"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gac59f20dcf3e73189b28cab8ed02e1a88">IMPSensorInfo::pwdn_gpio</a></div><div class="ttdeci">unsigned short pwdn_gpio</div><div class="ttdoc">摄像头power down接口链接的GPIO，注意：现在没有启用该参数 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:142</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaefda984f8fb1aed9fd540edec6f2c7ad"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaefda984f8fb1aed9fd540edec6f2c7ad">IMP_ISP_Tuning_GetGamma</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetGamma(IMPISPGamma *gamma)</div><div class="ttdoc">获取GAMMA参数. </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga7eecfde9edb07e017907cf28b9562d1e"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga7eecfde9edb07e017907cf28b9562d1e">IMP_ISP_Tuning_Awb_GetRgbCoefft</a></div><div class="ttdeci">int IMP_ISP_Tuning_Awb_GetRgbCoefft(IMPISPCOEFFTWB *isp_core_rgb_coefft_wb_attr)</div><div class="ttdoc">获取sensor AWB RGB通道偏移参数。 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga0a25bccb37d1487a6cc25a5b5f63ac62"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga0a25bccb37d1487a6cc25a5b5f63ac62">isp_core_ae_roi_select::endy</a></div><div class="ttdeci">unsigned endy</div><div class="ttdoc">结束点y坐标 (0 ~ 255) </div><div class="ttdef"><b>Definition:</b> imp_isp.h:802</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaf1f07a434ff4d5d0786d713aad2ffc26"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaf1f07a434ff4d5d0786d713aad2ffc26">IMP_ISP_Tuning_SetISPVflip</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetISPVflip(IMPISPTuningOpsMode mode)</div><div class="ttdoc">设置ISP图像上下反转效果功能是否使能 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga45aca860233255ad78614e2fa38520b9ab61200e52980316eaea2a9c2bd5abcf1"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab61200e52980316eaea2a9c2bd5abcf1">IMPISP_TUNING_OPS_MODE_DISABLE</a></div><div class="ttdoc">不使能该模块功能 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:282</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga121bb07b3c434d708ff9d2627f230884"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga121bb07b3c434d708ff9d2627f230884">IMP_ISP_GetSensorRegister</a></div><div class="ttdeci">int IMP_ISP_GetSensorRegister(uint32_t reg, uint32_t *value)</div><div class="ttdoc">获取sensor一个寄存器的值 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga1b6f33516c68ac7cf293efd247712dfc"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga1b6f33516c68ac7cf293efd247712dfc">IMP_ISP_Tuning_GetISPVflip</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetISPVflip(IMPISPTuningOpsMode *pmode)</div><div class="ttdoc">获取ISP图像上下反转效果功能的操作状态 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga95eace973c2c84c22acd607e1a81292d"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga95eace973c2c84c22acd607e1a81292d">IMP_ISP_Tuning_GetBrightness</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetBrightness(unsigned char *pbright)</div><div class="ttdoc">获取ISP 综合效果图片亮度 </div></div>
+<div class="ttc" id="structisp__core__wb__attr_html"><div class="ttname"><a href="structisp__core__wb__attr.html">isp_core_wb_attr</a></div><div class="ttdoc">白平衡参数 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:829</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga96980ba333fab92cd7644b36ba95bfc5"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga96980ba333fab92cd7644b36ba95bfc5">isp_core_expr_attr::@3::integration_time</a></div><div class="ttdeci">uint16_t integration_time</div><div class="ttdoc">获取的曝光时间，单位为行 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:761</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga6077cc12a1bb17d6eb6085a0b6c50bef"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga6077cc12a1bb17d6eb6085a0b6c50bef">isp_core_wb_attr::rgain</a></div><div class="ttdeci">uint16_t rgain</div><div class="ttdoc">红色增益，手动模式时有效 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:831</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga1c82db22ede96a92628c96a5b891ae11"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga1c82db22ede96a92628c96a5b891ae11">IMP_ISP_Tuning_SetAntiFlickerAttr</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetAntiFlickerAttr(IMPISPAntiflickerAttr attr)</div><div class="ttdoc">设置ISP抗闪频属性 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaa3571e3f4f0e2a5759f403241dbc1bde"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaa3571e3f4f0e2a5759f403241dbc1bde">IMP_ISP_Tuning_GetContrast</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetContrast(unsigned char *pcontrast)</div><div class="ttdoc">获取ISP 综合效果图片对比度 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga7c888732fd3ca06fabb28ff65a1acdec"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga7c888732fd3ca06fabb28ff65a1acdec">IMP_ISP_Tuning_GetExpr</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetExpr(IMPISPExpr *expr)</div><div class="ttdoc">获取AE参数。 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga304964ed99e1065b27eca47dada5fbab"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga304964ed99e1065b27eca47dada5fbab">IMP_ISP_Tuning_SetWB</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetWB(IMPISPWB *wb)</div><div class="ttdoc">设置白平衡功能设置。可以设置自动与手动模式，手动模式主要通过设置rgain、bgain实现。 ...</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22eaf767ffefd8e9cb997495bed0c3f4017c"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaf767ffefd8e9cb997495bed0c3f4017c">ISP_CORE_WB_MODE_CLOUDY</a></div><div class="ttdoc">阴天 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:817</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaafb8164f20f79a2dd0290502a25367d1"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaafb8164f20f79a2dd0290502a25367d1">IMPI2CInfo::addr</a></div><div class="ttdeci">int addr</div><div class="ttdoc">I2C地址 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:120</div></div>
+<div class="ttc" id="struct_i_m_p_sensor_info_html"><div class="ttname"><a href="struct_i_m_p_sensor_info.html">IMPSensorInfo</a></div><div class="ttdoc">摄像头注册信息结构体 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:134</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22eaaa36a59a0bc0b75b8e078ca54c96d306"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22eaaa36a59a0bc0b75b8e078ca54c96d306">ISP_CORE_WB_MODE_DAY_LIGHT</a></div><div class="ttdoc">晴天 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:816</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga452cdc199a01922aa7a5e10d06225f0e"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga452cdc199a01922aa7a5e10d06225f0e">IMPISPAntiflickerAttr</a></div><div class="ttdeci">IMPISPAntiflickerAttr</div><div class="ttdoc">ISP抗闪频属性参数结构体。 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:358</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gad50c1f6042c643570d9148832ac60dba"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gad50c1f6042c643570d9148832ac60dba">IMPISPAERoi</a></div><div class="ttdeci">union isp_core_ae_roi_select IMPISPAERoi</div><div class="ttdoc">曝光统计区域选择 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22ea6ce1e0466ff7747983d1b152285369c9"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea6ce1e0466ff7747983d1b152285369c9">ISP_CORE_WB_MODE_AUTO</a></div><div class="ttdoc">自动模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:814</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22ea82c9447a0616b465eae5b9a341148c6c"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea82c9447a0616b465eae5b9a341148c6c">ISP_CORE_WB_MODE_MANUAL</a></div><div class="ttdoc">手动模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:815</div></div>
+<div class="ttc" id="struct_i_m_p_i2_c_info_html"><div class="ttname"><a href="struct_i_m_p_i2_c_info.html">IMPI2CInfo</a></div><div class="ttdoc">摄像头控制总线类型是I2C时，需要配置的参数结构体 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:118</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga42cce6933c6242e9944874321756f62c"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga42cce6933c6242e9944874321756f62c">IMPISPExpr</a></div><div class="ttdeci">union isp_core_expr_attr IMPISPExpr</div><div class="ttdoc">曝光参数 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gac974214ea084793ccba91d0209ccf3a7"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gac974214ea084793ccba91d0209ccf3a7">IMP_ISP_Tuning_SetSensorFPS</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetSensorFPS(uint32_t fps_num, uint32_t fps_den)</div><div class="ttdoc">设置摄像头输出帧率 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gab0ad06b6d923c498476e367bf2e6a401"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gab0ad06b6d923c498476e367bf2e6a401">IMP_ISP_Tuning_GetISPHflip</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetISPHflip(IMPISPTuningOpsMode *pmode)</div><div class="ttdoc">获取ISP图像镜面效果功能的操作状态 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaebf901d84977e706770650e7184ff47e"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaebf901d84977e706770650e7184ff47e">isp_core_wb_attr::mode</a></div><div class="ttdeci">enum isp_core_wb_mode mode</div><div class="ttdoc">白平衡模式，分为自动与手动模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:830</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22ea0b524369d95f89cc2838614378f01f15"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea0b524369d95f89cc2838614378f01f15">ISP_CORE_WB_MODE_TWILIGHT</a></div><div class="ttdoc">黄昏 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:820</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga663cc368f688229e2766a2cc2a2cdc52"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga663cc368f688229e2766a2cc2a2cdc52">IMP_ISP_Tuning_SetISPHflip</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetISPHflip(IMPISPTuningOpsMode mode)</div><div class="ttdoc">设置ISP图像镜面效果功能是否使能 </div></div>
+<div class="ttc" id="unionisp__core__expr__attr_html"><div class="ttname"><a href="unionisp__core__expr__attr.html">isp_core_expr_attr</a></div><div class="ttdoc">曝光参数 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:753</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gab376dc9de94e58d63d0126ca3e232da3"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gab376dc9de94e58d63d0126ca3e232da3">IMP_ISP_Tuning_GetSaturation</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetSaturation(unsigned char *psat)</div><div class="ttdoc">获取ISP 综合效果图片饱和度 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga34e80ddfdcab5e5f1b500d9271e8a332"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga34e80ddfdcab5e5f1b500d9271e8a332">IMP_ISP_EnableTuning</a></div><div class="ttdeci">int IMP_ISP_EnableTuning(void)</div><div class="ttdoc">使能ISP效果调试功能 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga45aca860233255ad78614e2fa38520b9ab22cf50d640c3fa6e43566e45f60fb80"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga45aca860233255ad78614e2fa38520b9ab22cf50d640c3fa6e43566e45f60fb80">IMPISP_TUNING_OPS_MODE_BUTT</a></div><div class="ttdoc">用于判断参数的有效性，参数大小必须小于这个值 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:284</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga180f8a04199e6b151a28f0eb4c35e3bb"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga180f8a04199e6b151a28f0eb4c35e3bb">IMPSensorInfo::@0::i2c</a></div><div class="ttdeci">IMPI2CInfo i2c</div><div class="ttdoc">I2C总线信息 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:138</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga90942b48db02576837a357b6cca80b5a"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga90942b48db02576837a357b6cca80b5a">isp_core_expr_attr::mode</a></div><div class="ttdeci">enum isp_core_expr_mode mode</div><div class="ttdoc">设置的曝光模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:755</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga119b1782b6d972e38d604528ad72b65eaccd13313b10d37bb3631b3f63222acd1"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65eaccd13313b10d37bb3631b3f63222acd1">ISP_CORE_EXPR_UNIT_LINE</a></div><div class="ttdoc">行 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:746</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gadc2dae32ae59f0a277b58f61087c7220"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gadc2dae32ae59f0a277b58f61087c7220">IMP_ISP_Tuning_GetWB_GOL_Statis</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetWB_GOL_Statis(IMPISPWB *wb)</div><div class="ttdoc">获取白平衡全局统计值。 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga38ee4d645812c12b28cd37d5320ccfb2"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga38ee4d645812c12b28cd37d5320ccfb2">IMPSensorControlBusType</a></div><div class="ttdeci">IMPSensorControlBusType</div><div class="ttdoc">摄像头控制总线类型枚举 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:110</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22ea9860e8998bd2b3f3623e60ddd2c4c763"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea9860e8998bd2b3f3623e60ddd2c4c763">ISP_CORE_WB_MODE_WARM_FLOURESCENT</a></div><div class="ttdoc">暖色荧光灯 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:822</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gabae4cbcea455fe602d251e31fbbe84cb"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gabae4cbcea455fe602d251e31fbbe84cb">isp_core_expr_attr::@3::one_line_expr_in_us</a></div><div class="ttdeci">uint16_t one_line_expr_in_us</div><div class="ttdoc">获取的一行曝光时间对应的微妙数 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:764</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga753b2373687b80fd47a9ccfa0b0a3da6"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga753b2373687b80fd47a9ccfa0b0a3da6">IMPSensorInfo::@0::spi</a></div><div class="ttdeci">IMPSPIInfo spi</div><div class="ttdoc">SPI总线信息 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:139</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga9fc7e0562d8f0f2042fe798cbd269d06"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga9fc7e0562d8f0f2042fe798cbd269d06">isp_core_ae_roi_select::endx</a></div><div class="ttdeci">unsigned endx</div><div class="ttdoc">结束点x坐标 (0 ~ 255) </div><div class="ttdef"><b>Definition:</b> imp_isp.h:803</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga15dbea9727fd70901275c90a3e5ef2d2ac1c6437b2649ae7f6444dd8fabc140b5"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2ac1c6437b2649ae7f6444dd8fabc140b5">ISP_CORE_EXPR_MODE_MANUAL</a></div><div class="ttdoc">手动模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:739</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga5c2fdfdad046856bff32937c5ac05b90"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga5c2fdfdad046856bff32937c5ac05b90">IMP_ISP_Close</a></div><div class="ttdeci">int IMP_ISP_Close(void)</div><div class="ttdoc">关闭ISP模块 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga51cbf4116bb59389dc30a6840764e73e"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga51cbf4116bb59389dc30a6840764e73e">IMPISPTuningOpsType</a></div><div class="ttdeci">IMPISPTuningOpsType</div><div class="ttdoc">ISP功能选用开关 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:290</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga15176aa01cdc235ea1877154176cda57"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga15176aa01cdc235ea1877154176cda57">IMP_ISP_Tuning_GetISPRunningMode</a></div><div class="ttdeci">int IMP_ISP_Tuning_GetISPRunningMode(IMPISPRunningMode *pmode)</div><div class="ttdoc">获取ISP工作模式，正常模式或夜视模式。 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga452cdc199a01922aa7a5e10d06225f0eada18ffe50bfe6dfe686f37c4d16f574b"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga452cdc199a01922aa7a5e10d06225f0eada18ffe50bfe6dfe686f37c4d16f574b">IMPISP_ANTIFLICKER_50HZ</a></div><div class="ttdoc">使能ISP抗闪频功能, 并设置频率为50HZ </div><div class="ttdef"><b>Definition:</b> imp_isp.h:360</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga46a6f04217cc911114612141031d7f30"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga46a6f04217cc911114612141031d7f30">isp_core_expr_attr::@3::integration_time_max</a></div><div class="ttdeci">uint16_t integration_time_max</div><div class="ttdoc">获取的曝光最大时间，单位为行 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:763</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga8aa6f715914bd7b43ecdf648e4d55060"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga8aa6f715914bd7b43ecdf648e4d55060">IMPSensorInfo::cbus_type</a></div><div class="ttdeci">IMPSensorControlBusType cbus_type</div><div class="ttdoc">摄像头控制总线类型 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:136</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga8322e3086b65300b1aca801a5ad1b22ea10f484032b57286297764ad66e3959b0"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga8322e3086b65300b1aca801a5ad1b22ea10f484032b57286297764ad66e3959b0">ISP_CORE_WB_MODE_SHADE</a></div><div class="ttdoc">阴影 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:821</div></div>
+<div class="ttc" id="imp__common_8h_html"><div class="ttname"><a href="imp__common_8h.html">imp_common.h</a></div><div class="ttdoc">SDK-T15公共数据结构头文件 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga823f71e232236129da016cbbd0079295"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga823f71e232236129da016cbbd0079295">IMP_ISP_DisableSensor</a></div><div class="ttdeci">int IMP_ISP_DisableSensor(void)</div><div class="ttdoc">不使能一个sensor </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gaf44d63ecdfdf0d44e6e584848fb170a2"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gaf44d63ecdfdf0d44e6e584848fb170a2">IMPI2CInfo::i2c_adapter_id</a></div><div class="ttdeci">int i2c_adapter_id</div><div class="ttdoc">I2C控制器 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:121</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga37c58c97c2970aa01e438c189c25ef6d"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga37c58c97c2970aa01e438c189c25ef6d">IMP_ISP_Tuning_SetSharpness</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetSharpness(unsigned char sharpness)</div><div class="ttdoc">设置ISP 综合效果图片锐度 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga4a2606244fcaa169a4cee6637b23b631"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga4a2606244fcaa169a4cee6637b23b631">isp_core_expr_attr::unit</a></div><div class="ttdeci">enum isp_core_expr_unit unit</div><div class="ttdoc">设置的曝光单位 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:756</div></div>
+<div class="ttc" id="unionisp__core__ae__roi__select_html"><div class="ttname"><a href="unionisp__core__ae__roi__select.html">isp_core_ae_roi_select</a></div><div class="ttdoc">曝光统计区域选择 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:800</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga67c1bce041ce6ba21c81ae86a45d7a49"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga67c1bce041ce6ba21c81ae86a45d7a49">IMP_ISP_Tuning_SetSaturation</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetSaturation(unsigned char sat)</div><div class="ttdoc">设置ISP 综合效果图片饱和度 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gac56adabf276501db035d01b2881703c0"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gac56adabf276501db035d01b2881703c0">isp_core_ae_roi_select::startx</a></div><div class="ttdeci">unsigned startx</div><div class="ttdoc">起始点x坐标 (0 ~ 255) </div><div class="ttdef"><b>Definition:</b> imp_isp.h:805</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga414b5866577205f3cd28b7252d463adf"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga414b5866577205f3cd28b7252d463adf">IMP_ISP_Tuning_SetExpr</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetExpr(IMPISPExpr *expr)</div><div class="ttdoc">设置AE参数。 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gac80de0e7f019c1718e58bb9d728203c3"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gac80de0e7f019c1718e58bb9d728203c3">IMP_ISP_Open</a></div><div class="ttdeci">int IMP_ISP_Open(void)</div><div class="ttdoc">打开ISP模块 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga9a8ba3dfe858dde56672a5160ec1fdfd"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga9a8ba3dfe858dde56672a5160ec1fdfd">IMP_ISP_Tuning_SetISPRunningMode</a></div><div class="ttdeci">int IMP_ISP_Tuning_SetISPRunningMode(IMPISPRunningMode mode)</div><div class="ttdoc">设置ISP工作模式，正常模式或夜视模式；默认为正常模式。 </div></div>
+<div class="ttc" id="struct_i_m_p_i_s_p_gamma_html"><div class="ttname"><a href="struct_i_m_p_i_s_p_gamma.html">IMPISPGamma</a></div><div class="ttdoc">gamma </div><div class="ttdef"><b>Definition:</b> imp_isp.h:664</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga15dbea9727fd70901275c90a3e5ef2d2afc30999bcaa40b4d78b7917b5831857a"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga15dbea9727fd70901275c90a3e5ef2d2afc30999bcaa40b4d78b7917b5831857a">ISP_CORE_EXPR_MODE_AUTO</a></div><div class="ttdoc">自动模式 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:738</div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_ga8a86c7fac741e7d38daae9767f06a9f7"><div class="ttname"><a href="group___i_m_p___i_s_p.html#ga8a86c7fac741e7d38daae9767f06a9f7">IMP_ISP_SetSensorRegister</a></div><div class="ttdeci">int IMP_ISP_SetSensorRegister(uint32_t reg, uint32_t value)</div><div class="ttdoc">设置sensor一个寄存器的值 </div></div>
+<div class="ttc" id="group___i_m_p___i_s_p_html_gga119b1782b6d972e38d604528ad72b65ea78fe9c564ee2464a75aab02dfe770ef1"><div class="ttname"><a href="group___i_m_p___i_s_p.html#gga119b1782b6d972e38d604528ad72b65ea78fe9c564ee2464a75aab02dfe770ef1">ISP_CORE_EXPR_UNIT_US</a></div><div class="ttdoc">毫秒 </div><div class="ttdef"><b>Definition:</b> imp_isp.h:747</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2020年 五月 8日 星期五 16:09:30 , 为 ISVP-SDK使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>
