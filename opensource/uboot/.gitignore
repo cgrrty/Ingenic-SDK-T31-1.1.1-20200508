@@ -1,0 +1,99 @@
+#
+# NOTE! Don't add files that are generated in specific
+# subdirectories here. Add them in the ".gitignore" file
+# in that subdirectory instead.
+#
+# Normal rules
+#
+
+*.rej
+*.orig
+*.a
+*.o
+*.su
+*~
+*.swp
+*.patch
+*.bin
+*.cfgtmp
+
+# Build tree
+/build-*
+
+#
+# Top-level generic files
+#
+
+/MLO
+/SPL
+/System.map
+/u-boot
+/u-boot.hex
+/u-boot.imx
+/u-boot-with-spl.imx
+/u-boot-with-nand-spl.imx
+/u-boot.map
+/u-boot.srec
+/u-boot.ldr
+/u-boot.ldr.hex
+/u-boot.ldr.srec
+/u-boot.img
+/u-boot.kwb
+/u-boot.sha1
+/u-boot.dis
+/u-boot.lds
+/u-boot.ubl
+/u-boot.ais
+/u-boot.dtb
+/u-boot.sb
+/u-boot.bd
+/u-boot.geany
+
+#
+# Generated files
+#
+
+kk
+/include/charge_logo.h
+/tools/logos/ingenic.rle
+/include/rle_boot_logo.h
+/tools/charge_logo/charg*
+/include/rle_charge_logo.h
+/common/rle_logo.c
+/tools/logos/ingenic.jpg.rle
+
+*.depend*
+/LOG
+/errlog
+/reloc_off
+
+/include/generated/
+asm-offsets.s
+
+# stgit generated dirs
+patches-*
+.stgit-edit.txt
+
+# quilt's files
+patches
+series
+
+# gdb files
+.gdb_history
+
+# cscope files
+cscope.*
+
+# tags files
+/tags
+/ctags
+/etags
+
+# gnu global files
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+
+# spl ais files
+/spl/*.ais

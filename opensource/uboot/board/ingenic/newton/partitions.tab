@@ -1,0 +1,17 @@
+property:
+    disk_size = 4096m
+    gpt_header_lba = 2m
+
+partition:
+	#name     =  start,   size, fstype
+	uboot     =     0m,     3m, EMPTY
+	boot      =     3m,     8m, EMPTY
+	recovery  =    11m,     8m, EMPTY
+        misc      =    19m,     4m, EMPTY
+        battery   =    23m,     1m, EMPTY
+	cache     =    24m,    30m, LINUX_FS
+	device_id =    54m,     2m, EMPTY
+	system    =    56m,   512m, LINUX_FS
+	data      =   568m,  3072m, LINUX_FS
+
+#fstype could be: LINUX_FS, FAT_FS, EMPTY

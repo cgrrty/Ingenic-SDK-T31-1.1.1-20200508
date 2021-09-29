@@ -1,0 +1,1 @@
+obj-$(CONFIG_AVPU_DRIVER)	+= jz_avpu/

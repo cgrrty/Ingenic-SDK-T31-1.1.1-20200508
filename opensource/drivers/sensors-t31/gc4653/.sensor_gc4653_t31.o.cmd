@@ -1,0 +1,1 @@
+cmd_/home_d/jszhang/work/isvp/opensource/drivers/sensors-t31/gc4653/sensor_gc4653_t31.o := mips-linux-gnu-ld  -m elf32ltsmip   -r -o /home_d/jszhang/work/isvp/opensource/drivers/sensors-t31/gc4653/sensor_gc4653_t31.o /home_d/jszhang/work/isvp/opensource/drivers/sensors-t31/gc4653/gc4653.o 

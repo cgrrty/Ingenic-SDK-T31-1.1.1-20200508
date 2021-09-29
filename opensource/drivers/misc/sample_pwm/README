@@ -1,0 +1,24 @@
+HOW TO USE:
+1.修改内核配置选项
+	Device drivers -->
+		[*] Pulse-Width Modulation(PWM) Support -->
+			[] JZ PWM driver
+
+2. pwm通道配置
+修改Makefie，默认打开PWM0,如要打开多路，打开对应的宏即可;
+注意：T10 T20,只有0~3 通道；T30 有 0~7 通道。
+DEFS += -DCONFIG_PWM0
+#DEFS += -DCONFIG_PWM1
+#DEFS += -DCONFIG_PWM2
+#DEFS += -DCONFIG_PWM3
+#DEFS += -DCONFIG_PWM4
+#DEFS += -DCONFIG_PWM5
+#DEFS += -DCONFIG_PWM6
+#DEFS += -DCONFIG_PWM7
+
+2. KO加载
+直接make，会生成sample_pwm_core.ko和sample_pwm_hal.ko,先加载sample_pwm_core.ko，后加载sample_pwm_hal.ko;
+
+NOTES:
+1. T30 默认使用的是PC组GPIO，如果使用PB组GPIO，需要手动进行如下修改
+内核文件 arch/mips/xburst/soc-t21/common/platform.c jzpwm_pdata的PC17,PC18改成PB17,PB18

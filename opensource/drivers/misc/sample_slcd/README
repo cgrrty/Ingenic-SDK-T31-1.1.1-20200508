@@ -1,0 +1,19 @@
+内核配置如下：
+Please confirm that the configuration in kernel is as the following show before compiling the lcd module:
+Symbol: FB [=y]
+      Type  : tristate
+      Prompt: Support for frame buffer devices
+      Location:
+      -> Device Drivers
+      -> Graphics support
+
+slcd 端口配置更改如下位置
+以T31为例
+/lcd-device_truly240240.c
+#define GPIO_LCD_CS            GPIO_PB(20)
+#define GPIO_LCD_RD            GPIO_PB(18)
+#define GPIO_BL_PWR_EN         GPIO_PC(18)
+#define GPIO_LCD_RST           GPIO_PC(19)
+
+/lcd-driver_truly240240.c
+jzgpio_set_func(GPIO_PORT_B, GPIO_FUNC_3, 0x3f<<6 | 0x3<<13 | 0x3<<15 |0x1<<21);

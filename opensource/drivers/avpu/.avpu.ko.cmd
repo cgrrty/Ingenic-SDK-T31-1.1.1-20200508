@@ -1,0 +1,1 @@
+cmd_/home_d/jszhang/work/isvp/opensource/drivers/avpu/avpu.ko := mips-linux-gnu-ld -r  -m elf32ltsmip -T /home_d/jszhang/work/isvp/opensource/kernel/scripts/module-common.lds --build-id  -o /home_d/jszhang/work/isvp/opensource/drivers/avpu/avpu.ko /home_d/jszhang/work/isvp/opensource/drivers/avpu/avpu.o /home_d/jszhang/work/isvp/opensource/drivers/avpu/avpu.mod.o
